@@ -13,10 +13,10 @@ function App() {
     <div id="container">
       <div className="section header grid-container grid-parent">
         <div className="split picture-container grid-40">
-          <a href="/assets/images/tree.jpg">
+          <a href="./assets/images/tree.jpg">
             <picture className="picture">
-              <source type="image/webp" srcSet="/assets/images/tree.jpg" />
-              <img src="/assets/images/tree.jpg" alt="picture of Railgun Breaker" />
+              <source type="image/webp" srcSet="./assets/images/tree.jpg" />
+              <img src="./assets/images/tree.jpg" alt="picture of Railgun Breaker" />
             </picture>
           </a>
         </div>
