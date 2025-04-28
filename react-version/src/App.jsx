@@ -1,7 +1,10 @@
 import { useEffect } from 'react'
 import './App.css'
+import { useLanguage } from './LanguageContext'
 
 function App() {
+  const { language, toggleLanguage, t } = useLanguage();
+
   useEffect(() => {
     console.log('App component mounted successfully');
   }, []);
@@ -23,27 +26,48 @@ function App() {
             <h1 className="name">
               <span className="no-wrap">
                 Railgun <a className="chem-element" element="titanium" href="https://en.wikipedia.org/wiki/Bromine">Br </a>eaker <br />
-                (Guohua Song)
+                <span dangerouslySetInnerHTML={{ __html: t.name }} />
               </span>
             </h1>
           </div>
 
+          {/* Language Switcher */}
+          <div className="language-switcher" style={{ marginBottom: '15px' }}>
+            <button
+              onClick={toggleLanguage}
+              style={{
+                padding: '8px 15px',
+                backgroundColor: '#555',
+                color: 'white',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                fontSize: '14px'
+              }}
+            >
+              <i className="fa fa-language" style={{ marginRight: '8px' }}></i>
+              {language === 'en' ? '日本語に切り替える' : 'Switch to English'}
+            </button>
+          </div>
+
           <div className="label-group">
-            <span className="header">Language</span>
+            <span className="header">{t.languageHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-language"></i>
-              {' '}Chinese (Native)
+              {' '}{t.chineseLabel}
             </span>
             <span className="label">
-              <i className="fa fa-language"></i> <a href="index.html" style={{color: '#555'}}>English (Fluent)</a>
+              <i className="fa fa-language"></i> {t.englishLabel}
             </span>
             <span className="label">
-              <i className="fa fa-language"></i> <a href="index_ja.html" style={{color: '#555'}}>Japanese (Advanced)</a>
+              <i className="fa fa-language"></i> {t.japaneseLabel}
             </span>
           </div>
 
           <div className="label-group">
-            <span className="header">Schools</span>
+            <span className="header">{t.schoolsHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-university"></i>
               {' '}立命館大学(Ritsumeikan University)
@@ -52,24 +76,24 @@ function App() {
           </div>
 
           <div className="label-group">
-            <span className="header">Education</span>
+            <span className="header">{t.educationHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-graduation-cap"></i>
-              {' '}Undergraduate, Class of 2026
+              {' '}{t.educationLabel}
             </span>
           </div>
 
           <div className="label-group">
-            <span className="header">Major</span>
+            <span className="header">{t.majorHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-university"></i>
-              {' '}Global Liberal Arts(RU) (グローバル教養学、意味不明)
+              {' '}{t.majorLabel1}
             </span>
-            <span className="label">Asia Pacific Affairs(ANU)</span>
+            <span className="label">{t.majorLabel2}</span>
           </div>
 
           <div className="label-group">
-            <span className="header">E-mail(Web)</span>
+            <span className="header">{t.emailWebHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-envelope-square"></i>
               {' '}<a href="mailto:admin@alansong.club" style={{color: '#555'}}>admin@alansong.club</a>
@@ -77,7 +101,7 @@ function App() {
           </div>
 
           <div className="label-group">
-            <span className="header">E-mail(Academic)</span>
+            <span className="header">{t.emailAcademicHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-envelope-square"></i>
               {' '}<a href="mailto:gl0042hs@ed.ritsumei.ac.jp" style={{color: '#555'}}>gl0042hs@ed.ritsumei.ac.jp</a>
@@ -89,7 +113,7 @@ function App() {
           </div>
           <br />
           <div className="label-group">
-            <span className="header">Callsign</span>
+            <span className="header">{t.callsignHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-rss-square"></i>
               {' '}<span className="content">BG2FGI</span>
@@ -101,7 +125,7 @@ function App() {
           </div>
 
           <div className="label-group">
-            <span className="header">PGP Key ID</span>
+            <span className="header">{t.pgpKeyHeader}</span>
             <span className="label">
               <i aria-hidden="true" className="fa fa-key"></i>
               {' '}<a href="https://pgp.mit.edu/pks/lookup?search=0x5F1CD73F4A7C0832&op=indexb" style={{color: '#555'}}>0x5f1cd73f4a7c0832</a>
@@ -112,21 +136,21 @@ function App() {
 
       {/* Introduction Section */}
       <div className="section intro">
-        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> Introduction</h2>
+        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> {t.introTitle}</h2>
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp; I am an undergraduate student pursuing a dual degree in <strong>Asia Pacific Affairs</strong> at the Australian National University and <strong>Global Liberal Arts</strong> at Ritsumeikan University. My academic journey spans two leading institutions in the Asia-Pacific region, allowing me to approach global issues from both theoretical and cross-cultural perspectives.
+          &nbsp;&nbsp;&nbsp;&nbsp; {t.introPara1}
         </p>
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp;My current research focuses on the <strong>privatization of the Japanese National Railway (JNR)</strong>, <strong>university grade inflation</strong>, and <strong>higher education admission policies</strong>. These topics reflect my broader interest in the intersection between public policy, institutional reform, and social inequality.
+          &nbsp;&nbsp;&nbsp;&nbsp; {t.introPara2}
         </p>
         <p>
-          &nbsp;&nbsp;&nbsp;&nbsp; Outside of my academic work, I am passionate about <em>music games, photography, amateur radio, and Japanese culture</em>. I enjoy exploring both the serious and playful sides of life — whether it's investigating education policy or perfecting a song in 太鼓の達人.
+          &nbsp;&nbsp;&nbsp;&nbsp; {t.introPara3}
         </p>
       </div>
 
       {/* Education Background Section */}
       <div className="section intro">
-        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> Education Background</h2>
+        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> {t.educationTitle}</h2>
         <div className="block grid-container grid-parent">
           <div className="split grid-50 mobile-grid-100">
             <p>
@@ -155,7 +179,7 @@ function App() {
             </p>
             
             <p>
-              📄 <a href="./Guohua.S CV.pdf" download="CV">Download my full CV here</a>
+              📄 <a href="./Guohua.S CV.pdf" download="CV">{t.downloadCV}</a>
             </p>
           </div>
         </div>
@@ -163,7 +187,7 @@ function App() {
 
       {/* Awards Section */}
       <div className="section intro">
-        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> Awards</h2>
+        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> {t.awardsTitle}</h2>
         <p>
           &nbsp;&nbsp;&nbsp;&nbsp;&bull; 2024 Ritsumeikan University Tuition Fee Reduction (20%)<br />
           &nbsp;&nbsp;&nbsp;&nbsp;&bull; 2024 College of Global Liberal Arts Scholarship for Study Abroad<br />
@@ -177,7 +201,7 @@ function App() {
 
       {/* Skills Section */}
       <div className="section intro">
-        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> Skills</h2>
+        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> {t.skillsTitle}</h2>
         <div className="block grid-container grid-parent">
           <div className="split grid-50 mobile-grid-100">
             <div className="label-group2">
@@ -220,7 +244,7 @@ function App() {
 
       {/* Hobbies Section */}
       <div className="section intro">
-        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> Hobbies</h2>
+        <h2><i className="fa fa-chevron-right" aria-hidden="true"></i> {t.hobbiesTitle}</h2>
         <div className="block grid-container grid-parent">
           <div className="split grid-50 mobile-grid-100">
             <div className="label-group2">
