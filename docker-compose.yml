@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    container_name: railgunbreaker-app
+    ports:
+      - "80:80"
+    restart: unless-stopped
