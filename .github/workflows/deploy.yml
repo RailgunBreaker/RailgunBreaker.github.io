@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages Branch
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -10,12 +10,20 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Environment settings
+env:
+  NODE_VERSION: "22"
+
 jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Needed to push to gh-pages branch
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,7 +33,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: ${{ env.NODE_VERSION }}
           cache: "yarn"
 
       - name: Install dependencies
@@ -46,10 +54,9 @@ jobs:
             echo "CNAME file copied to dist directory"
           fi
 
-      - name: Deploy to GitHub Pages branch
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
           branch: gh-pages
-          clean: true
-          commit-message: "Deploy website [skip ci]"
+          clean: true # Automatically remove deleted files from the deploy branch
