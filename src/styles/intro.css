@@ -1,52 +1,97 @@
 .intro {
-  margin: 1.5em 0;
-  padding: 1em 0;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 0.8s ease-out 0.6s both;
 }
 
 .intro .block .split {
-  padding: 0 1em;
+  padding: 0 2rem;
 }
 
 .intro h2 {
-  font-weight: 300;
-  letter-spacing: 0.02em;
-  line-height: 2em;
-  margin: 0 0 0 1rem;
-  color: rgb(0, 0, 0);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  margin: 0 0 1.5rem 0;
+  color: var(--foreground);
+  font-size: 1.75rem;
+  position: relative;
+}
+
+.intro h2::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 3rem;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
 }
 
 .intro h2 i.fa {
-  margin: 0.25em;
+  margin: 0 0.5rem 0 0;
   text-align: center;
-  width: 1em;
+  width: 1.2rem;
+  color: var(--primary);
+  font-size: 1.1em;
 }
 
 .intro p {
-  color: rgb(86, 60, 60);
-  font-size: 1.2em;
-  font-weight: 300;
-  line-height: 1.75em;
-  margin: 1em 0;
+  color: var(--muted-foreground);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 1.5rem 0;
   overflow: auto;
-  padding: 0.5em 0.5em;
+  padding: 1.5rem;
+  background: var(--muted);
+  border-radius: 0.75rem;
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.intro p:hover {
+  background: var(--accent);
+  color: var(--accent-foreground);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .intro .label-group {
-  border-bottom: 0.1em solid rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid var(--border);
   display: block;
-  margin-top: 3em;
+  margin-top: 3rem;
   width: 100%;
-  color: rgb(167, 27, 27);
+  padding-bottom: 1.5rem;
+  position: relative;
+}
+
+.intro .label-group::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 4rem;
+  height: 2px;
+  background: var(--gradient-primary);
 }
 
 .intro .label-group:last-child {
   border-bottom: none;
 }
 
+.intro .label-group:last-child::after {
+  display: none;
+}
+
 .intro .label-group .header.alt {
-  color: #777;
-  font-size: 1em;
-  padding: 0 0.25em;
+  color: var(--muted-foreground);
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .intro .label-group .header.alt .fa-tag {
