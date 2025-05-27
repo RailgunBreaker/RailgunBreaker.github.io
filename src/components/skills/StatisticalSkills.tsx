@@ -1,22 +1,16 @@
+import { useLanguage } from "../../hooks/useLanguage";
+
 function StatisticalSkills() {
+  const { t } = useLanguage();
+
   return (
     <div className="label-group2">
-      <span className="header">Statistical &amp; Data Skills</span>
-      <span className="label">
-        <i className="fas fa-chart-line" /> Regression Analysis
-      </span>
-      <span className="label">
-        <i className="fas fa-cubes" /> Bayesian Modeling
-      </span>
-      <span className="label">
-        <i className="fas fa-share-alt" /> Network Analysis
-      </span>
-      <span className="label">
-        <i className="fas fa-cogs" /> Machine Learning
-      </span>
-      <span className="label">
-        <i className="fas fa-calculator" /> Quantitative Methods in Sociology
-      </span>
+      <span className="header">{t.skills.statisticalData}</span>
+      {t.skills.items.statistical.map((skill, index) => (
+        <span key={index} className="label">
+          <i className="fas fa-chart-line" /> {skill}
+        </span>
+      ))}
     </div>
   );
 }

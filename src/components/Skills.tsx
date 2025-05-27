@@ -5,10 +5,13 @@ import {
   Certifications,
 } from "./skills/index";
 import { Section, GridContainer, GridColumn } from "./custom-ui";
+import { useLanguage } from "../hooks/useLanguage";
 
 function Skills() {
+  const { t } = useLanguage();
+
   return (
-    <Section title="Skills">
+    <Section title={t.skills.title}>
       <GridContainer>
         <GridColumn>
           <ProgrammingSkills />

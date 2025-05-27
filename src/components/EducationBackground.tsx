@@ -1,11 +1,14 @@
 import { EducationEntry, CVDownload } from "./education/index";
+import { useLanguage } from "../hooks/useLanguage";
 
 function EducationBackground() {
+  const { t } = useLanguage();
+
   return (
     <div className="section intro">
       <h2>
-        <i className="fas fa-chevron-right" aria-hidden="true" /> Education
-        Background
+        <i className="fas fa-chevron-right" aria-hidden="true" />{" "}
+        {t.education.title}
       </h2>
       <div className="block grid-container grid-parent">
         <div className="split mobile-grid-100">
@@ -13,33 +16,22 @@ function EducationBackground() {
             period="2023 – 2026"
             institution="Australian National University"
             location="Canberra, Australia"
-            degree="Bachelor of Asia Pacific Affairs, College of Asia and the Pacific"
-            details={[
-              "Weighted Average Mark: 69.9",
-              "International Security Studies, Japanese Foreign Policy, Asian Economics",
-              "Class representative in ASIA2308 (Linguistic Histories in Asia and the Pacific)",
-            ]}
+            degree={t.education.entries.anu.degree}
+            details={t.education.entries.anu.details}
           />
           <EducationEntry
             period="2022 – 2026"
             institution="Ritsumeikan University"
             location="Osaka, Japan"
-            degree="Bachelor of Global Liberal Arts, College of Global Liberal Arts"
-            details={[
-              "CGPA: 3.86/5, Semester GPA: 4.20/5",
-              "Courses: Statistics, Law of Conflicts, Sociology, Political Theory, GIS",
-              "Instruction Language: English (with Japanese language coursework)",
-            ]}
+            degree={t.education.entries.ritsumeikan.degree}
+            details={t.education.entries.ritsumeikan.details}
           />
           <EducationEntry
             period="2024.6 – 2024.7"
             institution="University of Michigan"
             location="Ann Arbor, MI, USA"
-            degree=""
-            details={[
-              "Summer Program – Inter-university Consortium for Political and Social Research",
-              "Courses: Regression, Machine Learning, Bayesian Modeling, Network Analysis",
-            ]}
+            degree={t.education.entries.michigan.degree}
+            details={t.education.entries.michigan.details}
           />
           <CVDownload />
         </div>

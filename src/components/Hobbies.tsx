@@ -5,10 +5,13 @@ import {
   MusicGames,
 } from "./hobbies/index";
 import { Section, GridContainer, GridColumn } from "./custom-ui";
+import { useLanguage } from "../hooks/useLanguage";
 
 function Hobbies() {
+  const { t } = useLanguage();
+
   return (
-    <Section title="Hobbies">
+    <Section title={t.hobbies.title}>
       <GridContainer>
         <GridColumn mobileSize="mobile-grid-100">
           <HobbyActivities />

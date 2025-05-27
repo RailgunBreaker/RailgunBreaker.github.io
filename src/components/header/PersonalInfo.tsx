@@ -1,10 +1,26 @@
 import LanguageSwitch from "./LanguageSwitch";
+import { useLanguage } from "../../hooks/useLanguage";
 
 function PersonalInfo() {
+  const { currentLanguage } = useLanguage();
+
+  const getLanguageClass = () => {
+    switch (currentLanguage) {
+      case "en":
+        return "lang-en";
+      case "ja":
+        return "lang-ja";
+      case "zh":
+        return "lang-zh";
+      default:
+        return "lang-en";
+    }
+  };
+
   return (
     <div className="names text-center md:text-left">
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-        <h1 className="name">
+        <h1 className={`name ${getLanguageClass()}`}>
           <span className="no-wrap">
             Railgun{" "}
             <a

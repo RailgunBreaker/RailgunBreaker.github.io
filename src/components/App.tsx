@@ -5,10 +5,11 @@ import Awards from "./Awards";
 import Skills from "./Skills";
 import Hobbies from "./Hobbies";
 import Footer from "./Footer";
+import { LanguageProvider } from "../contexts/LanguageContext.tsx";
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <div id="container">
         <Header />
         <Introduction />
@@ -18,7 +19,7 @@ function App() {
         <Hobbies />
         <Footer />
       </div>
-    </>
+    </LanguageProvider>
   );
 }
 

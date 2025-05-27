@@ -1,84 +1,69 @@
+import { useLanguage } from "../../hooks/useLanguage";
+
 function HobbyActivities() {
+  const { t } = useLanguage();
+
   return (
     <>
       <div className="label-group2">
-        <span className="header">Model United Nations</span>
-        <span className="label">
-          <i className="fas fa-users" /> 12 times as delegate
-        </span>
-        <span className="label">
-          <i className="fas fa-users" /> Volunteer
-        </span>
-        <span className="label">
-          <i className="fas fa-users" /> Chair
-        </span>
+        <span className="header">{t.hobbies.categories.modelUN}</span>
+        {t.hobbies.items.modelUN.map((item, index) => (
+          <span key={index} className="label">
+            <i className="fas fa-users" /> {item}
+          </span>
+        ))}
       </div>
       <div className="label-group2">
-        <span className="header">Personal Website</span>
-        <span className="label">
-          <i className="fas fa-globe" /> 2,000,000+ visits
-        </span>
-        <span className="label">
-          <i className="fab fa-wordpress" /> Built with WordPress (LAMP stack)
-        </span>
+        <span className="header">{t.hobbies.categories.personalWebsite}</span>
+        {t.hobbies.items.personalWebsite.map((item, index) => (
+          <span key={index} className="label">
+            <i className={index === 0 ? "fas fa-globe" : "fab fa-wordpress"} />{" "}
+            {item}
+          </span>
+        ))}
       </div>
       <div className="label-group2">
-        <span className="header">Video Clipping</span>
-        <span className="label">
-          <i className="fas fa-film" /> Adobe Premiere
-        </span>
-        <span className="label">
-          <i className="fas fa-film" /> DaVinci Resolve
-        </span>
+        <span className="header">{t.hobbies.categories.videoClipping}</span>
+        {t.hobbies.items.videoClipping.map((item, index) => (
+          <span key={index} className="label">
+            <i className="fas fa-film" /> {item}
+          </span>
+        ))}
       </div>
       <div className="label-group2">
-        <span className="header">Badminton</span>
-        <span className="label">
-          <i className="fas fa-bolt" /> Recreational player
-        </span>
-        <span className="label">
-          <i className="fas fa-shield" /> VICTOR ARS-PB
-        </span>
+        <span className="header">{t.hobbies.categories.badminton}</span>
+        {t.hobbies.items.badminton.map((item, index) => (
+          <span key={index} className="label">
+            <i className={index === 0 ? "fas fa-bolt" : "fas fa-shield"} />{" "}
+            {item}
+          </span>
+        ))}
       </div>
       <div className="label-group2">
-        <span className="header">Collecting Postcards</span>
-        <span className="label">
-          <i className="fas fa-gift" /> Souvenir postcards from travel
-          destinations
+        <span className="header">
+          {t.hobbies.categories.collectingPostcards}
         </span>
+        {t.hobbies.items.collectingPostcards.map((item, index) => (
+          <span key={index} className="label">
+            <i className="fas fa-gift" /> {item}
+          </span>
+        ))}
       </div>
       <div className="label-group2">
-        <span className="header">Photography</span>
-        <span className="label">
-          <i className="fas fa-camera" /> Nikon D7000
-        </span>
-        <span className="label">
-          <i className="fas fa-camera" /> Nikon F3
-        </span>
-        <span className="label">
-          <i className="fas fa-camera" /> Nikon Z7II
-        </span>
-        <span className="label">
-          <i className="fas fa-camera" /> Bronica ECTL (6x6, 6x4.5)
-        </span>
-        <span className="label">
-          <i className="fas fa-camera" /> Luminar 4
-        </span>
+        <span className="header">{t.hobbies.categories.photography}</span>
+        {t.hobbies.items.photography.map((item, index) => (
+          <span key={index} className="label">
+            <i className="fas fa-camera" /> {item}
+          </span>
+        ))}
       </div>
       <div className="label-group2">
-        <span className="header">Amateur Radio</span>
-        <span className="label">
-          <i className="fas fa-broadcast-tower" /> Type "A" Licence, CRAC
-        </span>
-        <span className="label">
-          <i className="fas fa-broadcast-tower" /> ACMA-recognized
-        </span>
-        <span className="label">
-          <i className="fas fa-broadcast-tower" /> Radio Station licence, PRC
-        </span>
-        <span className="label">
-          <i className="fas fa-broadcast-tower" /> SenHaiX 8600
-        </span>
+        <span className="header">{t.hobbies.categories.amateurRadio}</span>
+        {t.hobbies.items.amateurRadio.map((item, index) => (
+          <span key={index} className="label">
+            <i className="fas fa-broadcast-tower" /> {item}
+          </span>
+        ))}
       </div>
     </>
   );

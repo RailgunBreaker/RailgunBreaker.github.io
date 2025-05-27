@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useLanguage } from "../../hooks/useLanguage";
+import { Language } from "../../types/language";
 
-type LanguageCode = "en" | "ja";
+type LanguageCode = Language;
 
-interface Language {
+interface LanguageInterface {
   code: LanguageCode;
   label: string;
   fullName: string;
@@ -10,16 +11,16 @@ interface Language {
 }
 
 function LanguageSwitch() {
-  const [currentLang, setCurrentLang] = useState<LanguageCode>("en");
+  const { currentLanguage, setLanguage } = useLanguage();
 
-  const languages: Language[] = [
-    { code: "en", label: "EN", fullName: "English", flag: "🇺🇸" },
-    { code: "ja", label: "JP", fullName: "日本語", flag: "🇯🇵" },
+  const languages: LanguageInterface[] = [
+    { code: Language.EN, label: "EN", fullName: "English", flag: "🇺🇸" },
+    { code: Language.JA, label: "JP", fullName: "日本語", flag: "🇯🇵" },
+    { code: Language.ZH, label: "中文", fullName: "中文", flag: "🇨🇳" },
   ];
 
   const handleLanguageSwitch = (langCode: LanguageCode) => {
-    setCurrentLang(langCode);
-    // Language switching logic will be implemented later
+    setLanguage(langCode);
     console.log(`Switching to ${langCode}`);
   };
 
@@ -33,7 +34,7 @@ function LanguageSwitch() {
             flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium rounded-md 
             transition-all duration-300 ease-out transform hover:scale-105 active:scale-95
             ${
-              currentLang === lang.code
+              currentLanguage === lang.code
                 ? "bg-white/90 text-gray-800 shadow-md scale-105"
                 : "text-white/70 hover:text-white hover:bg-white/15"
             }

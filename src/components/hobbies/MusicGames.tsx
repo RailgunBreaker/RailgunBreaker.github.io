@@ -1,12 +1,16 @@
 import { LabelGroup, Label } from "../custom-ui";
+import { useLanguage } from "../../hooks/useLanguage";
 
 function MusicGames() {
+  const { t } = useLanguage();
+
   return (
-    <LabelGroup title="Music Game" variant="alt">
-      <Label icon="fas fa-music">太鼓の達人(おに9★)</Label>
-      <Label icon="fas fa-music">Phigros (Elementary)</Label>
-      <Label icon="fas fa-music">Malody (Taiko Lv.22)</Label>
-      <Label icon="fas fa-music">Muse Dash (Intermediate)</Label>
+    <LabelGroup title={t.hobbies.musicGame} variant="alt">
+      {t.hobbies.items.musicGames.map((game, index) => (
+        <Label key={index} icon="fas fa-music">
+          {game}
+        </Label>
+      ))}
     </LabelGroup>
   );
 }

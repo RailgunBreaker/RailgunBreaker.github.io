@@ -1,8 +1,11 @@
 import { LabelGroup, Label } from "../custom-ui";
+import { useLanguage } from "../../hooks/useLanguage";
 
 function ProgrammingSkills() {
+  const { t } = useLanguage();
+
   return (
-    <LabelGroup title="Programming">
+    <LabelGroup title={t.skills.programming}>
       <Label icon="fas fa-code">Python</Label>
       <Label icon="fas fa-code">R</Label>
       <Label icon="fas fa-code">Java</Label>

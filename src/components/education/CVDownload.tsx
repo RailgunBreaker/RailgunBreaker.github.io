@@ -1,9 +1,13 @@
+import { useLanguage } from "../../hooks/useLanguage";
+
 function CVDownload() {
+  const { t } = useLanguage();
+
   return (
     <p>
       📄{" "}
       <a href="./Guohua.S CV.pdf" download="CV">
-        Download my full CV here
+        {t.education.downloadCV}
       </a>
     </p>
   );

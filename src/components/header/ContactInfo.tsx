@@ -1,27 +1,31 @@
+import { useLanguage } from "../../hooks/useLanguage";
+
 function ContactInfo() {
+  const { t } = useLanguage();
+
   return (
     <>
       <div className="label-group">
-        <span className="header">Language</span>
+        <span className="header">{t.header.language}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-language" />
-          Chinese (Native)
+          {t.header.languageItems.chineseNative}
         </span>
         <span className="label">
           <i className="fas fa-language" />{" "}
           <a href="index.html" style={{ color: "#555" }}>
-            English (Fluent)
+            {t.header.languageItems.englishFluent}
           </a>
         </span>
         <span className="label">
           <i className="fas fa-language" />{" "}
           <a href="index_ja.html" style={{ color: "#555" }}>
-            Japanese (Advanced)
+            {t.header.languageItems.japaneseAdvanced}
           </a>
         </span>
       </div>
       <div className="label-group">
-        <span className="header">Schools</span>
+        <span className="header">{t.header.schools}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-university" />
           立命館大学(Ritsumeikan University)
@@ -29,14 +33,14 @@ function ContactInfo() {
         <span className="label">Australian National University</span>
       </div>
       <div className="label-group">
-        <span className="header">Education</span>
+        <span className="header">{t.header.education}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-graduation-cap" />
           Undergraduate, Class of 2026
         </span>
       </div>
       <div className="label-group">
-        <span className="header">Major</span>
+        <span className="header">{t.header.major}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-university" />
           Global Liberal Arts(RU) (グローバル教養学、意味不明)
@@ -44,7 +48,7 @@ function ContactInfo() {
         <span className="label">Asia Pacific Affairs(ANU)</span>
       </div>
       <div className="label-group">
-        <span className="header">E-mail(Web)</span>
+        <span className="header">{t.header.emailWeb}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-envelope" />
           <a href="mailto:admin@alansong.club" style={{ color: "#555" }}>
@@ -53,7 +57,7 @@ function ContactInfo() {
         </span>
       </div>
       <div className="label-group">
-        <span className="header">E-mail(Academic)</span>
+        <span className="header">{t.header.emailAcademic}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-envelope" />
           <a href="mailto:gl0042hs@ed.ritsumei.ac.jp" style={{ color: "#555" }}>
@@ -71,7 +75,7 @@ function ContactInfo() {
       </div>
       <br />
       <div className="label-group">
-        <span className="header">Callsign</span>
+        <span className="header">{t.header.callsign}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-broadcast-tower" />
           <span className="content">BG2FGI</span>
@@ -82,7 +86,7 @@ function ContactInfo() {
         </span>
       </div>
       <div className="label-group">
-        <span className="header">PGP Key ID</span>
+        <span className="header">{t.header.pgpKeyId}</span>
         <span className="label">
           <i aria-hidden="true" className="fas fa-key" />
           <a
