@@ -1,0 +1,60 @@
+.footer.fab,
+.footer .fas,
+.footer .far {
+  text-align: center;
+  width: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer.fab:hover,
+.footer .fas:hover,
+.footer .far:hover {
+  transform: translateY(-2px) scale(1.1);
+  color: var(--accent);
+}
+
+.copyright {
+  background: linear-gradient(
+    135deg,
+    oklch(0.25 0.04 264) 0%,
+    oklch(0.2 0.03 264) 100%
+  );
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.hosting {
+  background: linear-gradient(
+    135deg,
+    oklch(0.28 0.04 264) 0%,
+    oklch(0.25 0.04 264) 100%
+  );
+  color: var(--primary-foreground);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.hosting:hover {
+  background: linear-gradient(
+    135deg,
+    oklch(0.3 0.04 264) 0%,
+    oklch(0.28 0.04 264) 100%
+  );
+  color: var(--primary-foreground);
+}
+
+.hosting .link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
