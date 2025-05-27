@@ -8,7 +8,7 @@ function EducationBackground() {
         Background
       </h2>
       <div className="block grid-container grid-parent">
-        <div className="split grid-50 mobile-grid-100">
+        <div className="split mobile-grid-100">
           <EducationEntry
             period="2023 – 2026"
             institution="Australian National University"
