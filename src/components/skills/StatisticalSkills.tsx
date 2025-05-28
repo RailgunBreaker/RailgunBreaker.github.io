@@ -6,7 +6,7 @@ function StatisticalSkills() {
   return (
     <div className="label-group2">
       <span className="header">{t.skills.statisticalData}</span>
-      {t.skills.items.statistical.map((skill, index) => (
+      {t.skills.items.statistical.map((skill: string, index: number) => (
         <span key={index} className="label">
           <i className="fas fa-chart-line" /> {skill}
         </span>

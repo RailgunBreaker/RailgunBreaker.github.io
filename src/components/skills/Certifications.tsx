@@ -6,11 +6,13 @@ function Certifications() {
   return (
     <div className="label-group2">
       <span className="header">{t.skills.certifications}</span>
-      {t.skills.items.certifications.map((certification, index) => (
-        <span key={index} className="label">
-          <i className="fas fa-id-card" /> {certification}
-        </span>
-      ))}
+      {t.skills.items.certifications.map(
+        (certification: string, index: number) => (
+          <span key={index} className="label">
+            <i className="fas fa-id-card" /> {certification}
+          </span>
+        )
+      )}
     </div>
   );
 }
