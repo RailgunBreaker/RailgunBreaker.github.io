@@ -6,7 +6,7 @@ function TechnologiesAndTools() {
   return (
     <div className="label-group2">
       <span className="header">{t.skills.technologiesTools}</span>
-      {t.skills.items.technologies.map((tech, index) => (
+      {t.skills.items.technologies.map((tech: string, index: number) => (
         <span key={index} className="label">
           <i className="fas fa-terminal" /> {tech}
         </span>

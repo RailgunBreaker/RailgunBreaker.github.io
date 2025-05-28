@@ -8,7 +8,7 @@ function Awards() {
   return (
     <Section title={t.awards.title}>
       <ContentBlock>
-        {t.awards.items.map((award, index) => (
+        {t.awards.items.map((award: string, index: number) => (
           <AwardItem key={index} award={award} />
         ))}
       </ContentBlock>

@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import type { Translations } from "../lib/translations";
+import type { Translations } from "@/assets/data/translations";
 import type { Language } from "../types/language";
 
 export interface LanguageContextType {
