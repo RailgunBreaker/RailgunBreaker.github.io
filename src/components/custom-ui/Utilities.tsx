@@ -21,14 +21,19 @@ interface ListItemProps {
 }
 
 function ListItem({ children, indent = true, className = "" }: ListItemProps) {
-  const prefix = indent ? "\u00A0\u00A0\u00A0\u00A0• " : "";
-
   return (
-    <span className={className}>
-      {prefix}
-      {children}
-      <br />
-    </span>
+    <div
+      className={`flex items-start gap-2 sm:gap-3 mb-2 sm:mb-3 ${className}`}
+    >
+      {indent && (
+        <span className="text-primary font-bold text-sm sm:text-base mt-0.5">
+          •
+        </span>
+      )}
+      <span className="text-sm sm:text-base leading-relaxed flex-1">
+        {children}
+      </span>
+    </div>
   );
 }
 

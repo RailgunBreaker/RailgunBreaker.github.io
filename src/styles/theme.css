@@ -155,11 +155,11 @@ html {
   }
 
   .section.header {
-    background: linear-gradient(
+    /* background: linear-gradient(
       135deg,
       oklch(0.08 0.01 264 / 0.9) 0%,
       oklch(0.12 0.02 264 / 0.95) 100%
-    );
+    ); */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 1rem 1rem 0 0;

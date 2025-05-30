@@ -174,7 +174,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Improved focus styles */
   *:focus-visible {
     @apply outline-2 outline-ring outline-offset-2;
   }
@@ -188,7 +187,6 @@
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Enhanced hover effects */
   a:hover,
   button:hover {
     transform: translateY(-1px);
@@ -214,7 +212,7 @@
 }
 
 @layer utilities {
-  /* Modern glass effect */
+  /* glass effect */
   .glass {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -222,7 +220,6 @@
     border: 1px solid var(--border);
   }
 
-  /* Enhanced shadows */
   .shadow-modern {
     box-shadow: var(--shadow-lg);
   }
@@ -231,7 +228,6 @@
     box-shadow: 0 0 20px var(--primary);
   }
 
-  /* Gradient text */
   .gradient-text {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -240,7 +236,6 @@
     background-clip: text;
   }
 
-  /* Modern animations */
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out;
   }
@@ -255,6 +250,47 @@
 
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  /* responsive utilities */
+  #container {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .text-responsive-sm {
+    @apply text-xs sm:text-sm md:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  .space-responsive {
+    @apply space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-6;
+  }
+
+  .gap-responsive {
+    @apply gap-2 sm:gap-3 md:gap-4 lg:gap-6;
+  }
+
+  .p-responsive {
+    @apply p-3 sm:p-4 md:p-6 lg:p-8;
+  }
+
+  .px-responsive {
+    @apply px-3 sm:px-4 md:px-6 lg:px-8;
+  }
+
+  .py-responsive {
+    @apply py-3 sm:py-4 md:py-6 lg:py-8;
   }
 }
 

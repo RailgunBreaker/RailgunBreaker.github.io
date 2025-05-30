@@ -4,100 +4,155 @@ function ContactInfo() {
   const { t } = useLanguage();
 
   return (
-    <>
+    <div className="space-y-4 md:space-y-6">
       <div className="label-group">
-        <span className="header">{t.header.language}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-language" />
-          {t.header.languageItems.chineseNative}
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.language}
         </span>
-        <span className="label">
-          <i className="fas fa-language" />{" "}
-          <a href="index.html" style={{ color: "#555" }}>
-            {t.header.languageItems.englishFluent}
-          </a>
-        </span>
-        <span className="label">
-          <i className="fas fa-language" />{" "}
-          <a href="index_ja.html" style={{ color: "#555" }}>
-            {t.header.languageItems.japaneseAdvanced}
-          </a>
-        </span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-language mr-2" />
+            {t.header.languageItems.chineseNative}
+          </span>
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i className="fas fa-language mr-2" />{" "}
+            <a
+              href="index.html"
+              className="text-gray-600 hover:text-white transition-colors"
+            >
+              {t.header.languageItems.englishFluent}
+            </a>
+          </span>
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i className="fas fa-language mr-2" />{" "}
+            <a
+              href="index_ja.html"
+              className="text-gray-600 hover:text-white transition-colors"
+            >
+              {t.header.languageItems.japaneseAdvanced}
+            </a>
+          </span>
+        </div>
       </div>
+
       <div className="label-group">
-        <span className="header">{t.header.schools}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-university" />
-          立命館大学(Ritsumeikan University)
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.schools}
         </span>
-        <span className="label">Australian National University</span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-university mr-2" />
+            立命館大学(Ritsumeikan University)
+          </span>
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            Australian National University
+          </span>
+        </div>
       </div>
+
       <div className="label-group">
-        <span className="header">{t.header.education}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-graduation-cap" />
-          Undergraduate, Class of 2026
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.education}
         </span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-graduation-cap mr-2" />
+            Undergraduate, Class of 2026
+          </span>
+        </div>
       </div>
+
       <div className="label-group">
-        <span className="header">{t.header.major}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-university" />
-          Global Liberal Arts(RU) (グローバル教養学、意味不明)
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.major}
         </span>
-        <span className="label">Asia Pacific Affairs(ANU)</span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-university mr-2" />
+            Global Liberal Arts(RU) (グローバル教養学、意味不明)
+          </span>
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            Asia Pacific Affairs(ANU)
+          </span>
+        </div>
       </div>
+
       <div className="label-group">
-        <span className="header">{t.header.emailWeb}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-envelope" />
-          <a href="mailto:admin@alansong.club" style={{ color: "#555" }}>
-            admin@alansong.club
-          </a>
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.emailWeb}
         </span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-envelope mr-2" />
+            <a
+              href="mailto:admin@alansong.club"
+              className="text-gray-600 hover:text-white transition-colors"
+            >
+              admin@alansong.club
+            </a>
+          </span>
+        </div>
       </div>
+
       <div className="label-group">
-        <span className="header">{t.header.emailAcademic}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-envelope" />
-          <a href="mailto:gl0042hs@ed.ritsumei.ac.jp" style={{ color: "#555" }}>
-            {" "}
-            gl0042hs@ed.ritsumei.ac.jp
-          </a>
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.emailAcademic}
         </span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-envelope" />
-          <a href="mailto:u7712843@anu.edu.au" style={{ color: "#555" }}>
-            {" "}
-            u7712843@anu.edu.au
-          </a>
-        </span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-envelope mr-2" />
+            <a
+              href="mailto:gl0042hs@ed.ritsumei.ac.jp"
+              className="text-gray-600 hover:text-white transition-colors"
+            >
+              gl0042hs@ed.ritsumei.ac.jp
+            </a>
+          </span>
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-envelope mr-2" />
+            <a
+              href="mailto:u7712843@anu.edu.au"
+              className="text-gray-600 hover:text-white transition-colors"
+            >
+              u7712843@anu.edu.au
+            </a>
+          </span>
+        </div>
       </div>
-      <br />
+
       <div className="label-group">
-        <span className="header">{t.header.callsign}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-broadcast-tower" />
-          <span className="content">BG2FGI</span>
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.callsign}
         </span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-broadcast-tower" />
-          <span className="content">VK1ABA</span>
-        </span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-broadcast-tower mr-2" />
+            <span className="content">BG2FGI</span>
+          </span>
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-broadcast-tower mr-2" />
+            <span className="content">VK1ABA</span>
+          </span>
+        </div>
       </div>
+
       <div className="label-group">
-        <span className="header">{t.header.pgpKeyId}</span>
-        <span className="label">
-          <i aria-hidden="true" className="fas fa-key" />
-          <a
-            href="https://pgp.mit.edu/pks/lookup?search=0x5F1CD73F4A7C0832&op=indexb"
-            style={{ color: "#555" }}
-          >
-            0x5f1cd73f4a7c0832
-          </a>
+        <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
+          {t.header.pgpKeyId}
         </span>
+        <div className="flex flex-wrap gap-2">
+          <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
+            <i aria-hidden="true" className="fas fa-key mr-2" />
+            <a
+              href="https://pgp.mit.edu/pks/lookup?search=0x5F1CD73F4A7C0832&op=indexb"
+              className="text-gray-600 hover:text-white transition-colors"
+            >
+              0x5f1cd73f4a7c0832
+            </a>
+          </span>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
