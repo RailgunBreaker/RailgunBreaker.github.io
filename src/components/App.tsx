@@ -10,7 +10,10 @@ import { LanguageProvider } from "../contexts/LanguageContext.tsx";
 function App() {
   return (
     <LanguageProvider>
-      <div id="container">
+      <div
+        id="container"
+        className="w-full max-w-none sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto my-4 sm:my-8"
+      >
         <Header />
         <Introduction />
         <EducationBackground />

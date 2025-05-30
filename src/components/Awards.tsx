@@ -1,5 +1,5 @@
 import { AwardItem } from "./awards/index";
-import { Section, ContentBlock } from "./custom-ui";
+import { Section } from "./custom-ui";
 import { useLanguage } from "../hooks/useLanguage";
 
 function Awards() {
@@ -7,11 +7,11 @@ function Awards() {
 
   return (
     <Section title={t.awards.title}>
-      <ContentBlock>
+      <div className="space-y-3 sm:space-y-4">
         {t.awards.items.map((award: string, index: number) => (
           <AwardItem key={index} award={award} />
         ))}
-      </ContentBlock>
+      </div>
     </Section>
   );
 }

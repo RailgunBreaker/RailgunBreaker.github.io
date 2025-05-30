@@ -6,7 +6,13 @@ interface ContentBlockProps {
 }
 
 function ContentBlock({ children, className = "" }: ContentBlockProps) {
-  return <p className={className}>{children}</p>;
+  return (
+    <p
+      className={`text-sm sm:text-base md:text-lg leading-relaxed sm:leading-relaxed md:leading-loose p-3 sm:p-4 md:p-6 ${className}`}
+    >
+      {children}
+    </p>
+  );
 }
 
 interface LinkProps {

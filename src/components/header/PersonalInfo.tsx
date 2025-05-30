@@ -18,10 +18,12 @@ function PersonalInfo() {
   };
 
   return (
-    <div className="names text-center md:text-left">
-      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-        <h1 className={`name ${getLanguageClass()}`}>
-          <span className="no-wrap">
+    <div className="names">
+      <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
+        <h1
+          className={`name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight ${getLanguageClass()}`}
+        >
+          <span className="no-wrap block">
             Railgun{" "}
             <a
               className="chem-element"
@@ -30,7 +32,9 @@ function PersonalInfo() {
             >
               Br{" "}
             </a>
-            eaker <br />
+            eaker
+          </span>
+          <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mt-2">
             (Guohua Song)
           </span>
         </h1>
