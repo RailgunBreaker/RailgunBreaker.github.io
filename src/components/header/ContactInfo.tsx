@@ -4,12 +4,12 @@ function ContactInfo() {
   const { t } = useLanguage();
 
   return (
-    <div className="space-y-4 md:space-y-6">
+    <div className="flex flex-wrap gap-4 md:gap-6">
       <div className="label-group">
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.language}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-language mr-2" />
             {t.header.languageItems.chineseNative}
@@ -39,7 +39,7 @@ function ContactInfo() {
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.schools}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-university mr-2" />
             立命館大学(Ritsumeikan University)
@@ -54,7 +54,7 @@ function ContactInfo() {
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.education}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-graduation-cap mr-2" />
             Undergraduate, Class of 2026
@@ -66,7 +66,7 @@ function ContactInfo() {
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.major}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-university mr-2" />
             Global Liberal Arts(RU) (グローバル教養学、意味不明)
@@ -81,7 +81,7 @@ function ContactInfo() {
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.emailWeb}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-envelope mr-2" />
             <a
@@ -98,7 +98,7 @@ function ContactInfo() {
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.emailAcademic}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-envelope mr-2" />
             <a
@@ -124,7 +124,7 @@ function ContactInfo() {
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.callsign}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-broadcast-tower mr-2" />
             <span className="content">BG2FGI</span>
@@ -140,7 +140,7 @@ function ContactInfo() {
         <span className="header text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 block">
           {t.header.pgpKeyId}
         </span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 flex-nowrap">
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
             <i aria-hidden="true" className="fas fa-key mr-2" />
             <a

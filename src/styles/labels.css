@@ -3,7 +3,8 @@
   margin: 1.5rem 0;
   padding: 0 0.5rem;
   position: relative;
-  width: 100%;
+  min-width: fit-content;
+  flex-shrink: 0;
 }
 
 .label-group .header {

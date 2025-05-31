@@ -1,5 +1,6 @@
 import LanguageSwitch from "./LanguageSwitch";
 import { useLanguage } from "../../hooks/useLanguage";
+import ProfilePicture from "./ProfilePicture";
 
 function PersonalInfo() {
   const { currentLanguage } = useLanguage();
@@ -20,6 +21,7 @@ function PersonalInfo() {
   return (
     <div className="names">
       <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
+        <ProfilePicture />
         <h1
           className={`name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight ${getLanguageClass()}`}
         >
