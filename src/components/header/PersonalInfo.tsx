@@ -32,8 +32,8 @@ function PersonalInfo() {
               data-element="titanium"
               href="https://en.wikipedia.org/wiki/Bromine"
             >
-              Br{" "}
-            </a>eaker
+              Br{" "}eaker
+            </a>
             
           </span>
           <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mt-2">

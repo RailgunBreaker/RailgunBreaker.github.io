@@ -10,14 +10,14 @@ function EducationBackground() {
       <div className="space-y-6 sm:space-y-8">
         <EducationEntry
           period="2023 – 2026"
-          institution="Australian National University"
+          institution="Australian National University（オーストラリア国立大学）"
           location="Canberra, Australia"
           degree={t.education.entries.anu.degree}
           details={t.education.entries.anu.details}
         />
         <EducationEntry
           period="2022 – 2026"
-          institution="Ritsumeikan University"
+          institution="Ritsumeikan University（立命館大学）"
           location="Osaka, Japan"
           degree={t.education.entries.ritsumeikan.degree}
           details={t.education.entries.ritsumeikan.details}
