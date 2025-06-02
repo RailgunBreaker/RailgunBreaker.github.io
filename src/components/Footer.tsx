@@ -20,7 +20,6 @@ function Footer() {
           {t.footer.forkedBy}
         </div>
       </div>
-    </div>
   );
 }
 
