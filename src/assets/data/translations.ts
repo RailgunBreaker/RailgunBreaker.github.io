@@ -114,9 +114,7 @@ export interface Translations {
 
   // Footer content
   footer: {
-    forkTemplate: string;
     hostedBy: string;
-    forkedBy: string;
   };
 
   // Common elements
@@ -291,9 +289,7 @@ export const englishTranslations: Translations = {
   },
 
   footer: {
-    forkTemplate: "Fork this template on GitHub",
     hostedBy: "Hosted by GitHub",
-    forkedBy: "Forked by Railgun Breaker from amphineko",
   },
 
   common: {
@@ -460,7 +456,6 @@ export const japaneseTranslations: Translations = {
   },
 
   footer: {
-    forkTemplate: "GitHubでこのテンプレートをフォーク",
     hostedBy: "GitHubでホスト",
   },
 
@@ -628,7 +623,6 @@ export const chineseTranslations: Translations = {
   },
 
   footer: {
-    forkTemplate: "在GitHub上Fork这个模板",
     hostedBy: "由GitHub托管",
   },
 

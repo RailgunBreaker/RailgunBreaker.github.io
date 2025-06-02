@@ -15,10 +15,7 @@ function Footer() {
           <span className="link font-semibold">railgunbreaker.github.io</span>
         </a>
 
-        <div className="copyright text-xs sm:text-sm text-muted-foreground">
-          <i aria-hidden="true" className="fas fa-exclamation-triangle mr-2" />
-          {t.footer.forkedBy}
-        </div>
+        
       </div>
   );
 }
