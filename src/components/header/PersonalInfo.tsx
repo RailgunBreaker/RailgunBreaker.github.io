@@ -33,8 +33,8 @@ function PersonalInfo() {
               href="https://en.wikipedia.org/wiki/Bromine"
             >
               Br{" "}
-            </a>
-            eaker
+            </a>eaker
+            
           </span>
           <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mt-2">
             (Guohua Song)

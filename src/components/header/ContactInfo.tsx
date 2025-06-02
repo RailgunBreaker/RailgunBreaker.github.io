@@ -45,7 +45,7 @@ function ContactInfo() {
             立命館大学(Ritsumeikan University)
           </span>
           <span className="label text-xs sm:text-sm px-3 py-1.5 rounded-full">
-            Australian National University
+            オーストラリア国立大学Australian National University
           </span>
         </div>
       </div>

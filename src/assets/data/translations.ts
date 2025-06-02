@@ -156,7 +156,7 @@ export const englishTranslations: Translations = {
     paragraph1:
       "I am an undergraduate student pursuing a dual degree in Asia Pacific Affairs at the Australian National University and Global Liberal Arts at Ritsumeikan University. My academic journey spans two leading institutions in the Asia-Pacific region, allowing me to approach global issues from both theoretical and cross-cultural perspectives.",
     paragraph2:
-      "My current research focuses on the privatization of the Japanese National Railway (JNR), university grade inflation, and higher education admission policies. These topics reflect my broader interest in the intersection between public policy, institutional reform, and social inequality.",
+      " My current research interests focus on the gap between admission standards and educational quality in English-medium undergraduate programs in Japan, the political and social implications of social credit and credibility systems, the evolving characteristics of Japan's new mode of capitalism, and the labor movements during the Japanese National Railways (JNR) era, particularly their relationship with the Japan Socialist Party.",
     paragraph3:
       "Outside of my academic work, I am passionate about music games, photography, amateur radio, and Japanese culture. I enjoy exploring both the serious and playful sides of life — whether it's investigating education policy or perfecting a song in 太鼓の達人.",
   },
@@ -332,7 +332,7 @@ export const japaneseTranslations: Translations = {
     paragraph1:
       "私はオーストラリア国立大学でアジア太平洋学学士号、立命館大学でグローバル教養学学士号の二重学位を取得中の学部生です。アジア太平洋地域の二つの主要な教育機関での学術的な経験により、理論的かつ異文化的な視点からグローバルな問題にアプローチすることができます。",
     paragraph2:
-      "現在の研究は、日本国有鉄道（JNR）の民営化、大学の成績インフレーション、高等教育の入学政策に焦点を当てています。これらのトピックは、公共政策、制度改革、社会不平等の交差点に対する私の幅広い関心を反映しています。",
+      "現在の研究関心は、日本における英語による学部課程における入学基準と教育の質のギャップ、社会信用および信用スコア制度の政治的・社会的影響、日本の「新しい資本主義」の特徴の変容、そして日本国有鉄道（国鉄）時代の労働運動と日本社会党との関係に焦点を当てています。",
     paragraph3:
       "学術的な活動以外では、音楽ゲーム、写真撮影、アマチュア無線、日本文化に情熱を注いでいます。教育政策の調査から太鼓の達人での楽曲の完璧な演奏まで、人生の真面目な面と楽しい面の両方を探求することを楽しんでいます。",
   },
