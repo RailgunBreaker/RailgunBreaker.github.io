@@ -462,7 +462,6 @@ export const japaneseTranslations: Translations = {
   footer: {
     forkTemplate: "GitHubでこのテンプレートをフォーク",
     hostedBy: "GitHubでホスト",
-    forkedBy: "amphineko からRailgun Breakerがフォーク",
   },
 
   common: {
@@ -631,7 +630,6 @@ export const chineseTranslations: Translations = {
   footer: {
     forkTemplate: "在GitHub上Fork这个模板",
     hostedBy: "由GitHub托管",
-    forkedBy: "由Railgun Breaker从amphineko Fork",
   },
 
   common: {
