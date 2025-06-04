@@ -4,7 +4,7 @@ function HobbyActivities() {
   const { t } = useLanguage();
 
   return (
-    <>
+    <div className="space-y-3 sm:space-y-4 md:space-y-6">
       <div className="label-group2">
         <span className="header">{t.hobbies.categories.modelUN}</span>
         {t.hobbies.items.modelUN.map((item: string, index: number) => (
@@ -67,7 +67,7 @@ function HobbyActivities() {
           </span>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

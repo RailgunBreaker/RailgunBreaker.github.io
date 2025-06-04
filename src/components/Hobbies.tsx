@@ -12,11 +12,11 @@ function Hobbies() {
 
   return (
     <Section title={t.hobbies.title}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
-        <div className="space-y-4 sm:space-y-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+        <div className="space-y-3 sm:space-y-4 md:space-y-6 order-1 lg:order-1">
           <HobbyActivities />
         </div>
-        <div className="space-y-4 sm:space-y-6">
+        <div className="space-y-3 sm:space-y-4 md:space-y-6 order-2 lg:order-2">
           <SocialNetworks />
           <GameProfiles />
           <MusicGames />

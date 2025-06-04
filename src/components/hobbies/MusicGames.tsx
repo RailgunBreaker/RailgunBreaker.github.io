@@ -7,7 +7,11 @@ function MusicGames() {
   return (
     <LabelGroup title={t.hobbies.musicGame} variant="alt">
       {t.hobbies.items.musicGames.map((game: string, index: number) => (
-        <Label key={index} icon="fas fa-music">
+        <Label
+          key={index}
+          icon="fas fa-music"
+          className="!bg-[var(--secondary)] !p-2 !text-[var(--primary)] "
+        >
           {game}
         </Label>
       ))}
