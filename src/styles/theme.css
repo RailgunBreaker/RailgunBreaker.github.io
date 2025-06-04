@@ -183,6 +183,62 @@ html {
   }
 }
 
+/* Extra responsive adjustments for very small screens */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  #container {
+    max-width: calc(100vw - 0.5rem);
+    border-radius: 0.75rem;
+  }
+
+  #container,
+  #container > *:first-child {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+
+  #container,
+  #container > *:last-child,
+  #container > *:last-child > *:last-child {
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+
+  .section.header {
+    padding: 1.5rem 0.75rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+
+  .section.header .split {
+    padding: 0 0.5rem;
+  }
+
+  .section.header .name {
+    font-size: 2rem;
+    margin: 0.25rem 0;
+  }
+
+  .intro .block .split {
+    padding: 0 0.5rem;
+  }
+
+  .intro p {
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .section.intro {
+    margin: 0.25rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+}
+
 /* Enhanced list styling */
 .intro .block .split li {
   color: var(--foreground);
