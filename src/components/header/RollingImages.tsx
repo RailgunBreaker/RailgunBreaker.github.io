@@ -3,11 +3,10 @@ import React, { useMemo } from "react";
 import { useLoadDataJson, useLoadPexelImages } from "@/hooks";
 
 export function RollingImages() {
-  const {
-    data: images,
-    isLoading,
-    error,
-  } = useLoadDataJson<string[]>("/data/rolling-images.json", "images");
+  const { data: images, error } = useLoadDataJson<string[]>(
+    "/data/rolling-images.json",
+    "images"
+  );
 
   // Shuffle images
   const shuffledImages = useMemo(() => {
@@ -15,8 +14,16 @@ export function RollingImages() {
   }, [images]);
 
   const [isAnimationRunning, setIsAnimationRunning] = React.useState(true);
-  const { areImagesLoaded, handleImageLoad } =
-    useLoadPexelImages(shuffledImages);
+  const { handleImageLoad } = useLoadPexelImages(shuffledImages);
+
+  const [loadedImages, setLoadedImages] = React.useState<Set<string>>(
+    new Set()
+  );
+
+  const handleIndividualImageLoad = (imageUrl: string) => {
+    setLoadedImages((prev) => new Set(prev).add(imageUrl));
+    handleImageLoad();
+  };
 
   // Show error state if error occurs
   if (error) {
@@ -24,14 +31,12 @@ export function RollingImages() {
   }
 
   return (
-    <div className={"h-52 overflow-hidden whitespace-nowrap"}>
+    <div className={"h-104 overflow-hidden whitespace-nowrap"}>
       {[0, 1].map((index) => {
         return (
           <div
             className={
-              areImagesLoaded && !isLoading
-                ? "inline-flex h-full w-max animate-scroll whitespace-nowrap"
-                : "hidden"
+              "inline-flex h-full w-max animate-scroll whitespace-nowrap"
             }
             key={index}
             style={{
@@ -41,26 +46,33 @@ export function RollingImages() {
             onMouseOut={() => setIsAnimationRunning(true)}
           >
             {shuffledImages.map((imageUrl, imgIndex) => {
+              const isImageLoaded = loadedImages.has(imageUrl);
+
               return (
-                <img
-                  src={imageUrl}
-                  key={imgIndex}
-                  className="duration-500 scale-85 rounded-lg transition-all hover:scale-100 hover:cursor-pointer"
-                  onClick={() => {
-                    window.open(convertPexelsUrl(imageUrl), "_blank");
-                  }}
-                  onLoad={handleImageLoad}
-                />
+                <div className="inline-block relative" key={imgIndex}>
+                  {!isImageLoaded && (
+                    <Skeleton className="h-full w-full aspect-video duration-500 scale-85 rounded-lg transition-all hover:scale-100 hover:cursor-pointer" />
+                  )}
+
+                  <img
+                    src={imageUrl}
+                    alt={`Rolling image ${imgIndex}`}
+                    className={`h-full w-full aspect-video duration-500 scale-85 rounded-lg transition-all hover:scale-100 hover:cursor-pointer object-cover ${
+                      isImageLoaded
+                        ? "block"
+                        : "absolute opacity-0 pointer-events-none"
+                    }`}
+                    onLoad={() => handleIndividualImageLoad(imageUrl)}
+                    onClick={() =>
+                      window.open(convertPexelsUrl(imageUrl), "_blank")
+                    }
+                  />
+                </div>
               );
             })}
           </div>
         );
       })}
-      <div
-        className={areImagesLoaded && !isLoading ? "hidden" : "h-full w-full"}
-      >
-        <Skeleton className="h-full w-full" />
-      </div>
     </div>
   );
 }
