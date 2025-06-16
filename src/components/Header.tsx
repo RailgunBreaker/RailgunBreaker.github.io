@@ -1,4 +1,4 @@
-import { PersonalInfo, ContactInfo } from "./header/index";
+import { PersonalInfo, ContactInfo, RollingImages } from "./header/index";
 
 function Header() {
   return (
@@ -6,6 +6,7 @@ function Header() {
       <div className="split flex flex-col gap-6 lg:gap-8 text-center lg:text-left w-full lg:w-full">
         <PersonalInfo />
         <ContactInfo />
+        <RollingImages />
       </div>
     </div>
   );
