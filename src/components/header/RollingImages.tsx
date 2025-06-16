@@ -24,7 +24,7 @@ export function RollingImages() {
   }
 
   return (
-    <div className={"h-52 overflow-hidden whitespace-nowrap"}>
+    <div className={"h-104 overflow-hidden whitespace-nowrap"}>
       {[0, 1].map((index) => {
         return (
           <div
