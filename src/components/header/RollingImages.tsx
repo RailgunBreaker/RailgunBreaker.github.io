@@ -10,7 +10,7 @@ export function RollingImages() {
 
   // Shuffle images
   const shuffledImages = useMemo(() => {
-    return [...images].sort(() => Math.random() - 0.5);
+    return [...images].sort(() => Math.random() - 0.5).slice(0, 20);
   }, [images]);
 
   const [isAnimationRunning, setIsAnimationRunning] = React.useState(true);
@@ -31,7 +31,7 @@ export function RollingImages() {
   }
 
   return (
-    <div className={"h-104 overflow-hidden whitespace-nowrap"}>
+    <div className={"md:h-104 overflow-hidden whitespace-nowrap h-40"}>
       {[0, 1].map((index) => {
         return (
           <div
