@@ -1,4 +1,5 @@
 import LanguageSwitch from "./LanguageSwitch";
+import ThemeSwitch from "./ThemeSwitch";
 import { useLanguage } from "../../hooks/useLanguage";
 import ProfilePicture from "./ProfilePicture";
 
@@ -32,16 +33,18 @@ function PersonalInfo() {
               data-element="titanium"
               href="https://en.wikipedia.org/wiki/Bromine"
             >
-              Br{" "}eaker
+              Br eaker
             </a>
-            
           </span>
           <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mt-2">
             (Guohua Song)
           </span>
         </h1>
         <div className="flex-shrink-0">
-          <LanguageSwitch />
+          <div className="flex flex-col gap-2">
+            <LanguageSwitch />
+            <ThemeSwitch />
+          </div>
         </div>
       </div>
     </div>
