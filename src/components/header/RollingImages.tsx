@@ -10,7 +10,7 @@ export function RollingImages() {
 
   // Shuffle images
   const shuffledImages = useMemo(() => {
-    return [...images].sort(() => Math.random() - 0.5).slice(0, 20);
+    return [...images].sort(() => Math.random() - 0.5).slice(0, 5);
   }, [images]);
 
   const [isAnimationRunning, setIsAnimationRunning] = React.useState(true);
