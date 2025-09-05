@@ -154,7 +154,7 @@ export const englishTranslations: Translations = {
     paragraph1:
       "I am an undergraduate student pursuing a dual degree in Asia Pacific Affairs at the Australian National University and Global Liberal Arts at Ritsumeikan University. My academic journey spans two leading institutions in the Asia-Pacific region, allowing me to approach global issues from both theoretical and cross-cultural perspectives.",
     paragraph2:
-      " My current research interests focus on the gap between admission standards and educational quality in English-medium undergraduate programs in Japan, the political and social implications of social credit and credibility systems, the evolving characteristics of Japan's new mode of capitalism, and the labor movements during the Japanese National Railways (JNR) era, particularly their relationship with the Japan Socialist Party.",
+      "My research interests lie at the intersection of Japanese society, politics, and culture: 1. Institutional discrimination against foreign residents in Japan—including Japanese nationals raised abroad—and the development and implementation of multicultural coexistence policies. 2. The interaction between Japan's animation industry (broadcasting and production) and the dynamics of Sino–Japanese relations. 3. Broader issues in contemporary Japanese politics and their implications for society.",
     paragraph3:
       "Outside of my academic work, I am passionate about music games, photography, amateur radio, and Japanese culture. I enjoy exploring both the serious and playful sides of life — whether it's investigating education policy or perfecting a song in 太鼓の達人.",
   },
@@ -167,8 +167,8 @@ export const englishTranslations: Translations = {
         degree:
           "Bachelor of Asia Pacific Affairs, College of Asia and the Pacific",
         details: [
-          "Weighted Average Mark: 69.9",
-          "International Security Studies, Japanese Foreign Policy, Asian Economics",
+          "Semester GPA: 6/7; Cumulative GPA: 5.5/7",
+          "Relevant coursework: International Security Studies, Japanese Politics and Foreign Policy, Asian Economics, Peace and Conflict Studies.",
           "Class representative in ASIA2308 (Linguistic Histories in Asia and the Pacific)",
         ],
       },
@@ -177,8 +177,9 @@ export const englishTranslations: Translations = {
           "Bachelor of Global Liberal Arts, College of Global Liberal Arts",
         details: [
           "CGPA: 3.86/5, Semester GPA: 4.20/5",
-          "Courses: Statistics, Law of Conflicts, Sociology, Political Theory, GIS",
-          "Instruction Language: English (with Japanese language coursework)",
+          "Relevant coursework, Law of Conflicts, Sociology, Political Theory, GIS",
+          "First thesis supervisor: Prof. Mayumi Shimura.",
+          "Seminar: Prof. Mayumi Shimura, Prof. U. Aytun Ozturk",
         ],
       },
       michigan: {
@@ -328,7 +329,7 @@ export const japaneseTranslations: Translations = {
     paragraph1:
       "私はオーストラリア国立大学でアジア太平洋学学士号、立命館大学でグローバル教養学学士号の二重学位を取得中の学部生です。アジア太平洋地域の二つの主要な教育機関での学術的な経験により、理論的かつ異文化的な視点からグローバルな問題にアプローチすることができます。",
     paragraph2:
-      "現在の研究関心は、日本における英語による学部課程における入学基準と教育の質のギャップ、社会信用および信用スコア制度の政治的・社会的影響、日本の「新しい資本主義」の特徴の変容、そして日本国有鉄道（国鉄）時代の労働運動と日本社会党との関係に焦点を当てています。",
+      "私の研究関心は、日本社会・政治・文化の交差点に位置しています：1. 外国人住民（海外で育った日本国民を含む）に対する制度的差別と、多文化共生政策の展開・実施。2. 日本のアニメ産業（放送と制作）と日中関係のダイナミクスとの相互作用。3. 現代日本政治の幅広い課題と、それが社会に及ぼす影響。",
     paragraph3:
       "学術的な活動以外では、音楽ゲーム、写真撮影、アマチュア無線、日本文化に情熱を注いでいます。教育政策の調査から太鼓の達人での楽曲の完璧な演奏まで、人生の真面目な面と楽しい面の両方を探求することを楽しんでいます。",
   },
@@ -340,8 +341,8 @@ export const japaneseTranslations: Translations = {
       anu: {
         degree: "アジア太平洋学学士号、アジア太平洋学部",
         details: [
-          "加重平均点：69.9",
-          "国際安全保障学、日本外交政策、アジア経済学",
+          "学期GPA：6/7、累積GPA：5.5/7",
+          "関連履修科目：国際安全保障学、日本政治・外交政策、アジア経済学、平和・紛争研究",
           "ASIA2308（アジア太平洋地域の言語史）のクラス代表",
         ],
       },
@@ -349,8 +350,9 @@ export const japaneseTranslations: Translations = {
         degree: "グローバル教養学学士号、グローバル教養学部",
         details: [
           "CGPA：3.86/5、学期GPA：4.20/5",
-          "履修科目：統計学、紛争法、社会学、政治理論、GIS",
-          "授業言語：英語（日本語科目も含む）",
+          "関連履修科目：紛争法、社会学、政治理論、GIS",
+          "卒業論文指導教員：志村真弓教授",
+          "ゼミナール：志村ゼミ、Ozturkゼミ",
         ],
       },
       michigan: {
@@ -495,7 +497,7 @@ export const chineseTranslations: Translations = {
     paragraph1:
       "我是一名本科生，正在澳大利亚国立大学攻读亚太事务学士学位，在立命馆大学攻读全球教养学学士学位。我的学术旅程跨越亚太地区的两所顶尖教育机构，让我能够从理论和跨文化的角度来处理全球问题。",
     paragraph2:
-      "我目前的研究重点是日本国有铁道（JNR）的私有化、大学成绩通胀以及高等教育录取政策。这些主题反映了我对公共政策、制度改革和社会不平等交汇点的广泛兴趣。",
+      "我的研究兴趣位于日本社会、政治与文化的交叉领域：1. 日本对外国居民（包括在海外成长的日本国民）的制度性歧视，以及多文化共生政策的发展与实施。2. 日本动画产业（包括播出与制作）与中日关系动态之间的互动。3. 当代日本政治的广泛议题及其对社会的影响。",
     paragraph3:
       "在学术工作之外，我热衷于音乐游戏、摄影、业余无线电和日本文化。我喜欢探索生活中严肃和有趣的两面——无论是调查教育政策还是在太鼓达人中完美演奏一首歌曲。",
   },
@@ -507,8 +509,8 @@ export const chineseTranslations: Translations = {
       anu: {
         degree: "亚太事务学士学位，亚太学院",
         details: [
-          "加权平均分：69.9",
-          "国际安全研究、日本外交政策、亚洲经济学",
+          "学期GPA：6/7；累积GPA：5.5/7",
+          "相关课程：国际安全研究、日本政治与外交政策、亚洲经济学、和平与冲突研究",
           "ASIA2308（亚太地区语言史）课程代表",
         ],
       },
@@ -516,8 +518,9 @@ export const chineseTranslations: Translations = {
         degree: "全球教养学学士学位，全球教养学院",
         details: [
           "CGPA：3.86/5，学期GPA：4.20/5",
-          "课程：统计学、冲突法、社会学、政治理论、GIS",
-          "授课语言：英语（包含日语课程）",
+          "相关课程：冲突法、社会学、政治理论、GIS",
+          "毕业论文指导教师：志村真弓教授",
+          "研讨班：志村真弓教授、U. Aytun Ozturk教授",
         ],
       },
       michigan: {
