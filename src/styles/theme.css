@@ -89,11 +89,11 @@ html {
 }
 
 .section.intro {
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     var(--card) 0%,
     oklch(0.99 0.005 264) 100%
-  );
+  ); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 1.5rem;

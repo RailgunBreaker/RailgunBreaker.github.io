@@ -21,6 +21,10 @@
   letter-spacing: 0.05em;
 }
 
+.dark .label-group .header {
+  color: white;
+}
+
 .label-group .header.alt {
   color: var(--muted-foreground);
   text-shadow: none;
@@ -40,6 +44,10 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+.dark .label-group .label {
+  background: var(--dark-gradient-primary) !important;
 }
 
 .label-group .label::before {
