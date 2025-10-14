@@ -104,7 +104,7 @@
   margin-right: 0.5ch;
   text-align: center;
   width: 1.5em;
-  color: rgb(72, 48, 48);
+  color: var(--primary);
 }
 
 .intro .label-group .label {
