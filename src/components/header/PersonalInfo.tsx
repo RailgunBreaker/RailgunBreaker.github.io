@@ -2,9 +2,11 @@ import LanguageSwitch from "./LanguageSwitch";
 import ThemeSwitch from "./ThemeSwitch";
 import { useLanguage } from "../../hooks/useLanguage";
 import ProfilePicture from "./ProfilePicture";
+import { getTranslations } from "../../assets/data/translations";
 
 function PersonalInfo() {
   const { currentLanguage } = useLanguage();
+  const t = getTranslations(currentLanguage);
 
   const getLanguageClass = () => {
     switch (currentLanguage) {
@@ -37,7 +39,12 @@ function PersonalInfo() {
             </a>
           </span>
           <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mt-2">
-            (Guohua Song)
+            {t.header.name.hiragana && (
+              <span className="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-normal mb-1">
+                {t.header.name.hiragana}
+              </span>
+            )}
+            ({t.header.name.main})
           </span>
         </h1>
         <div className="flex-shrink-0">
