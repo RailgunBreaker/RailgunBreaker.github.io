@@ -8,7 +8,7 @@ figure.identities:last-child {
 }
 
 figure.identities figcaption {
-    color: #777;
+    color: var(--muted-foreground);
     line-height: 2em;
     padding: 0 0.25em;
 }
@@ -18,6 +18,7 @@ figure.identities figcaption i {
     margin-right: 0.5ch; /* margin from mystery space after identity brand icons */
     text-align: center;
     width: 1.5em;
+    color: var(--primary);
 }
 
 figure.identities ul {
@@ -32,7 +33,7 @@ figure.identities ul li {
 }
 
 figure.identities ul li a {
-    color: rgb(105, 63, 63);
+    color: var(--foreground);
     display: block;
     font-size: 1.1em;
     line-height: 1.75em;
@@ -49,10 +50,11 @@ figure.identities ul li a i {
     font-size: 1.1em;
     text-align: center;
     width: 1.5em;
+    color: var(--primary);
 }
 
 figure.identities ul li a .fake-link {
-    color: #317589;
+    color: var(--primary);
     float: right;
 }
 
@@ -66,8 +68,8 @@ figure.identities ul li.shutdown a .fake-link {
 
 figure.identities ul li.shutdown a:hover .label,
 figure.identities ul li.shutdown a:hover .fake-link {
-    color: #ddd;
-    text-decoration-color: #c93756;
+    color: var(--muted-foreground);
+    text-decoration-color: var(--destructive);
 }
 
 @media (max-width: 768px) {
