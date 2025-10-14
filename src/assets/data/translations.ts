@@ -19,6 +19,10 @@ export interface Translations {
       englishFluent: string;
       japaneseAdvanced: string;
     };
+    name: {
+      hiragana?: string;
+      main: string;
+    };
     schools: string;
     education: string;
     major: string;
@@ -139,6 +143,9 @@ export const englishTranslations: Translations = {
       chineseNative: "Chinese (Native)",
       englishFluent: "English (Fluent)",
       japaneseAdvanced: "Japanese (Advanced)",
+    },
+    name: {
+      main: "Guohua Song",
     },
     schools: "Schools",
     education: "Education",
@@ -315,6 +322,10 @@ export const japaneseTranslations: Translations = {
       englishFluent: "英語（流暢）",
       japaneseAdvanced: "日本語（上級）",
     },
+    name: {
+      hiragana: "そう　こくか",
+      main: "宋　国華",
+    },
     schools: "所属大学",
     education: "学歴",
     major: "専攻",
@@ -482,6 +493,9 @@ export const chineseTranslations: Translations = {
       chineseNative: "中文（母语）",
       englishFluent: "英语（流利）",
       japaneseAdvanced: "日语（高级）",
+    },
+    name: {
+      main: "宋国华",
     },
     schools: "所属院校",
     education: "学历",
