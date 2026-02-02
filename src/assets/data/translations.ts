@@ -185,8 +185,9 @@ export const englishTranslations: Translations = {
         details: [
           "CGPA: 3.86/5, Semester GPA: 4.20/5",
           "Relevant coursework, Law of Conflicts, Sociology, Political Theory, GIS",
-          "First thesis supervisor: Prof. Mayumi Shimura.",
-          "Seminar: Prof. Mayumi Shimura, Prof. U. Aytun Ozturk",
+          "First thesis supervisor: Prof. Mayumi Shimura",
+          "First thesis: Western Sanctions, Russian Resilience, and the Failure of Deterrence in 2022",
+          "Seminar: Prof. Mayumi Shimura, Prof. U. Aytun Ozturk, Prof. Eri Yamashita, Prof. Huseyin Rasit",
         ],
       },
       michigan: {
@@ -363,7 +364,8 @@ export const japaneseTranslations: Translations = {
           "CGPA：3.86/5、学期GPA：4.20/5",
           "関連履修科目：紛争法、社会学、政治理論、GIS",
           "卒業論文指導教員：志村真弓教授",
-          "ゼミナール：志村ゼミ、Ozturkゼミ",
+          "卒業論文：Western Sanctions, Russian Resilience, and the Failure of Deterrence in 2022",
+          "ゼミナール：志村真弓教授、U. Aytun Ozturk教授、山下恵理教授、Huseyin Rasit教授",
         ],
       },
       michigan: {
@@ -534,7 +536,8 @@ export const chineseTranslations: Translations = {
           "CGPA：3.86/5，学期GPA：4.20/5",
           "相关课程：冲突法、社会学、政治理论、GIS",
           "毕业论文指导教师：志村真弓教授",
-          "研讨班：志村真弓教授、U. Aytun Ozturk教授",
+          "毕业论文：Western Sanctions, Russian Resilience, and the Failure of Deterrence in 2022",
+          "研讨班：志村真弓教授、U. Aytun Ozturk教授、山下恵理教授、Huseyin Rasit教授",
         ],
       },
       michigan: {
