@@ -45,7 +45,26 @@ export interface Translations {
   experience: {
     title: string;
     entries: {
-      // Add experience entries here as needed
+      researchAssistant: {
+        position: string;
+        details: string[];
+      };
+      anaInternship: {
+        position: string;
+        details: string[];
+      };
+      photographer: {
+        position: string;
+        details: string[];
+      };
+      stockInvestor: {
+        position: string;
+        details: string[];
+      };
+      taikoChampionship: {
+        position: string;
+        details: string[];
+      };
     };
   };
 
@@ -178,7 +197,42 @@ export const englishTranslations: Translations = {
 
   experience: {
     title: "Experience",
-    entries: {},
+    entries: {
+      researchAssistant: {
+        position: "Student Research Assistant – Associate Professor Huseyin Rasit",
+        details: [
+          "Detect, classify, and analyze 120-130 entries of the existing political bias based on a large volume of newspapers regarding worldwide protests and demonstrations per month in the project Journalists of the Empire: Capitalism, Imperialism, and Misinformation (https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/)",
+        ],
+      },
+      anaInternship: {
+        position: "Internship",
+        details: [
+          "Built a predictive maintenance proposal using ACARS-based aircraft health data and Boeing AHM, enabling earlier risk detection and reducing AOG-driven disruption risk.",
+          "Designed a maintenance–operations coordination workflow to share aircraft condition insights between Operations Management and Maintenance, and proposed pre-arrival aircraft swap (\"ship change\") decisions to protect on-time performance and safety.",
+        ],
+      },
+      photographer: {
+        position: "Amateur Photographer",
+        details: [
+          "Captured and curated a diverse portfolio of over 500 images across subjects such as civil aviation, railways, wildlife, traditional festivals, cultural landscapes, and art museum interiors.",
+          "Participated in astrophotography projects, running alignment and stacking algorithms to combine long-exposure shots and reduce noise for night sky images.",
+          "Built and maintained a public photography portfolio with over 1.9 million total views on Pexels (pexels.com/@railgunbreaker/), gaining recognition from aviation and travel photography enthusiasts.",
+        ],
+      },
+      stockInvestor: {
+        position: "Individual Stock Investor",
+        details: [
+          "Conducted long-term independent research on global market trends by monitoring macroeconomic data, sectoral developments, and geopolitical risk factors.",
+          "Investments on S&P, NASDAQ, DAX, natural resources, and Japanese ETF stock market and obtained 25% return rate peak portfolio growth rate of 54%.",
+        ],
+      },
+      taikoChampionship: {
+        position: "Taiko no Tatsujin Donder WORLD CHAMPIONSHIP 2024",
+        details: [
+          "First place in Australian Capital Territory, Australia",
+        ],
+      },
+    },
   },
 
   education: {
@@ -363,7 +417,42 @@ export const japaneseTranslations: Translations = {
 
   experience: {
     title: "経験",
-    entries: {},
+    entries: {
+      researchAssistant: {
+        position: "学生研究補助員 – フセイン・ラシット准教授",
+        details: [
+          "プロジェクト「帝国のジャーナリスト：資本主義、帝国主義、誤報」（https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/）において、世界中の抗議活動やデモに関する大量の新聞記事から、毎月120-130件の既存の政治的偏向を検出、分類、分析",
+        ],
+      },
+      anaInternship: {
+        position: "インターンシップ",
+        details: [
+          "ACARSベースの航空機健全性データとボーイングAHMを使用した予知保全提案を構築し、早期リスク検知とAOG起因の運航混乱リスクの低減を実現",
+          "運航管理部門と整備部門間で航空機状態の情報を共有する整備・運航連携ワークフローを設計し、定時性と安全性を保護するための到着前機材交換（「シップチェンジ」）の意思決定を提案",
+        ],
+      },
+      photographer: {
+        position: "アマチュア写真家",
+        details: [
+          "民間航空、鉄道、野生動物、伝統的な祭り、文化的景観、美術館内部など、多様な被写体にわたる500枚以上の画像を撮影・厳選したポートフォリオを作成",
+          "天体写真プロジェクトに参加し、位置合わせとスタッキングアルゴリズムを実行して長時間露光ショットを合成し、夜空の画像のノイズを低減",
+          "Pexels（pexels.com/@railgunbreaker/）で190万回以上の総閲覧数を持つ公開写真ポートフォリオを構築・維持し、航空・旅行写真愛好家から認知を獲得",
+        ],
+      },
+      stockInvestor: {
+        position: "個人株式投資家",
+        details: [
+          "マクロ経済データ、セクター別動向、地政学的リスク要因を監視することで、グローバル市場トレンドに関する長期的な独立調査を実施",
+          "S&P、NASDAQ、DAX、天然資源、日本のETF株式市場への投資で、25%のリターン率とピーク時のポートフォリオ成長率54%を達成",
+        ],
+      },
+      taikoChampionship: {
+        position: "太鼓の達人ドンダーワールドチャンピオンシップ2024",
+        details: [
+          "オーストラリア首都特別地域（オーストラリア）で第1位",
+        ],
+      },
+    },
   },
 
   education: {
@@ -540,7 +629,42 @@ export const chineseTranslations: Translations = {
 
   experience: {
     title: "工作经验",
-    entries: {},
+    entries: {
+      researchAssistant: {
+        position: "学生研究助理 – Huseyin Rasit副教授",
+        details: [
+          "在项目\"帝国的记者：资本主义、帝国主义和错误信息\"（https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/）中，每月从大量报纸中检测、分类和分析120-130条关于全球抗议和示威的现有政治偏见条目",
+        ],
+      },
+      anaInternship: {
+        position: "实习",
+        details: [
+          "使用基于ACARS的飞机健康数据和波音AHM建立预测性维护提案，实现更早的风险检测并降低AOG导致的运营中断风险",
+          "设计维护-运营协调工作流程，在运营管理和维护部门之间共享飞机状况洞察，并提出到达前飞机交换（\"换机\"）决策，以保护准点性能和安全性",
+        ],
+      },
+      photographer: {
+        position: "业余摄影师",
+        details: [
+          "拍摄并精选了涵盖民用航空、铁路、野生动物、传统节日、文化景观和艺术博物馆内部等主题的500多张图片的多样化作品集",
+          "参与天体摄影项目，运行对齐和堆叠算法来组合长曝光拍摄并降低夜空图像的噪声",
+          "在Pexels（pexels.com/@railgunbreaker/）上建立和维护公共摄影作品集，总浏览量超过190万次，获得航空和旅行摄影爱好者的认可",
+        ],
+      },
+      stockInvestor: {
+        position: "个人股票投资者",
+        details: [
+          "通过监测宏观经济数据、行业发展和地缘政治风险因素，对全球市场趋势进行长期独立研究",
+          "投资标普、纳斯达克、DAX、自然资源和日本ETF股票市场，获得25%的回报率和54%的峰值投资组合增长率",
+        ],
+      },
+      taikoChampionship: {
+        position: "太鼓达人Donder世界锦标赛2024",
+        details: [
+          "澳大利亚首都领地第一名",
+        ],
+      },
+    },
   },
 
   education: {

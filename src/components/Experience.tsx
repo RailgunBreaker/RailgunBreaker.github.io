@@ -1,3 +1,4 @@
+import { ExperienceEntry } from "./experience/index";
 import { Section } from "./custom-ui";
 import { useLanguage } from "../hooks/useLanguage";
 
@@ -7,23 +8,41 @@ function Experience() {
   return (
     <Section title={t.experience.title}>
       <div className="space-y-6 sm:space-y-8">
-        {/* Experience entries can be added here as they become available */}
-        {/* Example (uncomment and import ExperienceEntry from "./experience/index"):
         <ExperienceEntry
-          period="2024 – Present"
-          company="Example Company"
-          location="Tokyo, Japan"
-          position="Position Title"
-          details={[
-            "Responsibility 1",
-            "Responsibility 2",
-          ]}
+          period="May 2025 – Present"
+          company="Ritsumeikan University"
+          location="Osaka, Japan"
+          position={t.experience.entries.researchAssistant.position}
+          details={t.experience.entries.researchAssistant.details}
         />
-        */}
-        <div className="text-center text-gray-600 dark:text-gray-400 py-8">
-          {/* Placeholder for when there are no entries yet */}
-          Experience entries will be added here.
-        </div>
+        <ExperienceEntry
+          period="October 2025 – November 2025"
+          company="ANA Kansai Airport Co., Ltd."
+          location="Osaka, Japan"
+          position={t.experience.entries.anaInternship.position}
+          details={t.experience.entries.anaInternship.details}
+        />
+        <ExperienceEntry
+          period="2010 – Present"
+          company="Freelance"
+          location="Worldwide"
+          position={t.experience.entries.photographer.position}
+          details={t.experience.entries.photographer.details}
+        />
+        <ExperienceEntry
+          period="March 2022 – Present"
+          company="Independent"
+          location="Global Markets"
+          position={t.experience.entries.stockInvestor.position}
+          details={t.experience.entries.stockInvestor.details}
+        />
+        <ExperienceEntry
+          period="March 2024"
+          company="Taiko no Tatsujin Championship"
+          location="Australian Capital Territory, Australia"
+          position={t.experience.entries.taikoChampionship.position}
+          details={t.experience.entries.taikoChampionship.details}
+        />
       </div>
     </Section>
   );
