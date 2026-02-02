@@ -5,6 +5,7 @@ export interface Translations {
   // Navigation and sections
   sections: {
     introduction: string;
+    experience: string;
     educationBackground: string;
     awards: string;
     skills: string;
@@ -38,6 +39,14 @@ export interface Translations {
     paragraph1: string;
     paragraph2: string;
     paragraph3: string;
+  };
+
+  // Experience content
+  experience: {
+    title: string;
+    entries: {
+      // Add experience entries here as needed
+    };
   };
 
   // Education content
@@ -131,6 +140,7 @@ export interface Translations {
 export const englishTranslations: Translations = {
   sections: {
     introduction: "Introduction",
+    experience: "Experience",
     educationBackground: "Education Background",
     awards: "Awards",
     skills: "Skills",
@@ -164,6 +174,11 @@ export const englishTranslations: Translations = {
       "My research interests lie at the intersection of Japanese society, politics, and culture: 1. Institutional discrimination against foreign residents in Japan—including Japanese nationals raised abroad—and the development and implementation of multicultural coexistence policies. 2. The interaction between Japan's animation industry (broadcasting and production) and the dynamics of Sino–Japanese relations. 3. Broader issues in contemporary Japanese politics and their implications for society.",
     paragraph3:
       "Outside of my academic work, I am passionate about music games, photography, amateur radio, and Japanese culture. I enjoy exploring both the serious and playful sides of life — whether it's investigating education policy or perfecting a song in 太鼓の達人.",
+  },
+
+  experience: {
+    title: "Experience",
+    entries: {},
   },
 
   education: {
@@ -309,6 +324,7 @@ export const englishTranslations: Translations = {
 export const japaneseTranslations: Translations = {
   sections: {
     introduction: "自己紹介",
+    experience: "経験",
     educationBackground: "学歴",
     awards: "受賞歴",
     skills: "スキル",
@@ -343,6 +359,11 @@ export const japaneseTranslations: Translations = {
       "私の研究関心は、日本社会・政治・文化の交差点に位置しています：1. 外国人住民（海外で育った日本国民を含む）に対する制度的差別と、多文化共生政策の展開・実施。2. 日本のアニメ産業（放送と制作）と日中関係のダイナミクスとの相互作用。3. 現代日本政治の幅広い課題と、それが社会に及ぼす影響。",
     paragraph3:
       "学術的な活動以外では、音楽ゲーム、写真撮影、アマチュア無線、日本文化に情熱を注いでいます。教育政策の調査から太鼓の達人での楽曲の完璧な演奏まで、人生の真面目な面と楽しい面の両方を探求することを楽しんでいます。",
+  },
+
+  experience: {
+    title: "経験",
+    entries: {},
   },
 
   education: {
@@ -481,6 +502,7 @@ export const japaneseTranslations: Translations = {
 export const chineseTranslations: Translations = {
   sections: {
     introduction: "自我介绍",
+    experience: "工作经验",
     educationBackground: "教育背景",
     awards: "获奖经历",
     skills: "技能",
@@ -514,6 +536,11 @@ export const chineseTranslations: Translations = {
       "我的研究兴趣位于日本社会、政治与文化的交叉领域：1. 日本对外国居民（包括在海外成长的日本国民）的制度性歧视，以及多文化共生政策的发展与实施。2. 日本动画产业（包括播出与制作）与中日关系动态之间的互动。3. 当代日本政治的广泛议题及其对社会的影响。",
     paragraph3:
       "在学术工作之外，我热衷于音乐游戏、摄影、业余无线电和日本文化。我喜欢探索生活中严肃和有趣的两面——无论是调查教育政策还是在太鼓达人中完美演奏一首歌曲。",
+  },
+
+  experience: {
+    title: "工作经验",
+    entries: {},
   },
 
   education: {
