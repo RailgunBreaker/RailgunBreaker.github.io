@@ -14,7 +14,7 @@ function ExperienceEntry({
   details,
 }: ExperienceEntryProps) {
   return (
-    <div className="border-l-4 border-green-500 dark:border-green-400 rounded-lg p-4 sm:p-6 space-y-3 transition-all duration-300 hover:shadow-lg hover:border-l-6 hover:from-green-50 hover:to-green-100 dark:hover:from-gray-800 dark:hover:to-gray-700 hover:scale-[1.02] cursor-pointer">
+    <div className="border-l-4 border-green-500 dark:border-green-400 rounded-lg p-4 sm:p-6 space-y-3 transition-all duration-300 hover:shadow-lg hover:border-l-6 hover:scale-[1.02] cursor-pointer">
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
         <div className="flex-1">
           <div className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 mb-1 transition-colors duration-300 group-hover:text-green-800 dark:group-hover:text-green-300">

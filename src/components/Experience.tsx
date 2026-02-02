@@ -8,7 +8,7 @@ function Experience() {
     <Section title={t.experience.title}>
       <div className="space-y-6 sm:space-y-8">
         {/* Experience entries can be added here as they become available */}
-        {/* Example:
+        {/* Example (uncomment and import ExperienceEntry from "./experience/index"):
         <ExperienceEntry
           period="2024 – Present"
           company="Example Company"
