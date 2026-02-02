@@ -201,7 +201,7 @@ export const englishTranslations: Translations = {
       researchAssistant: {
         position: "Student Research Assistant – Associate Professor Huseyin Rasit",
         details: [
-          "Detect, classify, and analyze 120-130 entries of the existing political bias based on a large volume of newspapers regarding worldwide protests and demonstrations per month in the project Journalists of the Empire: Capitalism, Imperialism, and Misinformation (https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/)",
+          "Detect, classify, and analyze 120-130 entries exhibiting political bias from newspapers covering worldwide protests and demonstrations per month in the project Journalists of the Empire: Capitalism, Imperialism, and Misinformation (https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/)",
         ],
       },
       anaInternship: {
@@ -223,7 +223,7 @@ export const englishTranslations: Translations = {
         position: "Individual Stock Investor",
         details: [
           "Conducted long-term independent research on global market trends by monitoring macroeconomic data, sectoral developments, and geopolitical risk factors.",
-          "Investments on S&P, NASDAQ, DAX, natural resources, and Japanese ETF stock market and obtained 25% return rate peak portfolio growth rate of 54%.",
+          "Investments in S&P, NASDAQ, DAX, natural resources, and Japanese ETF stock market, achieving a 25% return rate with peak portfolio growth of 54%.",
         ],
       },
       taikoChampionship: {
