@@ -161,7 +161,7 @@ export const englishTranslations: Translations = {
     paragraph1:
       "I am an undergraduate student pursuing a dual degree in Asia Pacific Affairs at the Australian National University and Global Liberal Arts at Ritsumeikan University. My academic journey spans two leading institutions in the Asia-Pacific region, allowing me to approach global issues from both theoretical and cross-cultural perspectives.",
     paragraph2:
-      "My research interests lie at the intersection of Japanese society, politics, and culture: 1. Institutional discrimination against foreign residents in Japan—including Japanese nationals raised abroad—and the development and implementation of multicultural coexistence policies. 2. The interaction between Japan's animation industry (broadcasting and production) and the dynamics of Sino–Japanese relations. 3. Broader issues in contemporary Japanese politics and their implications for society.",
+      "My research interests lie in international political economy, particularly in how political expectations and geopolitical risk are reshaping global trade and production networks. I am interested in the limitations of efficiency-based frameworks such as world-systems theory in explaining recent changes in supply chains, trade governance, and outsourcing decisions. Drawing on cases such as rising strategic tensions involving China, the Russia–Ukraine war, and the weakening of the WTO, I seek to explore how expectations about future conflict, coercion, and institutional reliability influence state and firm behavior, as well as the growing role of high-standard trade arrangements such as the CPTPP.",
     paragraph3:
       "Outside of my academic work, I am passionate about music games, photography, amateur radio, and Japanese culture. I enjoy exploring both the serious and playful sides of life — whether it's investigating education policy or perfecting a song in 太鼓の達人.",
   },
@@ -340,7 +340,7 @@ export const japaneseTranslations: Translations = {
     paragraph1:
       "私はオーストラリア国立大学でアジア太平洋学学士号、立命館大学でグローバル教養学学士号の二重学位を取得中の学部生です。アジア太平洋地域の二つの主要な教育機関での学術的な経験により、理論的かつ異文化的な視点からグローバルな問題にアプローチすることができます。",
     paragraph2:
-      "私の研究関心は、日本社会・政治・文化の交差点に位置しています：1. 外国人住民（海外で育った日本国民を含む）に対する制度的差別と、多文化共生政策の展開・実施。2. 日本のアニメ産業（放送と制作）と日中関係のダイナミクスとの相互作用。3. 現代日本政治の幅広い課題と、それが社会に及ぼす影響。",
+      "私の研究関心は国際政治経済学にあり、特に政治的期待と地政学的リスクがグローバルな貿易・生産ネットワークをどのように再構築しているかに焦点を当てています。私は、サプライチェーン、貿易ガバナンス、アウトソーシング決定における最近の変化を説明する上で、世界システム論などの効率性ベースの枠組みの限界に関心を持っています。中国をめぐる戦略的緊張の高まり、ロシア・ウクライナ戦争、WTOの弱体化などの事例を通じて、将来の紛争、強制、制度的信頼性に関する期待が、国家や企業の行動にどのように影響を与えるか、またCPTPPなどの高水準貿易協定の役割の拡大について探求したいと考えています。",
     paragraph3:
       "学術的な活動以外では、音楽ゲーム、写真撮影、アマチュア無線、日本文化に情熱を注いでいます。教育政策の調査から太鼓の達人での楽曲の完璧な演奏まで、人生の真面目な面と楽しい面の両方を探求することを楽しんでいます。",
   },
@@ -511,7 +511,7 @@ export const chineseTranslations: Translations = {
     paragraph1:
       "我是一名本科生，正在澳大利亚国立大学攻读亚太事务学士学位，在立命馆大学攻读全球教养学学士学位。我的学术旅程跨越亚太地区的两所顶尖教育机构，让我能够从理论和跨文化的角度来处理全球问题。",
     paragraph2:
-      "我的研究兴趣位于日本社会、政治与文化的交叉领域：1. 日本对外国居民（包括在海外成长的日本国民）的制度性歧视，以及多文化共生政策的发展与实施。2. 日本动画产业（包括播出与制作）与中日关系动态之间的互动。3. 当代日本政治的广泛议题及其对社会的影响。",
+      "我的研究兴趣在于国际政治经济学，特别是政治预期和地缘政治风险如何重塑全球贸易和生产网络。我对基于效率的框架（如世界体系理论）在解释供应链、贸易治理和外包决策最近变化方面的局限性感兴趣。通过中国战略紧张局势加剧、俄乌战争和WTO弱化等案例，我寻求探索对未来冲突、强制和制度可靠性的预期如何影响国家和企业行为，以及CPTPP等高标准贸易安排日益增长的作用。",
     paragraph3:
       "在学术工作之外，我热衷于音乐游戏、摄影、业余无线电和日本文化。我喜欢探索生活中严肃和有趣的两面——无论是调查教育政策还是在太鼓达人中完美演奏一首歌曲。",
   },
