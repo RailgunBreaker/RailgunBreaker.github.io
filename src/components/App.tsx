@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Introduction from "./Introduction";
+import Experience from "./Experience";
 import EducationBackground from "./EducationBackground";
 import Awards from "./Awards";
 import Skills from "./Skills";
@@ -18,6 +19,7 @@ function App() {
         >
           <Header />
           <Introduction />
+          <Experience />
           <EducationBackground />
           <Awards />
           <Skills />

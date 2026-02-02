@@ -5,6 +5,7 @@ export interface Translations {
   // Navigation and sections
   sections: {
     introduction: string;
+    experience: string;
     educationBackground: string;
     awards: string;
     skills: string;
@@ -38,6 +39,33 @@ export interface Translations {
     paragraph1: string;
     paragraph2: string;
     paragraph3: string;
+  };
+
+  // Experience content
+  experience: {
+    title: string;
+    entries: {
+      researchAssistant: {
+        position: string;
+        details: string[];
+      };
+      anaInternship: {
+        position: string;
+        details: string[];
+      };
+      photographer: {
+        position: string;
+        details: string[];
+      };
+      stockInvestor: {
+        position: string;
+        details: string[];
+      };
+      taikoChampionship: {
+        position: string;
+        details: string[];
+      };
+    };
   };
 
   // Education content
@@ -131,6 +159,7 @@ export interface Translations {
 export const englishTranslations: Translations = {
   sections: {
     introduction: "Introduction",
+    experience: "Experience",
     educationBackground: "Education Background",
     awards: "Awards",
     skills: "Skills",
@@ -164,6 +193,46 @@ export const englishTranslations: Translations = {
       "My research interests lie in international political economy, particularly in how political expectations and geopolitical risk are reshaping global trade and production networks. I am interested in the limitations of efficiency-based frameworks such as world-systems theory in explaining recent changes in supply chains, trade governance, and outsourcing decisions. Drawing on cases such as rising strategic tensions involving China, the Russia–Ukraine war, and the weakening of the WTO, I seek to explore how expectations about future conflict, coercion, and institutional reliability influence state and firm behavior, as well as the growing role of high-standard trade arrangements such as the CPTPP.",
     paragraph3:
       "Outside of my academic work, I am passionate about music games, photography, amateur radio, and Japanese culture. I enjoy exploring both the serious and playful sides of life — whether it's investigating education policy or perfecting a song in 太鼓の達人.",
+  },
+
+  experience: {
+    title: "Experience",
+    entries: {
+      researchAssistant: {
+        position: "Student Research Assistant – Associate Professor Huseyin Rasit",
+        details: [
+          "Detect, classify, and analyze 120-130 entries exhibiting political bias from newspapers covering worldwide protests and demonstrations per month in the project Journalists of the Empire: Capitalism, Imperialism, and Misinformation (https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/)",
+        ],
+      },
+      anaInternship: {
+        position: "Internship",
+        details: [
+          "Built a predictive maintenance proposal using ACARS-based aircraft health data and Boeing AHM, enabling earlier risk detection and reducing AOG-driven disruption risk.",
+          "Designed a maintenance–operations coordination workflow to share aircraft condition insights between Operations Management and Maintenance, and proposed pre-arrival aircraft swap (\"ship change\") decisions to protect on-time performance and safety.",
+        ],
+      },
+      photographer: {
+        position: "Amateur Photographer",
+        details: [
+          "Captured and curated a diverse portfolio of over 500 images across subjects such as civil aviation, railways, wildlife, traditional festivals, cultural landscapes, and art museum interiors.",
+          "Participated in astrophotography projects, running alignment and stacking algorithms to combine long-exposure shots and reduce noise for night sky images.",
+          "Built and maintained a public photography portfolio with over 1.9 million total views on Pexels (pexels.com/@railgunbreaker/), gaining recognition from aviation and travel photography enthusiasts.",
+        ],
+      },
+      stockInvestor: {
+        position: "Individual Stock Investor",
+        details: [
+          "Conducted long-term independent research on global market trends by monitoring macroeconomic data, sectoral developments, and geopolitical risk factors.",
+          "Investments in S&P, NASDAQ, DAX, natural resources, and Japanese ETF stock market, achieving a 25% return rate with peak portfolio growth of 54%.",
+        ],
+      },
+      taikoChampionship: {
+        position: "Taiko no Tatsujin Donder WORLD CHAMPIONSHIP 2024",
+        details: [
+          "First place in Australian Capital Territory, Australia",
+        ],
+      },
+    },
   },
 
   education: {
@@ -310,6 +379,7 @@ export const englishTranslations: Translations = {
 export const japaneseTranslations: Translations = {
   sections: {
     introduction: "自己紹介",
+    experience: "経験",
     educationBackground: "学歴",
     awards: "受賞歴",
     skills: "スキル",
@@ -344,6 +414,46 @@ export const japaneseTranslations: Translations = {
       "私の研究関心は国際政治経済学にあり、特に政治的期待と地政学的リスクがグローバルな貿易・生産ネットワークをどのように再構築しているかに焦点を当てています。私は、サプライチェーン、貿易ガバナンス、アウトソーシング決定における最近の変化を説明する上で、世界システム論などの効率性ベースの枠組みの限界に関心を持っています。中国をめぐる戦略的緊張の高まり、ロシア・ウクライナ戦争、WTOの弱体化などの事例を通じて、将来の紛争、強制、制度的信頼性に関する期待が、国家や企業の行動にどのように影響を与えるか、またCPTPPなどの高水準貿易協定の役割の拡大について探求したいと考えています。",
     paragraph3:
       "学術的な活動以外では、音楽ゲーム、写真撮影、アマチュア無線、日本文化に情熱を注いでいます。教育政策の調査から太鼓の達人での楽曲の完璧な演奏まで、人生の真面目な面と楽しい面の両方を探求することを楽しんでいます。",
+  },
+
+  experience: {
+    title: "経験",
+    entries: {
+      researchAssistant: {
+        position: "学生研究補助員 – フセイン・ラシット准教授",
+        details: [
+          "プロジェクト「帝国のジャーナリスト：資本主義、帝国主義、誤報」（https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/）において、世界中の抗議活動やデモに関する大量の新聞記事から、毎月120-130件の既存の政治的偏向を検出、分類、分析",
+        ],
+      },
+      anaInternship: {
+        position: "インターンシップ",
+        details: [
+          "ACARSベースの航空機健全性データとボーイングAHMを使用した予知保全提案を構築し、早期リスク検知とAOG起因の運航混乱リスクの低減を実現",
+          "運航管理部門と整備部門間で航空機状態の情報を共有する整備・運航連携ワークフローを設計し、定時性と安全性を保護するための到着前機材交換（「シップチェンジ」）の意思決定を提案",
+        ],
+      },
+      photographer: {
+        position: "アマチュア写真家",
+        details: [
+          "民間航空、鉄道、野生動物、伝統的な祭り、文化的景観、美術館内部など、多様な被写体にわたる500枚以上の画像を撮影・厳選したポートフォリオを作成",
+          "天体写真プロジェクトに参加し、位置合わせとスタッキングアルゴリズムを実行して長時間露光ショットを合成し、夜空の画像のノイズを低減",
+          "Pexels（pexels.com/@railgunbreaker/）で190万回以上の総閲覧数を持つ公開写真ポートフォリオを構築・維持し、航空・旅行写真愛好家から認知を獲得",
+        ],
+      },
+      stockInvestor: {
+        position: "個人株式投資家",
+        details: [
+          "マクロ経済データ、セクター別動向、地政学的リスク要因を監視することで、グローバル市場トレンドに関する長期的な独立調査を実施",
+          "S&P、NASDAQ、DAX、天然資源、日本のETF株式市場への投資で、25%のリターン率とピーク時のポートフォリオ成長率54%を達成",
+        ],
+      },
+      taikoChampionship: {
+        position: "太鼓の達人ドンダーワールドチャンピオンシップ2024",
+        details: [
+          "オーストラリア首都特別地域（オーストラリア）で第1位",
+        ],
+      },
+    },
   },
 
   education: {
@@ -483,6 +593,7 @@ export const japaneseTranslations: Translations = {
 export const chineseTranslations: Translations = {
   sections: {
     introduction: "自我介绍",
+    experience: "工作经验",
     educationBackground: "教育背景",
     awards: "获奖经历",
     skills: "技能",
@@ -516,6 +627,46 @@ export const chineseTranslations: Translations = {
       "我的研究兴趣在于国际政治经济学，特别是政治预期和地缘政治风险如何重塑全球贸易和生产网络。我对基于效率的框架（如世界体系理论）在解释供应链、贸易治理和外包决策最近变化方面的局限性感兴趣。通过中国战略紧张局势加剧、俄乌战争和WTO弱化等案例，我寻求探索对未来冲突、强制和制度可靠性的预期如何影响国家和企业行为，以及CPTPP等高标准贸易安排日益增长的作用。",
     paragraph3:
       "在学术工作之外，我热衷于音乐游戏、摄影、业余无线电和日本文化。我喜欢探索生活中严肃和有趣的两面——无论是调查教育政策还是在太鼓达人中完美演奏一首歌曲。",
+  },
+
+  experience: {
+    title: "工作经验",
+    entries: {
+      researchAssistant: {
+        position: "学生研究助理 – Huseyin Rasit副教授",
+        details: [
+          "在项目\"帝国的记者：资本主义、帝国主义和错误信息\"（https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/）中，每月从大量报纸中检测、分类和分析120-130条关于全球抗议和示威的现有政治偏见条目",
+        ],
+      },
+      anaInternship: {
+        position: "实习",
+        details: [
+          "使用基于ACARS的飞机健康数据和波音AHM建立预测性维护提案，实现更早的风险检测并降低AOG导致的运营中断风险",
+          "设计维护-运营协调工作流程，在运营管理和维护部门之间共享飞机状况洞察，并提出到达前飞机交换（\"换机\"）决策，以保护准点性能和安全性",
+        ],
+      },
+      photographer: {
+        position: "业余摄影师",
+        details: [
+          "拍摄并精选了涵盖民用航空、铁路、野生动物、传统节日、文化景观和艺术博物馆内部等主题的500多张图片的多样化作品集",
+          "参与天体摄影项目，运行对齐和堆叠算法来组合长曝光拍摄并降低夜空图像的噪声",
+          "在Pexels（pexels.com/@railgunbreaker/）上建立和维护公共摄影作品集，总浏览量超过190万次，获得航空和旅行摄影爱好者的认可",
+        ],
+      },
+      stockInvestor: {
+        position: "个人股票投资者",
+        details: [
+          "通过监测宏观经济数据、行业发展和地缘政治风险因素，对全球市场趋势进行长期独立研究",
+          "投资标普、纳斯达克、DAX、自然资源和日本ETF股票市场，获得25%的回报率和54%的峰值投资组合增长率",
+        ],
+      },
+      taikoChampionship: {
+        position: "太鼓达人Donder世界锦标赛2024",
+        details: [
+          "澳大利亚首都领地第一名",
+        ],
+      },
+    },
   },
 
   education: {
