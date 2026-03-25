@@ -34,33 +34,18 @@ function getResponsiveImageSources(imageUrl: string) {
   return { src, srcSet };
 }
 
-function pickRandomImages(images: string[], count: number, previous: string[]) {
-  const shuffled = [...images].sort(() => Math.random() - 0.5);
-  const nextSelection = shuffled.slice(0, Math.min(count, shuffled.length));
+function shuffleImages(images: string[]) {
+  const shuffled = [...images];
 
-  if (images.length <= count || previous.length === 0) {
-    return nextSelection;
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[randomIndex]] = [
+      shuffled[randomIndex],
+      shuffled[index],
+    ];
   }
 
-  const nextKey = [...nextSelection].sort().join("|");
-  const previousKey = [...previous].sort().join("|");
-
-  if (nextKey !== previousKey) {
-    return nextSelection;
-  }
-
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const retrySelection = [...images]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, Math.min(count, images.length));
-    const retryKey = [...retrySelection].sort().join("|");
-
-    if (retryKey !== previousKey) {
-      return retrySelection;
-    }
-  }
-
-  return nextSelection;
+  return shuffled;
 }
 
 export function RollingImages() {
@@ -72,9 +57,29 @@ export function RollingImages() {
   const [isAnimationRunning, setIsAnimationRunning] = React.useState(true);
   const [displayImages, setDisplayImages] = React.useState<string[]>([]);
   const { handleImageLoad } = useLoadPexelImages(displayImages);
+  const shuffledPoolRef = React.useRef<string[]>([]);
 
   const [loadedImages, setLoadedImages] = React.useState<Set<string>>(
     new Set()
+  );
+
+  const getNextImageBatch = React.useCallback(
+    (sourceImages: string[], count: number) => {
+      if (sourceImages.length === 0) {
+        return [];
+      }
+
+      if (sourceImages.length <= count) {
+        return shuffleImages(sourceImages);
+      }
+
+      if (shuffledPoolRef.current.length < count) {
+        shuffledPoolRef.current = shuffleImages(sourceImages);
+      }
+
+      return shuffledPoolRef.current.splice(0, count);
+    },
+    []
   );
 
   React.useEffect(() => {
@@ -82,18 +87,15 @@ export function RollingImages() {
       return;
     }
 
-    setDisplayImages((previous: string[]) =>
-      pickRandomImages(images, DISPLAY_IMAGE_COUNT, previous)
-    );
+    shuffledPoolRef.current = shuffleImages(images);
+    setDisplayImages(getNextImageBatch(images, DISPLAY_IMAGE_COUNT));
 
     const intervalId = window.setInterval(() => {
-      setDisplayImages((previous: string[]) =>
-        pickRandomImages(images, DISPLAY_IMAGE_COUNT, previous)
-      );
+      setDisplayImages(getNextImageBatch(images, DISPLAY_IMAGE_COUNT));
     }, REFRESH_INTERVAL_MS);
 
     return () => window.clearInterval(intervalId);
-  }, [images]);
+  }, [getNextImageBatch, images]);
 
   React.useEffect(() => {
     setLoadedImages(new Set());
@@ -110,7 +112,7 @@ export function RollingImages() {
   }
 
   return (
-    <div className={"md:h-104 overflow-hidden whitespace-nowrap h-40"}>
+    <div className={"md:h-104 overflow-hidden whitespace-nowrap h-52 w-full"}>
       {[0, 1].map((index) => {
         return (
           <div
@@ -129,22 +131,25 @@ export function RollingImages() {
               const { src, srcSet } = getResponsiveImageSources(imageUrl);
 
               return (
-                <div className="inline-block relative" key={imgIndex}>
+                <div
+                  className="inline-block relative w-[84vw] max-w-sm sm:w-72 md:w-80 lg:w-96 mr-3 sm:mr-4"
+                  key={imgIndex}
+                >
                   {!isImageLoaded && (
-                    <Skeleton className="h-full w-full aspect-video duration-500 scale-85 rounded-lg transition-all hover:scale-100 hover:cursor-pointer" />
+                    <Skeleton className="h-full w-full aspect-video duration-500 scale-100 md:scale-85 rounded-lg transition-all hover:scale-100 hover:cursor-pointer" />
                   )}
 
                   <img
                     src={src}
                     srcSet={srcSet}
-                    sizes="(max-width: 768px) 72vw, 32vw"
+                    sizes="(max-width: 768px) 94vw, 32vw"
                     loading="lazy"
                     decoding="async"
                     fetchPriority="low"
                     width={720}
                     height={405}
                     alt={`Rolling image ${imgIndex}`}
-                    className={`h-full w-full aspect-video duration-500 scale-85 rounded-lg transition-all hover:scale-100 hover:cursor-pointer object-contain md:object-cover ${
+                    className={`h-full w-full aspect-video duration-500 scale-100 md:scale-85 rounded-lg transition-all hover:scale-100 hover:cursor-pointer object-contain md:object-cover ${
                       isImageLoaded
                         ? "block"
                         : "absolute opacity-0 pointer-events-none"

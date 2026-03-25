@@ -5,9 +5,9 @@ function ProfilePicture() {
   const { t } = useLanguage();
 
   return (
-    <div className="split picture-container grid-40 w-full lg:w-auto flex justify-center lg:justify-start mb-0 lg:mb-0">
+    <div className="picture-container w-auto flex justify-center lg:justify-start mb-0">
       <a href={lifeTreeImage} className="block">
-        <picture className="picture w-38 h-38 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64">
+        <picture className="picture w-30 h-30 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-44 lg:h-44">
           <source type="image/webp" srcSet={lifeTreeImage} />
           <img
             src={lifeTreeImage}

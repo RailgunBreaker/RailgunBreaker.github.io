@@ -15,7 +15,7 @@ function App() {
       <LanguageProvider>
         <div
           id="container"
-          className="w-full max-w-none sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto my-4 sm:my-8"
+          className="w-full max-w-none sm:max-w-3xl md:max-w-5xl lg:max-w-6xl xl:max-w-6xl 2xl:max-w-7xl mx-auto my-3 sm:my-6 lg:my-10"
         >
           <Header />
           <Introduction />

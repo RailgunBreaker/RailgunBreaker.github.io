@@ -22,17 +22,11 @@ interface ListItemProps {
 
 function ListItem({ children, indent = true, className = "" }: ListItemProps) {
   return (
-    <div
-      className={`flex items-start gap-2 sm:gap-3 mb-2 sm:mb-3 ${className}`}
-    >
+    <div className={`portfolio-list-item ${className}`}>
       {indent && (
-        <span className="text-primary font-bold text-sm sm:text-base mt-0.5">
-          •
-        </span>
+        <span className="portfolio-list-bullet">•</span>
       )}
-      <span className="text-sm sm:text-base leading-relaxed flex-1">
-        {children}
-      </span>
+      <span className="portfolio-list-content">{children}</span>
     </div>
   );
 }

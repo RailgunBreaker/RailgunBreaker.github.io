@@ -6,15 +6,9 @@ function Introduction() {
 
   return (
     <Section title={t.sections.introduction}>
-      <ContentBlock>
-        &nbsp;&nbsp;&nbsp;&nbsp; {t.introduction.paragraph1}
-      </ContentBlock>
-      <ContentBlock>
-        &nbsp;&nbsp;&nbsp;&nbsp; {t.introduction.paragraph2}
-      </ContentBlock>
-      <ContentBlock>
-        &nbsp;&nbsp;&nbsp;&nbsp; {t.introduction.paragraph3}
-      </ContentBlock>
+      <ContentBlock className="intro-paragraph">{t.introduction.paragraph1}</ContentBlock>
+      <ContentBlock className="intro-paragraph">{t.introduction.paragraph2}</ContentBlock>
+      <ContentBlock className="intro-paragraph">{t.introduction.paragraph3}</ContentBlock>
     </Section>
   );
 }

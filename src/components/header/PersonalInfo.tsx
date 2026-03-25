@@ -1,5 +1,4 @@
 import LanguageSwitch from "./LanguageSwitch";
-import ThemeSwitch from "./ThemeSwitch";
 import { useLanguage } from "../../hooks/useLanguage";
 import ProfilePicture from "./ProfilePicture";
 import { getTranslations } from "../../assets/data/translations";
@@ -22,36 +21,33 @@ function PersonalInfo() {
   };
 
   return (
-    <div className="names">
-      <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
+    <div className="hero-top">
+      <div className="hero-identity-wrap">
         <ProfilePicture />
-        <h1
-          className={`name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight ${getLanguageClass()}`}
-        >
-          <span className="no-wrap block">
-            Railgun{" "}
-            <a
-              className="chem-element"
-              data-element="titanium"
-              href="https://en.wikipedia.org/wiki/Bromine"
-            >
-              Br eaker
-            </a>
-          </span>
-          <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium mt-2">
-            {t.header.name.hiragana && (
-              <span className="block text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-normal mb-1">
-                {t.header.name.hiragana}
-              </span>
-            )}
-            ({t.header.name.main})
-          </span>
-        </h1>
-        <div className="flex-shrink-0">
-          <div className="flex flex-col gap-2">
-            <LanguageSwitch />
-            <ThemeSwitch />
-          </div>
+        <div className="hero-title-wrap">
+          <h1 className={`name hero-name ${getLanguageClass()}`}>
+            <span className="block sm:whitespace-nowrap">
+              Railgun{" "}
+              <a
+                className="chem-element"
+                data-element="titanium"
+                href="https://en.wikipedia.org/wiki/Bromine"
+              >
+                Br eaker
+              </a>
+            </span>
+            <span className="hero-name-subtitle">
+              {t.header.name.hiragana && (
+                <span className="hero-name-hiragana">{t.header.name.hiragana}</span>
+              )}
+              <span>({t.header.name.main})</span>
+            </span>
+          </h1>
+        </div>
+      </div>
+      <div className="hero-controls" role="group" aria-label="Language controls">
+        <div className="flex flex-col gap-2">
+          <LanguageSwitch />
         </div>
       </div>
     </div>
