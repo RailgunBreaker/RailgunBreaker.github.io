@@ -1,7 +1,7 @@
 {
   "hello": {
-    "en": "Hello, World!",
-    "zh": "你好，世界！",
-    "ja": "こんにちは、世界！"
+    "en": "Hello, World! Vocaloid is alive!",
+    "zh": "你好，世界！Vocaloid is alive！",
+    "ja": "こんにちは、世界！ボーカロイドは生きている！"
   }
 }
