@@ -71,6 +71,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 
 - Text contents should be available in three languages: English, Japanese, and Chinese. The contents should be put under `src/assets/i18n/` in JSON format, and the website should load the active language from `src/hooks/stores/useLanguage.ts`.
 - Language state supports `en`, `zh`, and `ja`; default from the browser locale and persist the selected language to localStorage.
+- Typography uses Google Fonts: `Space Grotesk` for Latin text and `LXGW WenKai TC` for Japanese/Chinese characters through a CSS `unicode-range`, independent of the active language.
 
 ## Hooks
 

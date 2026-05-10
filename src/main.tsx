@@ -2,10 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { LanguageSelector } from "./components/ui/LanguageSelector";
 import { ThemeSelector } from "./components/ui/ThemeSelector";
+import { initializeLanguage } from "./hooks/stores/useLanguage";
 import { initializeTheme } from "./hooks/stores/useTheme";
 import { useContent } from "./hooks/useContent";
 import "./styles/index.css";
 
+initializeLanguage();
 initializeTheme();
 
 export function App() {

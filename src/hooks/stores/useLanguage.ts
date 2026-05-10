@@ -8,6 +8,16 @@ type LanguageState = {
   setLanguage: (language: Language) => void;
 };
 
+function applyLanguage(language: Language) {
+  if (typeof document === "undefined") {
+    return;
+  }
+
+  const root = document.documentElement;
+
+  root.lang = language;
+}
+
 function getBrowserLanguage(): Language {
   if (typeof navigator === "undefined") {
     return "en";
@@ -40,11 +50,21 @@ export const useLanguage = create<LanguageState>()(
   persist(
     (set) => ({
       language: getBrowserLanguage(),
-      setLanguage: (language) => set({ language }),
+      setLanguage: (language) => {
+        applyLanguage(language);
+        set({ language });
+      },
     }),
     {
       name: "language",
       partialize: (state) => ({ language: state.language }),
+      onRehydrateStorage: () => (state) => {
+        state?.setLanguage(state.language);
+      },
     },
   ),
 );
+
+export function initializeLanguage() {
+  applyLanguage(useLanguage.getState().language);
+}
