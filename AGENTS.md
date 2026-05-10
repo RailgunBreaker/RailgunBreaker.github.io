@@ -35,7 +35,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - Put small reusable UI controls in `src/components/ui/`.
 - Put reusable React hooks in `src/hooks/`.
 - Use the `@/` alias for imports from `src/` when it improves readability.
-- `src/styles/index.css` imports Tailwind and HeroUI styles.
+- `src/styles/index.css` imports Tailwind and HeroUI styles. It contains the color theme definitions and other global definitions.
 - `vite.config.ts` configures Tailwind, React, and the React Compiler Babel preset.
 - `dist/` is generated build output. Do not edit it by hand unless the user explicitly asks.
 
