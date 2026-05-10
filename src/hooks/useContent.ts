@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { useLanguage } from "./stores/useLanguage";
 
 const languageSchema = z.enum(["en", "zh", "ja"]);
 const localizedContentSchema = z.object({
@@ -18,17 +19,16 @@ export type Language = z.infer<typeof languageSchema>;
 type ContentRequest = {
   contentKey: string;
   sectionName: string;
-  languageCode: string;
 };
 
 type ContentResult = Record<string, string>;
 
 export function useContent(requests: ContentRequest[]): ContentResult {
+  const language = languageSchema.parse(useLanguage((state) => state.language));
   const validatedSections = new Map<string, z.infer<typeof contentSchema>>();
   const result: ContentResult = {};
 
   for (const request of requests) {
-    const language = languageSchema.parse(request.languageCode);
     let content = validatedSections.get(request.sectionName);
 
     if (!content) {

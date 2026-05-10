@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a personal portfolio website for RailgunBreaker. It is a Vite-powered React app written in TypeScript, styled with Tailwind CSS v4 and HeroUI v3.
+This is a personal portfolio website for RailgunBreaker. It is a Vite-powered React app written in TypeScript, styled with Tailwind CSS v4, React Icons, and HeroUI v3.
 
 Keep the site focused, polished, and portfolio-first. Prefer direct, usable pages and components over marketing filler.
 
@@ -16,7 +16,7 @@ Keep the site focused, polished, and portfolio-first. Prefer direct, usable page
 - Formatting: Prettier with `prettier-plugin-tailwindcss`
 - Linting: ESLint flat config
 
-## Useful Commands
+## Commands
 
 - Install dependencies: `pnpm install`
 - Start local development: `pnpm dev`
@@ -32,7 +32,9 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 
 - `src/main.tsx` is the current React entry point.
 - Put reusable React components in `src/components/`.
+- Put small reusable UI controls in `src/components/ui/`.
 - Put reusable React hooks in `src/hooks/`.
+- Use the `@/` alias for imports from `src/` when it improves readability.
 - `src/styles/index.css` imports Tailwind and HeroUI styles.
 - `vite.config.ts` configures Tailwind, React, and the React Compiler Babel preset.
 - `dist/` is generated build output. Do not edit it by hand unless the user explicitly asks.
@@ -47,7 +49,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - Keep `src/styles/index.css` clean and limited to essential global imports or necessary custom styles that cannot be expressed with Tailwind.
 - Avoid one-off CSS unless Tailwind or HeroUI cannot express the design cleanly.
 - Keep generated assets and build artifacts out of source edits unless they are intentionally part of the requested change.
-- Text contents should be available in three languages: English, Japanese, and Chinese. The contents should be put under `src/assets/i18n/` in JSON format, and the website should load the appropriate language from there based on the Zustand state.
+- Update this `AGENTS.md` when changes introduce new conventions, commands, structure, or workflow details that future agents should know. Only include important information that is not already obvious from the code or project structure.
 
 ## Design Guidelines
 
@@ -64,3 +66,18 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - Keep ESLint and Prettier clean.
 - When adding dependencies, justify the need and prefer packages that fit the current Vite/React stack.
 - Respect existing uncommitted user changes. Do not revert or overwrite unrelated edits.
+
+## Internationalization
+
+- Text contents should be available in three languages: English, Japanese, and Chinese. The contents should be put under `src/assets/i18n/` in JSON format, and the website should load the active language from `src/hooks/stores/useLanguage.ts`.
+- Language state supports `en`, `zh`, and `ja`; default from the browser locale and persist the selected language to localStorage.
+
+## Hooks
+
+- Put reusable Zustand stores under `src/hooks/stores/`.
+- `src/hooks/useContent.ts`: loads localized JSON content from `src/assets/i18n/`, validates it with Zod, and reads the active language from `useLanguage`.
+- `src/hooks/stores/useLanguage.ts`: owns persisted language state.
+
+## Theme Selection
+
+- Theme state supports `light`, `dark`, and `system`; default to `system`. Apply themes globally by updating `<html class="light|dark" data-theme="light|dark">`.
