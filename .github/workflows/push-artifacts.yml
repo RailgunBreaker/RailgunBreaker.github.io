@@ -38,8 +38,5 @@ jobs:
         run: |
           aws s3 sync ./dist s3://${{ vars.AWS_S3_BUCKET }}/rb-website --delete
       - name: Invalidate CloudFront cache
-        uses: foxdalas/cloudfront-invalidator@v4
-        with:
-          tag_key: "Name"
-          tag_value: ${{ vars.CLOUDFRONT_DISTRIBUTION_NAME }}
-          paths: "/*"
+        run: |
+          aws cloudfront create-invalidation --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" --paths "/*"
