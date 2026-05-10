@@ -1,0 +1,43 @@
+# Build artifacts and push to S3
+name: Publish to S3
+on:
+  push:
+    branches:
+      - rebuild
+    paths-ignore:
+      - scripts/**
+      - README.md
+      - .github/workflows/**
+  workflow_dispatch:
+jobs:
+  push-artifacts-to-s3:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ secrets.AWS_IAM_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: "pnpm"
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Build Project
+        run: pnpm build
+      - name: Deploy to S3
+        run: |
+          aws s3 sync ./dist s3://${{ vars.AWS_S3_BUCKET }}/rb-website --delete
+      - name: Invalidate CloudFront cache
+        uses: foxdalas/cloudfront-invalidator@v4
+        with:
+          tag_key: "Name"
+          tag_value: ${{ vars.CLOUDFRONT_DISTRIBUTION_NAME }}
+          paths: "/*"
