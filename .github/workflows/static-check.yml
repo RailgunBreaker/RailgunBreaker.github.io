@@ -1,5 +1,5 @@
 ---
-name: Check Build
+name: Static Check
 
 on:
   pull_request:
@@ -16,8 +16,8 @@ permissions:
   contents: read
 
 jobs:
-  check-build:
-    name: Check pnpm build
+  static-check:
+    name: Static Check
     runs-on: ubuntu-latest
 
     steps:
@@ -37,5 +37,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build
+      - name: Check build
         run: pnpm build
+
+      - name: Check lint and format
+        run: pnpm lint:check && pnpm format:check
+
+      - name: Validate i18n content
+        run: pnpm validate-i18n

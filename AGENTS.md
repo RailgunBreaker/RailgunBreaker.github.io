@@ -47,6 +47,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - Keep `src/styles/index.css` clean and limited to essential global imports or necessary custom styles that cannot be expressed with Tailwind.
 - Avoid one-off CSS unless Tailwind or HeroUI cannot express the design cleanly.
 - Keep generated assets and build artifacts out of source edits unless they are intentionally part of the requested change.
+- Text contents should be available in three languages: English, Japanese, and Chinese. The contents should be put under `src/assets/i18n/` in JSON format, and the website should load the appropriate language from there based on the Zustand state.
 
 ## Design Guidelines
 
