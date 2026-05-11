@@ -25,6 +25,7 @@ Keep the site focused, polished, and portfolio-first. Prefer direct, usable page
 - Strict lint check: `pnpm lint:check`
 - Format: `pnpm format`
 - Check formatting: `pnpm format:check`
+- Fix lint and format issues: `pnpm fix`
 
 Run `pnpm build` before considering larger UI or TypeScript changes complete. For smaller style-only edits, at least run `pnpm lint:check` or explain why it was not run.
 

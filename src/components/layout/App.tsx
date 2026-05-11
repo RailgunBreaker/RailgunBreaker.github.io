@@ -8,8 +8,8 @@ import { Skills } from "../sections/Skills";
 
 export function App() {
   return (
-    <main className="mx-auto my-10 flex min-h-dvh max-w-4/5 items-center justify-center rounded-2xl bg-blue-800 px-6 py-8">
-      <div className="flex w-full flex-col gap-4">
+    <main className="mx-auto flex min-h-dvh w-full max-w-6xl items-center justify-center bg-blue-800 px-3 py-4 sm:px-5 sm:py-6 md:my-8 md:w-[92%] md:rounded-2xl md:px-6 md:py-8 lg:w-4/5">
+      <div className="flex w-full flex-col gap-3 sm:gap-4">
         <Overview />
         <Introduction />
         <Experience />

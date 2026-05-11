@@ -8,7 +8,7 @@ type SectionProps = {
 export function Section({ children, className = "" }: SectionProps) {
   return (
     <section
-      className={`w-full rounded-2xl px-6 py-16 ${className} bg-blue-500`}
+      className={`w-full rounded-xl bg-blue-500 px-4 py-10 sm:rounded-2xl sm:px-6 sm:py-12 md:py-16 ${className}`}
     >
       <div>{children}</div>
     </section>

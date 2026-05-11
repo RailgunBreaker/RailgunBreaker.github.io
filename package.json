@@ -14,7 +14,8 @@
     "validate-i18n": "tsx scripts/validate-i18n.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "fix": "pnpm run lint && pnpm run format"
   },
   "dependencies": {
     "@heroui/react": "^3.0.4",
