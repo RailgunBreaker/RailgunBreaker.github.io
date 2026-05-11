@@ -60,6 +60,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - Keep layout responsive across mobile and desktop.
 - Avoid oversized decorative sections that delay access to actual portfolio content.
 - Do not add instructional text about how the UI works unless it is necessary for the user experience.
+- Colors should be available for both light and dark themes, unless they can be shared by both themes.
 
 ## Quality Bar
 

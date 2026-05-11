@@ -106,6 +106,55 @@
   }
 }
 
+@layer components {
+  .site-page-gradient {
+    background: linear-gradient(to bottom right, #e0f2fe, #bfdbfe, #cffafe);
+  }
+
+  .site-main-gradient {
+    background: linear-gradient(
+      to bottom right,
+      rgb(255 255 255 / 0.9),
+      rgb(224 242 254 / 0.9),
+      rgb(191 219 254 / 0.8)
+    );
+  }
+
+  .site-section-gradient {
+    background: linear-gradient(
+      to bottom right,
+      rgb(255 255 255 / 0.8),
+      rgb(240 249 255 / 0.8),
+      rgb(219 234 254 / 0.8)
+    );
+  }
+
+  .dark .site-page-gradient,
+  [data-theme="dark"] .site-page-gradient {
+    background: linear-gradient(to bottom right, #172554, #0c4a6e, #155e75);
+  }
+
+  .dark .site-main-gradient,
+  [data-theme="dark"] .site-main-gradient {
+    background: linear-gradient(
+      to bottom right,
+      rgb(30 58 138 / 0.9),
+      rgb(8 47 73 / 0.9),
+      rgb(22 78 99 / 0.9)
+    );
+  }
+
+  .dark .site-section-gradient,
+  [data-theme="dark"] .site-section-gradient {
+    background: linear-gradient(
+      to bottom right,
+      rgb(186 230 253 / 0.18),
+      rgb(96 165 250 / 0.16),
+      rgb(103 232 249 / 0.12)
+    );
+  }
+}
+
 @font-face {
   font-family: "LXGW WenKai TC CJK";
   font-style: normal;
