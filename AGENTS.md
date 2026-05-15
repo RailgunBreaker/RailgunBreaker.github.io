@@ -36,7 +36,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - Put small reusable UI controls in `src/components/ui/`.
 - Put reusable React hooks in `src/hooks/`.
 - Use the `@/` alias for imports from `src/` when it improves readability.
-- `src/styles/index.css` imports Tailwind and HeroUI styles. It contains the color theme definitions and other global definitions.
+- `src/styles/index.css` imports Tailwind and HeroUI styles. It contains the dark-only color definitions and other global definitions.
 - `vite.config.ts` configures Tailwind, React, and the React Compiler Babel preset.
 - `dist/` is generated build output. Do not edit it by hand unless the user explicitly asks.
 
@@ -60,7 +60,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - Keep layout responsive across mobile and desktop.
 - Avoid oversized decorative sections that delay access to actual portfolio content.
 - Do not add instructional text about how the UI works unless it is necessary for the user experience.
-- Colors should be available for both light and dark themes, unless they can be shared by both themes.
+- Colors should assume the site is dark-only.
 
 ## Quality Bar
 
@@ -81,6 +81,6 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - `src/hooks/useContent.ts`: loads localized JSON content from `src/assets/i18n/`, validates it with Zod, and reads the active language from `useLanguage`.
 - `src/hooks/stores/useLanguage.ts`: owns persisted language state.
 
-## Theme Selection
+## Theme
 
-- Theme state supports `light`, `dark`, and `system`; default to `system`. Apply themes globally by updating `<html class="light|dark" data-theme="light|dark">`.
+- The site is dark-only. Do not add alternate color modes or system color-mode switching unless explicitly requested.
