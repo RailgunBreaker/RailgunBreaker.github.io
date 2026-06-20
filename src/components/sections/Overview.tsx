@@ -208,16 +208,18 @@ export function Overview() {
           <div>
             <h1 className="text-5xl leading-tight font-bold tracking-normal text-white drop-shadow-[0_4px_3px_rgb(0_0_0/0.42)] sm:text-6xl lg:text-7xl">
               <span>Railgun </span>
-              <a
-                aria-label="Br, Bromine"
-                className="inline-block rounded-2xl border border-sky-200/10 bg-slate-500/35 px-3 py-1 text-white transition duration-200 hover:-translate-y-0.5 hover:border-cyan-200/60 hover:bg-cyan-300/20 hover:text-cyan-100 hover:shadow-[0_0_26px_rgb(34_211_238/0.22)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200"
-                href="https://en.wikipedia.org/wiki/Bromine"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Br
-              </a>
-              <span>eaker</span>
+              <span className="whitespace-nowrap">
+                <a
+                  aria-label="Br, Bromine"
+                  className="inline-block rounded-2xl border border-sky-200/10 bg-slate-500/35 px-3 py-1 text-white transition duration-200 hover:-translate-y-0.5 hover:border-cyan-200/60 hover:bg-cyan-300/20 hover:text-cyan-100 hover:shadow-[0_0_26px_rgb(34_211_238/0.22)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200"
+                  href="https://en.wikipedia.org/wiki/Bromine"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Br
+                </a>
+                <span>eaker</span>
+              </span>
             </h1>
             <p className="mt-2 text-2xl font-semibold text-slate-300 drop-shadow-[0_3px_2px_rgb(0_0_0/0.35)] sm:text-3xl">
               (<LegalName content={content} />)
