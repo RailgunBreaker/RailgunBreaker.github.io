@@ -478,5 +478,140 @@
     "en": "2022 Non-Resident Achievement Scholarship, University of California, Riverside (Rejected acceptance)",
     "zh": "2022年 加州大学河滨分校 Non-Resident Achievement Scholarship（已拒绝录取）",
     "ja": "2022年 University of California, Riverside Non-Resident Achievement Scholarship（入学辞退）"
+  },
+  "skills.title": {
+    "en": "Skills",
+    "zh": "技能",
+    "ja": "スキル"
+  },
+  "skills.category.programming": {
+    "en": "Programming",
+    "zh": "编程",
+    "ja": "プログラミング"
+  },
+  "skills.category.statisticalData": {
+    "en": "Statistical & Data Skills",
+    "zh": "统计与数据技能",
+    "ja": "統計・データスキル"
+  },
+  "skills.category.technologiesTools": {
+    "en": "Technologies & Tools",
+    "zh": "技术与工具",
+    "ja": "技術・ツール"
+  },
+  "skills.category.certifications": {
+    "en": "Certifications",
+    "zh": "证书",
+    "ja": "資格"
+  },
+  "skills.programming.python": {
+    "en": "Python",
+    "zh": "Python",
+    "ja": "Python"
+  },
+  "skills.programming.r": {
+    "en": "R",
+    "zh": "R",
+    "ja": "R"
+  },
+  "skills.programming.java": {
+    "en": "Java",
+    "zh": "Java",
+    "ja": "Java"
+  },
+  "skills.programming.php": {
+    "en": "PHP",
+    "zh": "PHP",
+    "ja": "PHP"
+  },
+  "skills.programming.html": {
+    "en": "HTML",
+    "zh": "HTML",
+    "ja": "HTML"
+  },
+  "skills.programming.css": {
+    "en": "CSS",
+    "zh": "CSS",
+    "ja": "CSS"
+  },
+  "skills.programming.markdown": {
+    "en": "Markdown",
+    "zh": "Markdown",
+    "ja": "Markdown"
+  },
+  "skills.programming.latex": {
+    "en": "LaTeX",
+    "zh": "LaTeX",
+    "ja": "LaTeX"
+  },
+  "skills.tools.linux": {
+    "en": "Linux",
+    "zh": "Linux",
+    "ja": "Linux"
+  },
+  "skills.tools.github": {
+    "en": "GitHub",
+    "zh": "GitHub",
+    "ja": "GitHub"
+  },
+  "skills.tools.git": {
+    "en": "Git",
+    "zh": "Git",
+    "ja": "Git"
+  },
+  "skills.tools.apache": {
+    "en": "Apache",
+    "zh": "Apache",
+    "ja": "Apache"
+  },
+  "skills.tools.vscode": {
+    "en": "Visual Studio Code",
+    "zh": "Visual Studio Code",
+    "ja": "Visual Studio Code"
+  },
+  "skills.tools.pycharm": {
+    "en": "PyCharm",
+    "zh": "PyCharm",
+    "ja": "PyCharm"
+  },
+  "skills.tools.spss": {
+    "en": "IBM SPSS Statistics",
+    "zh": "IBM SPSS Statistics",
+    "ja": "IBM SPSS Statistics"
+  },
+  "skills.tools.arcgis": {
+    "en": "ArcGIS (Grade: A, RU)",
+    "zh": "ArcGIS（成绩：A，立命馆大学）",
+    "ja": "ArcGIS（成績：A、立命館大学）"
+  },
+  "skills.statistical.regression": {
+    "en": "Regression Analysis",
+    "zh": "回归分析",
+    "ja": "回帰分析"
+  },
+  "skills.statistical.bayesian": {
+    "en": "Bayesian Modeling",
+    "zh": "贝叶斯建模",
+    "ja": "ベイズモデリング"
+  },
+  "skills.statistical.network": {
+    "en": "Network Analysis",
+    "zh": "网络分析",
+    "ja": "ネットワーク分析"
+  },
+  "skills.statistical.machineLearning": {
+    "en": "Machine Learning",
+    "zh": "机器学习",
+    "ja": "機械学習"
+  },
+  "skills.statistical.quantitativeMethods": {
+    "en": "Quantitative Methods in Sociology",
+    "zh": "社会学定量方法",
+    "ja": "社会学の定量的手法"
+  },
+  "skills.certifications.drivingLicense": {
+    "en": "Japanese Driving License – Class 1 (普通車一種運転免許)",
+    "zh": "日本普通汽车第一类驾驶执照（普通車一種運転免許）",
+    "ja": "普通車一種運転免許"
   }
 }
