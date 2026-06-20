@@ -236,7 +236,7 @@ export function Overview() {
         <div className="grid gap-4">
           {factGroups.map((group) => (
             <section
-              className="rounded-3xl border border-sky-200/10 bg-[rgb(3_25_48/0.78)] px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.04)] sm:px-8"
+              className="rounded-3xl border border-blue-200/14 bg-[rgb(3_25_48/0.78)] px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.04)] transition duration-300 ease-out hover:-translate-y-1 hover:border-blue-200/35 hover:bg-blue-400/6 hover:shadow-[0_18px_42px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.055)] sm:px-8"
               key={group.labelKey}
             >
               <h2 className="text-base font-bold tracking-[0.12em] text-slate-200 uppercase">
