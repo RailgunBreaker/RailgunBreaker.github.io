@@ -109,6 +109,35 @@
   .site-section-gradient {
     background: var(--card);
   }
+
+  .rolling-images-track {
+    animation: rolling-images-scroll 45s linear infinite;
+  }
+
+  .rolling-images:hover .rolling-images-track,
+  .rolling-images:focus-within .rolling-images-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes rolling-images-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rolling-images {
+    overflow-x: auto;
+  }
+
+  .rolling-images-track {
+    animation: none;
+  }
 }
 
 @font-face {

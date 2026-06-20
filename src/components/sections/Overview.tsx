@@ -10,6 +10,7 @@ import treeImage from "../../assets/images/tree.jpg";
 import { useContent } from "../../hooks/useContent";
 import { Section } from "../layout/Section";
 import { LanguageSelector } from "../ui/LanguageSelector";
+import { RollingImages } from "../ui/RollingImages";
 
 const overviewContentRequests = [
   { sectionName: "content", contentKey: "overview.name" },
@@ -250,6 +251,7 @@ export function Overview() {
               </div>
             </section>
           ))}
+          <RollingImages />
         </div>
       </div>
     </Section>
