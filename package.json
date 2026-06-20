@@ -7,10 +7,11 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "scripts/prepare-image-links.sh && vite",
+    "build": "scripts/prepare-image-links.sh && tsc -b && vite build",
     "lint": "eslint .",
     "lint:check": "eslint . --max-warnings=0",
+    "generate:rolling-images": "FORCE_ROLLING_IMAGES=true scripts/prepare-image-links.sh",
     "validate-i18n": "tsx scripts/validate-i18n.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
