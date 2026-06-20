@@ -438,5 +438,45 @@
     "en": "Courses: Regression, Machine Learning, Bayesian Modeling, Network Analysis",
     "zh": "课程：回归分析、机器学习、贝叶斯建模、网络分析",
     "ja": "履修科目：Regression、Machine Learning、Bayesian Modeling、Network Analysis"
+  },
+  "awards.title": {
+    "en": "Awards",
+    "zh": "奖项",
+    "ja": "受賞・奨学金"
+  },
+  "awards.ritsumeikanTuition2024": {
+    "en": "2024 Ritsumeikan University Tuition Fee Reduction (20%)",
+    "zh": "2024年 立命馆大学学费减免（20%）",
+    "ja": "2024年 立命館大学 学費減免（20%）"
+  },
+  "awards.glaStudyAbroad2024": {
+    "en": "2024 College of Global Liberal Arts Scholarship for Study Abroad",
+    "zh": "2024年 全球教养学院海外留学奖学金",
+    "ja": "2024年 College of Global Liberal Arts 海外留学奨学金"
+  },
+  "awards.studyAbroadChallenge": {
+    "en": "Ritsumeikan University Study Abroad Challenge Scholars",
+    "zh": "立命馆大学 Study Abroad Challenge Scholars",
+    "ja": "立命館大学 Study Abroad Challenge Scholars"
+  },
+  "awards.ritsumeikanTuition2023": {
+    "en": "2023 Ritsumeikan University Tuition Fee Reduction (20%)",
+    "zh": "2023年 立命馆大学学费减免（20%）",
+    "ja": "2023年 立命館大学 学費減免（20%）"
+  },
+  "awards.monbukagakusho2022": {
+    "en": "2022-2023 Monbukagakusho Honors Scholarship for Privately Financed International Students",
+    "zh": "2022-2023年 文部科学省私费外国人留学生学习奖励费",
+    "ja": "2022-2023年 文部科学省 私費外国人留学生学習奨励費"
+  },
+  "awards.ritsumeikanTuition2022": {
+    "en": "2022 Ritsumeikan University Tuition Fee Reduction (20%)",
+    "zh": "2022年 立命馆大学学费减免（20%）",
+    "ja": "2022年 立命館大学 学費減免（20%）"
+  },
+  "awards.ucr2022": {
+    "en": "2022 Non-Resident Achievement Scholarship, University of California, Riverside (Rejected acceptance)",
+    "zh": "2022年 加州大学河滨分校 Non-Resident Achievement Scholarship（已拒绝录取）",
+    "ja": "2022年 University of California, Riverside Non-Resident Achievement Scholarship（入学辞退）"
   }
 }
