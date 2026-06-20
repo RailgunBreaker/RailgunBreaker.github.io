@@ -135,7 +135,7 @@ function FactChip({ children, href, Icon }: FactChipProps) {
 
   if (href) {
     return (
-      <a className={`${className} hover:border-cyan-300/50`} href={href}>
+      <a className={`${className} hover:border-blue-300/55`} href={href}>
         {content}
       </a>
     );
@@ -173,7 +173,7 @@ function LegalName({ content }: LegalNameProps) {
             key={segment.text}
           >
             {segment.text}
-            <rt className="pb-1 text-sm font-semibold tracking-normal text-cyan-100/85 sm:text-base">
+            <rt className="pb-1 text-sm font-semibold tracking-normal text-blue-100/85 sm:text-base">
               {segment.annotation}
             </rt>
           </ruby>
@@ -211,7 +211,7 @@ export function Overview() {
               <span className="whitespace-nowrap">
                 <a
                   aria-label="Br, Bromine"
-                  className="inline-block rounded-2xl border border-sky-200/10 bg-slate-500/35 px-3 py-1 text-white transition duration-200 hover:-translate-y-0.5 hover:border-cyan-200/60 hover:bg-cyan-300/20 hover:text-cyan-100 hover:shadow-[0_0_26px_rgb(34_211_238/0.22)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200"
+                  className="inline-block rounded-2xl border border-sky-200/10 bg-slate-500/35 px-3 py-1 text-white transition duration-200 hover:-translate-y-0.5 hover:border-blue-200/60 hover:bg-blue-400/20 hover:text-blue-100 hover:shadow-[0_0_26px_rgb(96_165_250/0.24)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-200"
                   href="https://en.wikipedia.org/wiki/Bromine"
                   rel="noreferrer"
                   target="_blank"
@@ -239,7 +239,7 @@ export function Overview() {
               <h2 className="text-base font-bold tracking-[0.12em] text-slate-200 uppercase">
                 {content[group.labelKey]}
               </h2>
-              <div className="mt-3 h-1 w-20 rounded-full bg-cyan-300" />
+              <div className="mt-3 h-1 w-20 rounded-full bg-blue-400" />
               <div className="mt-7 flex flex-wrap gap-3">
                 {group.items.map((item) => (
                   <FactChip

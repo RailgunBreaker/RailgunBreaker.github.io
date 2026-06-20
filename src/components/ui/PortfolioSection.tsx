@@ -37,7 +37,7 @@ export function PortfolioSectionHeading({
         />
         {children}
       </h2>
-      <div className="mt-4 h-1 w-20 rounded-full bg-cyan-300" />
+      <div className="mt-4 h-1 w-20 rounded-full bg-blue-400" />
     </header>
   );
 }
@@ -49,7 +49,7 @@ export function PortfolioSectionCard({
 }: PortfolioSectionCardProps) {
   return (
     <Element
-      className={`border-border rounded-2xl border border-l-4 border-l-blue-400 bg-slate-950/25 px-5 py-6 text-slate-300 shadow-[inset_0_1px_0_rgb(255_255_255/0.03)] transition duration-300 ease-out focus-within:border-sky-200/70 focus-within:border-l-cyan-300 focus-within:bg-sky-300/8 focus-within:shadow-[0_22px_55px_rgb(14_165_233/0.18),inset_0_1px_0_rgb(255_255_255/0.07)] hover:border-sky-200/70 hover:border-l-cyan-300 hover:bg-sky-300/8 hover:shadow-[0_22px_55px_rgb(14_165_233/0.18),inset_0_1px_0_rgb(255_255_255/0.07)] motion-safe:focus-within:-translate-y-2 motion-safe:hover:-translate-y-2 sm:px-7 ${className}`}
+      className={`border-border rounded-2xl border border-l-4 border-l-blue-400 bg-slate-950/25 px-5 py-6 text-slate-300 shadow-[inset_0_1px_0_rgb(255_255_255/0.03)] transition duration-300 ease-out focus-within:border-blue-200/70 focus-within:border-l-blue-400 focus-within:bg-blue-400/8 focus-within:shadow-[0_22px_55px_rgb(96_165_250/0.2),inset_0_1px_0_rgb(255_255_255/0.07)] hover:border-blue-200/70 hover:border-l-blue-400 hover:bg-blue-400/8 hover:shadow-[0_22px_55px_rgb(96_165_250/0.2),inset_0_1px_0_rgb(255_255_255/0.07)] motion-safe:focus-within:-translate-y-2 motion-safe:hover:-translate-y-2 sm:px-7 ${className}`}
     >
       {children}
     </Element>

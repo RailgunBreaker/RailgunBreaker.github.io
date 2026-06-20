@@ -38,9 +38,9 @@ export function LanguageSelector() {
               key={languageOption}
               aria-label={content[`languageSelector.${languageOption}`]}
               aria-pressed={isSelected}
-              className={`h-8 min-w-11 rounded-full px-3 text-sm font-bold transition duration-200 ease-out outline-none hover:-translate-y-px focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 active:translate-y-0 ${
+              className={`h-8 min-w-11 rounded-full px-3 text-sm font-bold transition duration-200 ease-out outline-none hover:-translate-y-px focus-visible:ring-2 focus-visible:ring-blue-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 active:translate-y-0 ${
                 isSelected
-                  ? "bg-cyan-300 text-slate-950 shadow-[0_8px_18px_rgb(34_211_238/0.22)]"
+                  ? "bg-blue-400 text-slate-950 shadow-[0_8px_18px_rgb(96_165_250/0.24)]"
                   : "bg-transparent text-slate-300 hover:bg-white/10 hover:text-white"
               }`}
               type="button"

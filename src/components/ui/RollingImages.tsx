@@ -90,7 +90,7 @@ export function RollingImages() {
           <div className="flex shrink-0 gap-8 pr-8" key={trackIndex}>
             {shuffledImages.map((imageUrl) => (
               <a
-                className="block shrink-0 overflow-hidden rounded-xl transition duration-500 outline-none hover:scale-110 focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-4 focus-visible:ring-offset-slate-950"
+                className="block shrink-0 overflow-hidden rounded-xl transition duration-500 outline-none hover:scale-110 focus-visible:ring-2 focus-visible:ring-blue-200 focus-visible:ring-offset-4 focus-visible:ring-offset-slate-950"
                 href={toPexelsPhotoUrl(imageUrl)}
                 key={`${trackIndex}-${imageUrl}`}
                 rel="noreferrer"
