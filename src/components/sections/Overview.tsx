@@ -125,7 +125,7 @@ type FactChipProps = {
 
 function FactChip({ children, href, Icon }: FactChipProps) {
   const className =
-    "inline-flex min-h-10 max-w-full items-center gap-3 rounded-full border border-sky-200/25 bg-sky-300/15 px-4 py-1.5 text-base font-medium leading-snug text-slate-200 shadow-(--shadow-sm) transition-colors sm:text-lg";
+    "inline-flex min-h-10 max-w-full items-center gap-3 rounded-full border border-sky-200/25 bg-sky-300/15 px-4 py-1.5 text-base font-medium leading-snug text-slate-200 shadow-(--shadow-sm) transition duration-200 ease-out hover:-translate-y-1 hover:border-blue-300/65 hover:bg-blue-400/20 hover:text-white hover:shadow-[0_12px_28px_rgb(96_165_250/0.2)] sm:text-lg";
   const content = (
     <>
       <Icon className="size-4 shrink-0 text-sky-200" aria-hidden />
@@ -135,7 +135,10 @@ function FactChip({ children, href, Icon }: FactChipProps) {
 
   if (href) {
     return (
-      <a className={`${className} hover:border-blue-300/55`} href={href}>
+      <a
+        className={`${className} outline-none focus-visible:-translate-y-1 focus-visible:border-blue-300/65 focus-visible:bg-blue-400/20 focus-visible:text-white focus-visible:shadow-[0_12px_28px_rgb(96_165_250/0.2)] focus-visible:ring-2 focus-visible:ring-blue-200 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950`}
+        href={href}
+      >
         {content}
       </a>
     );
