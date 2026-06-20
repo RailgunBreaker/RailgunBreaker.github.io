@@ -21,6 +21,7 @@ Keep the site focused, polished, and portfolio-first. Prefer direct, usable page
 - Install dependencies: `pnpm install`
 - Start local development: `pnpm dev`
 - Build for production: `pnpm build`
+- Build for CI without regenerating rolling images: `pnpm cibuild`
 - Lint: `pnpm lint`
 - Strict lint check: `pnpm lint:check`
 - Format: `pnpm format`

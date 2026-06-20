@@ -33,7 +33,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
       - name: Build Project
-        run: pnpm build
+        run: pnpm cibuild
       - name: Deploy to S3
         run: |
           aws s3 sync ./dist s3://${{ vars.AWS_S3_BUCKET }}/rb-website --delete

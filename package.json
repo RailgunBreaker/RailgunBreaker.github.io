@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "scripts/prepare-image-links.sh && vite",
     "build": "scripts/prepare-image-links.sh && tsc -b && vite build",
+    "cibuild": "tsc -b && vite build",
     "lint": "eslint .",
     "lint:check": "eslint . --max-warnings=0",
     "generate:rolling-images": "FORCE_ROLLING_IMAGES=true scripts/prepare-image-links.sh",
