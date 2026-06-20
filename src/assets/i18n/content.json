@@ -3,5 +3,175 @@
     "en": "Hello, World. Vocaloid is alive!",
     "zh": "你好，世界。Vocaloid is alive！",
     "ja": "こんにちは、世界。ボーカロイドは生きている！"
+  },
+  "languageSelector.label": {
+    "en": "Language",
+    "zh": "语言",
+    "ja": "言語"
+  },
+  "languageSelector.en": {
+    "en": "English",
+    "zh": "英语",
+    "ja": "英語"
+  },
+  "languageSelector.enShort": {
+    "en": "EN",
+    "zh": "EN",
+    "ja": "EN"
+  },
+  "languageSelector.zh": {
+    "en": "Chinese",
+    "zh": "中文",
+    "ja": "中国語"
+  },
+  "languageSelector.zhShort": {
+    "en": "中文",
+    "zh": "中文",
+    "ja": "中文"
+  },
+  "languageSelector.ja": {
+    "en": "Japanese",
+    "zh": "日语",
+    "ja": "日本語"
+  },
+  "languageSelector.jaShort": {
+    "en": "日本語",
+    "zh": "日本語",
+    "ja": "日本語"
+  },
+  "overview.name": {
+    "en": "Railgun Breaker",
+    "zh": "Railgun Breaker",
+    "ja": "Railgun Breaker"
+  },
+  "overview.legalName": {
+    "en": "Guohua Song",
+    "zh": "宋国华",
+    "ja": "宋 国華"
+  },
+  "overview.legalName.first.text": {
+    "en": "Guohua",
+    "zh": "宋",
+    "ja": "宋"
+  },
+  "overview.legalName.first.annotation": {
+    "en": "国华",
+    "zh": "__none__",
+    "ja": "ソン"
+  },
+  "overview.legalName.second.text": {
+    "en": "Song",
+    "zh": "国华",
+    "ja": "国華"
+  },
+  "overview.legalName.second.annotation": {
+    "en": "宋",
+    "zh": "__none__",
+    "ja": "グオホア"
+  },
+  "overview.summary": {
+    "en": "Undergraduate portfolio spanning global liberal arts, Asia-Pacific affairs, languages, and amateur radio.",
+    "zh": "本科生作品集，关注全球教养、亚太事务、语言与业余无线电。",
+    "ja": "グローバル教養、アジア太平洋地域研究、言語、アマチュア無線に取り組む学部生のポートフォリオ。"
+  },
+  "overview.language.label": {
+    "en": "Language",
+    "zh": "语言",
+    "ja": "言語"
+  },
+  "overview.language.chinese": {
+    "en": "Chinese (Native)",
+    "zh": "中文（母语）",
+    "ja": "中国語（母語）"
+  },
+  "overview.language.english": {
+    "en": "English (Fluent)",
+    "zh": "英语（流利）",
+    "ja": "英語（流暢）"
+  },
+  "overview.language.japanese": {
+    "en": "Japanese (Advanced)",
+    "zh": "日语（高级）",
+    "ja": "日本語（上級）"
+  },
+  "overview.schools.label": {
+    "en": "Schools",
+    "zh": "学校",
+    "ja": "学校"
+  },
+  "overview.schools.ritsumeikan": {
+    "en": "立命館大学(Ritsumeikan University)",
+    "zh": "立命馆大学（Ritsumeikan University）",
+    "ja": "立命館大学（Ritsumeikan University）"
+  },
+  "overview.schools.anu": {
+    "en": "オーストラリア国立大学（Australian National University）",
+    "zh": "澳大利亚国立大学（Australian National University）",
+    "ja": "オーストラリア国立大学（Australian National University）"
+  },
+  "overview.education.label": {
+    "en": "Education",
+    "zh": "教育",
+    "ja": "学歴"
+  },
+  "overview.education.degree": {
+    "en": "Undergraduate, Class of 2026",
+    "zh": "本科生，2026届",
+    "ja": "学部生、2026年卒業予定"
+  },
+  "overview.major.label": {
+    "en": "Major",
+    "zh": "专业",
+    "ja": "専攻"
+  },
+  "overview.major.ru": {
+    "en": "Global Liberal Arts(RU) (グローバル教養学、意味不明)",
+    "zh": "全球教养（立命馆大学）",
+    "ja": "グローバル教養（立命館大学）"
+  },
+  "overview.major.anu": {
+    "en": "Asia Pacific Affairs(ANU)",
+    "zh": "亚太事务（澳大利亚国立大学）",
+    "ja": "アジア太平洋地域研究（ANU）"
+  },
+  "overview.emailWeb.label": {
+    "en": "E-mail(Web)",
+    "zh": "电子邮件（网站）",
+    "ja": "メール（Web）"
+  },
+  "overview.emailWeb.address": {
+    "en": "alansong0318@outlook.com",
+    "zh": "alansong0318@outlook.com",
+    "ja": "alansong0318@outlook.com"
+  },
+  "overview.emailAcademic.label": {
+    "en": "E-mail(Academic)",
+    "zh": "电子邮件（学术）",
+    "ja": "メール（大学）"
+  },
+  "overview.emailAcademic.ritsumeikan": {
+    "en": "gl0042hs@ed.ritsumei.ac.jp",
+    "zh": "gl0042hs@ed.ritsumei.ac.jp",
+    "ja": "gl0042hs@ed.ritsumei.ac.jp"
+  },
+  "overview.emailAcademic.anu": {
+    "en": "u7712843@anu.edu.au",
+    "zh": "u7712843@anu.edu.au",
+    "ja": "u7712843@anu.edu.au"
+  },
+  "overview.callsign.label": {
+    "en": "Callsign",
+    "zh": "呼号",
+    "ja": "コールサイン"
+  },
+  "overview.callsign.bg": {
+    "en": "BG2FGI",
+    "zh": "BG2FGI",
+    "ja": "BG2FGI"
+  },
+  "overview.callsign.vk": {
+    "en": "VK1ABA",
+    "zh": "VK1ABA",
+    "ja": "VK1ABA"
   }
 }
