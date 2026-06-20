@@ -319,6 +319,26 @@
     "zh": "澳大利亚首都领地第一名",
     "ja": "オーストラリア首都特別地域 1 位"
   },
+  "experience.cv.title": {
+    "en": "Full CV",
+    "zh": "完整简历",
+    "ja": "履歴書・CV"
+  },
+  "experience.cv.description": {
+    "en": "Download the full PDF version for detailed experience, education, and project information.",
+    "zh": "下载完整 PDF 版本，查看更详细的经历、教育背景与项目信息。",
+    "ja": "詳しい経験、学歴、プロジェクト情報をまとめた PDF 版をダウンロードできます。"
+  },
+  "experience.cv.action": {
+    "en": "Download CV",
+    "zh": "下载简历",
+    "ja": "CV をダウンロード"
+  },
+  "experience.cv.aria": {
+    "en": "Download Guohua Song's full CV as a PDF",
+    "zh": "下载宋国华的完整 PDF 简历",
+    "ja": "宋国華の CV を PDF でダウンロード"
+  },
   "education.title": {
     "en": "Education Background",
     "zh": "教育背景",
