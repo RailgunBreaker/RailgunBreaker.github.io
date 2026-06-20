@@ -613,5 +613,220 @@
     "en": "Japanese Driving License – Class 1 (普通車一種運転免許)",
     "zh": "日本普通汽车第一类驾驶执照（普通車一種運転免許）",
     "ja": "普通車一種運転免許"
+  },
+  "hobbies.title": {
+    "en": "Hobbies",
+    "zh": "兴趣爱好",
+    "ja": "趣味"
+  },
+  "hobbies.mun.title": {
+    "en": "Model United Nations",
+    "zh": "模拟联合国",
+    "ja": "模擬国連"
+  },
+  "hobbies.mun.delegate": {
+    "en": "12 times as delegate",
+    "zh": "12次代表经历",
+    "ja": "代表として12回参加"
+  },
+  "hobbies.mun.volunteer": {
+    "en": "Volunteer",
+    "zh": "志愿者",
+    "ja": "ボランティア"
+  },
+  "hobbies.mun.chair": {
+    "en": "Chair",
+    "zh": "主席",
+    "ja": "議長"
+  },
+  "hobbies.website.title": {
+    "en": "Personal Website",
+    "zh": "个人网站",
+    "ja": "個人サイト"
+  },
+  "hobbies.website.visits": {
+    "en": "2,000,000+ visits",
+    "zh": "200万+访问量",
+    "ja": "200万回以上の訪問"
+  },
+  "hobbies.website.wordpress": {
+    "en": "Built with WordPress (LAMP stack)",
+    "zh": "使用 WordPress 构建（LAMP stack）",
+    "ja": "WordPress（LAMP stack）で構築"
+  },
+  "hobbies.video.title": {
+    "en": "Video Clipping",
+    "zh": "视频剪辑",
+    "ja": "動画編集"
+  },
+  "hobbies.video.premiere": {
+    "en": "Adobe Premiere",
+    "zh": "Adobe Premiere",
+    "ja": "Adobe Premiere"
+  },
+  "hobbies.video.resolve": {
+    "en": "DaVinci Resolve",
+    "zh": "DaVinci Resolve",
+    "ja": "DaVinci Resolve"
+  },
+  "hobbies.badminton.title": {
+    "en": "Badminton",
+    "zh": "羽毛球",
+    "ja": "バドミントン"
+  },
+  "hobbies.badminton.recreational": {
+    "en": "Recreational player",
+    "zh": "休闲玩家",
+    "ja": "レクリエーションプレイヤー"
+  },
+  "hobbies.badminton.racket": {
+    "en": "VICTOR ARS-PB",
+    "zh": "VICTOR ARS-PB",
+    "ja": "VICTOR ARS-PB"
+  },
+  "hobbies.postcards.title": {
+    "en": "Collecting Postcards",
+    "zh": "收集明信片",
+    "ja": "ポストカード収集"
+  },
+  "hobbies.postcards.souvenir": {
+    "en": "Souvenir postcards from travel destinations",
+    "zh": "旅行目的地纪念明信片",
+    "ja": "旅先の記念ポストカード"
+  },
+  "hobbies.photography.title": {
+    "en": "Photography",
+    "zh": "摄影",
+    "ja": "写真"
+  },
+  "hobbies.photography.d7000": {
+    "en": "Nikon D7000",
+    "zh": "Nikon D7000",
+    "ja": "Nikon D7000"
+  },
+  "hobbies.photography.f3": {
+    "en": "Nikon F3",
+    "zh": "Nikon F3",
+    "ja": "Nikon F3"
+  },
+  "hobbies.photography.z7ii": {
+    "en": "Nikon Z7II",
+    "zh": "Nikon Z7II",
+    "ja": "Nikon Z7II"
+  },
+  "hobbies.photography.bronica": {
+    "en": "Bronica ECTL (6x6, 6x4.5)",
+    "zh": "Bronica ECTL（6x6, 6x4.5）",
+    "ja": "Bronica ECTL（6x6, 6x4.5）"
+  },
+  "hobbies.photography.luminar": {
+    "en": "Luminar 4",
+    "zh": "Luminar 4",
+    "ja": "Luminar 4"
+  },
+  "hobbies.radio.title": {
+    "en": "Amateur Radio",
+    "zh": "业余无线电",
+    "ja": "アマチュア無線"
+  },
+  "hobbies.radio.typeA": {
+    "en": "Type \"A\" Licence, CRAC",
+    "zh": "CRAC A 类操作证书",
+    "ja": "CRAC A級操作証明"
+  },
+  "hobbies.radio.acma": {
+    "en": "ACMA-recognized",
+    "zh": "ACMA 认可",
+    "ja": "ACMA 認定"
+  },
+  "hobbies.radio.station": {
+    "en": "Radio Station licence, PRC",
+    "zh": "中国无线电台执照",
+    "ja": "中国 無線局免許"
+  },
+  "hobbies.radio.senhaix": {
+    "en": "SenHaiX 8600",
+    "zh": "SenHaiX 8600",
+    "ja": "SenHaiX 8600"
+  },
+  "hobbies.profile.title": {
+    "en": "Profiles",
+    "zh": "个人主页",
+    "ja": "プロフィール"
+  },
+  "hobbies.profile.github.label": {
+    "en": "GitHub",
+    "zh": "GitHub",
+    "ja": "GitHub"
+  },
+  "hobbies.profile.github.value": {
+    "en": "@RailgunBreaker",
+    "zh": "@RailgunBreaker",
+    "ja": "@RailgunBreaker"
+  },
+  "hobbies.profile.website.label": {
+    "en": "Personal Website",
+    "zh": "个人网站",
+    "ja": "個人サイト"
+  },
+  "hobbies.profile.website.value": {
+    "en": "Quomodo eradicari potest malum?",
+    "zh": "Quomodo eradicari potest malum?",
+    "ja": "Quomodo eradicari potest malum?"
+  },
+  "hobbies.profile.bilibili.label": {
+    "en": "Bilibili",
+    "zh": "哔哩哔哩",
+    "ja": "Bilibili"
+  },
+  "hobbies.profile.bilibili.value": {
+    "en": "Railgun_Breaker_的个人空间",
+    "zh": "Railgun_Breaker_的个人空间",
+    "ja": "Railgun_Breaker_的个人空间"
+  },
+  "hobbies.profile.steam.label": {
+    "en": "Steam",
+    "zh": "Steam",
+    "ja": "Steam"
+  },
+  "hobbies.profile.steam.value": {
+    "en": "Railgun Breaker",
+    "zh": "Railgun Breaker",
+    "ja": "Railgun Breaker"
+  },
+  "hobbies.profile.genshin.label": {
+    "en": "Genshin Impact",
+    "zh": "原神",
+    "ja": "原神"
+  },
+  "hobbies.profile.genshin.value": {
+    "en": "UID:174463696 (RailgunBreaker)",
+    "zh": "UID:174463696 (RailgunBreaker)",
+    "ja": "UID:174463696 (RailgunBreaker)"
+  },
+  "hobbies.music.title": {
+    "en": "Music Game",
+    "zh": "音乐游戏",
+    "ja": "音楽ゲーム"
+  },
+  "hobbies.music.taiko": {
+    "en": "太鼓の達人 (おに9★)",
+    "zh": "太鼓の達人（おに9★）",
+    "ja": "太鼓の達人（おに9★）"
+  },
+  "hobbies.music.phigros": {
+    "en": "Phigros (Elementary)",
+    "zh": "Phigros（Elementary）",
+    "ja": "Phigros（Elementary）"
+  },
+  "hobbies.music.malody": {
+    "en": "Malody (Taiko Lv.22)",
+    "zh": "Malody（Taiko Lv.22）",
+    "ja": "Malody（Taiko Lv.22）"
+  },
+  "hobbies.music.museDash": {
+    "en": "Muse Dash (Intermediate)",
+    "zh": "Muse Dash（Intermediate）",
+    "ja": "Muse Dash（Intermediate）"
   }
 }
