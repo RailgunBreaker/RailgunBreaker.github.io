@@ -13,7 +13,7 @@ export function Section({
 }: SectionProps) {
   return (
     <section
-      className={`site-section-gradient border-border w-full border px-4 py-10 shadow-[var(--shadow-md)] sm:px-6 sm:py-12 md:py-16 ${className}`}
+      className={`site-section-gradient border-border w-full border px-4 py-10 shadow-(--shadow-md) sm:px-6 sm:py-12 md:py-16 ${className}`}
     >
       <div
         className={

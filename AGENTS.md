@@ -36,6 +36,7 @@ Run `pnpm build` before considering larger UI or TypeScript changes complete. Fo
 - `src/main.tsx` is the current React entry point.
 - Put reusable React components in `src/components/`.
 - Put small reusable UI controls in `src/components/ui/`.
+- Use `src/components/ui/PortfolioSection.tsx` for repeated portfolio section headings and left-accent content cards.
 - Put reusable React hooks in `src/hooks/`.
 - Use the `@/` alias for imports from `src/` when it improves readability.
 - `src/styles/index.css` imports Tailwind and HeroUI styles. It contains the dark-only color definitions and other global definitions.
