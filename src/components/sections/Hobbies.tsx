@@ -3,19 +3,22 @@ import {
   FaBolt,
   FaBroadcastTower,
   FaCamera,
+  FaDrum,
   FaExternalLinkAlt,
-  FaFilm,
   FaGamepad,
   FaGift,
   FaGithub,
   FaGlobe,
   FaMusic,
+  FaPhotoVideo,
   FaPlay,
   FaShieldAlt,
   FaUsers,
   FaWordpress,
 } from "react-icons/fa";
-import { SiBilibili, SiSteam } from "react-icons/si";
+import { MdChair, MdOutlineVolunteerActivism } from "react-icons/md";
+import { SiBilibili, SiDavinciresolve, SiSteam } from "react-icons/si";
+import { TbBrandAdobePremier, TbLicense } from "react-icons/tb";
 import { useContent } from "../../hooks/useContent";
 import { Section } from "../layout/Section";
 import {
@@ -45,8 +48,8 @@ const hobbyGroups: HobbyGroup[] = [
     titleKey: "hobbies.mun.title",
     chips: [
       { labelKey: "hobbies.mun.delegate", Icon: FaUsers },
-      { labelKey: "hobbies.mun.volunteer", Icon: FaUsers },
-      { labelKey: "hobbies.mun.chair", Icon: FaUsers },
+      { labelKey: "hobbies.mun.volunteer", Icon: MdOutlineVolunteerActivism },
+      { labelKey: "hobbies.mun.chair", Icon: MdChair },
     ],
   },
   {
@@ -59,8 +62,8 @@ const hobbyGroups: HobbyGroup[] = [
   {
     titleKey: "hobbies.video.title",
     chips: [
-      { labelKey: "hobbies.video.premiere", Icon: FaFilm },
-      { labelKey: "hobbies.video.resolve", Icon: FaFilm },
+      { labelKey: "hobbies.video.premiere", Icon: TbBrandAdobePremier },
+      { labelKey: "hobbies.video.resolve", Icon: SiDavinciresolve },
     ],
   },
   {
@@ -81,15 +84,15 @@ const hobbyGroups: HobbyGroup[] = [
       { labelKey: "hobbies.photography.f3", Icon: FaCamera },
       { labelKey: "hobbies.photography.z7ii", Icon: FaCamera },
       { labelKey: "hobbies.photography.bronica", Icon: FaCamera },
-      { labelKey: "hobbies.photography.luminar", Icon: FaCamera },
+      { labelKey: "hobbies.photography.luminar", Icon: FaPhotoVideo },
     ],
   },
   {
     titleKey: "hobbies.radio.title",
     chips: [
-      { labelKey: "hobbies.radio.typeA", Icon: FaBroadcastTower },
-      { labelKey: "hobbies.radio.acma", Icon: FaBroadcastTower },
-      { labelKey: "hobbies.radio.station", Icon: FaBroadcastTower },
+      { labelKey: "hobbies.radio.typeA", Icon: TbLicense },
+      { labelKey: "hobbies.radio.acma", Icon: TbLicense },
+      { labelKey: "hobbies.radio.station", Icon: TbLicense },
       { labelKey: "hobbies.radio.senhaix", Icon: FaBroadcastTower },
     ],
   },
@@ -128,7 +131,7 @@ const profileItems: ProfileItem[] = [
 ];
 
 const musicGameChips: HobbyChip[] = [
-  { labelKey: "hobbies.music.taiko", Icon: FaMusic },
+  { labelKey: "hobbies.music.taiko", Icon: FaDrum },
   { labelKey: "hobbies.music.phigros", Icon: FaMusic },
   { labelKey: "hobbies.music.malody", Icon: FaMusic },
   { labelKey: "hobbies.music.museDash", Icon: FaMusic },
