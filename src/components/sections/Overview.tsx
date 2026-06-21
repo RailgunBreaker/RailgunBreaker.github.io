@@ -233,10 +233,10 @@ export function Overview() {
           </div>
         </div>
 
-        <div className="grid gap-4">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,22rem),1fr))] gap-4">
           {factGroups.map((group) => (
             <section
-              className="rounded-3xl border border-blue-200/14 bg-[rgb(3_25_48/0.78)] px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.04)] transition duration-300 ease-out hover:-translate-y-1 hover:border-blue-200/35 hover:bg-blue-400/6 hover:shadow-[0_18px_42px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.055)] sm:px-8"
+              className="min-w-0 rounded-3xl border border-blue-200/14 bg-[rgb(3_25_48/0.78)] px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.04)] transition duration-300 ease-out hover:-translate-y-1 hover:border-blue-200/35 hover:bg-blue-400/6 hover:shadow-[0_18px_42px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.055)] sm:px-8"
               key={group.labelKey}
             >
               <h2 className="text-base font-bold tracking-[0.12em] text-slate-200 uppercase">
@@ -256,7 +256,9 @@ export function Overview() {
               </div>
             </section>
           ))}
-          <RollingImages />
+          <div className="col-span-full">
+            <RollingImages />
+          </div>
         </div>
       </div>
     </Section>
