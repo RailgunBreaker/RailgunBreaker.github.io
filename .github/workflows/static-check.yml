@@ -1,0 +1,47 @@
+---
+name: Static Check
+
+on:
+  pull_request:
+    branches:
+      - main
+      - rebuild
+  push:
+    branches:
+      - main
+      - rebuild
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-check:
+    name: Static Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check build
+        run: pnpm cibuild
+
+      - name: Check lint and format
+        run: pnpm lint:check && pnpm format:check
+
+      - name: Validate i18n content
+        run: pnpm validate-i18n

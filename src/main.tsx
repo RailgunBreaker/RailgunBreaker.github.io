@@ -1,11 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "@/styles/index.css";
-import "@/styles/theme.css";
-import App from "./components/App";
+import { App } from "./components/layout/App";
+import { initializeLanguage } from "./hooks/stores/useLanguage";
+import "./styles/index.css";
+
+initializeLanguage();
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
-  </StrictMode>
+  </StrictMode>,
 );
