@@ -98,7 +98,7 @@ export function RollingImages() {
               >
                 <img
                   alt=""
-                  className="h-56 w-80 object-cover sm:h-64 sm:w-96 lg:h-72 lg:w-md"
+                  className="h-70 w-100 object-cover sm:h-80 sm:w-120 lg:h-90 lg:w-140"
                   src={imageUrl}
                   onError={trackIndex === 0 ? handleImageSettled : undefined}
                   onLoad={trackIndex === 0 ? handleImageSettled : undefined}
