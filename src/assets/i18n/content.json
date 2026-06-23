@@ -25,7 +25,7 @@
     "ja": "中国語"
   },
   "languageSelector.zhShort": {
-    "en": "ZH",
+    "en": "中文",
     "zh": "中文",
     "ja": "中文"
   },
@@ -35,9 +35,9 @@
     "ja": "日本語"
   },
   "languageSelector.jaShort": {
-    "en": "JA",
-    "zh": "日本語",
-    "ja": "日本語"
+    "en": "日本语",
+    "zh": "日本语",
+    "ja": "日本语"
   },
   "overview.name": {
     "en": "Railgun Breaker",
