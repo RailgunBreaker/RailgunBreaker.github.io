@@ -55,9 +55,9 @@
     "ja": "宋"
   },
   "overview.legalName.first.annotation": {
-    "en": "国华",
+    "en": "__none__",
     "zh": "__none__",
-    "ja": "ソン"
+    "ja": "ソウ"
   },
   "overview.legalName.second.text": {
     "en": "Song",
@@ -65,9 +65,9 @@
     "ja": "国華"
   },
   "overview.legalName.second.annotation": {
-    "en": "宋",
+    "en": "__none__",
     "zh": "__none__",
-    "ja": "グオホア"
+    "ja": "コクカ"
   },
   "overview.summary": {
     "en": "Undergraduate portfolio spanning global liberal arts, Asia-Pacific affairs, languages, and amateur radio.",
