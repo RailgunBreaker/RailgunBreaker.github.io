@@ -25,7 +25,7 @@
     "ja": "中国語"
   },
   "languageSelector.zhShort": {
-    "en": "中文",
+    "en": "ZH",
     "zh": "中文",
     "ja": "中文"
   },
@@ -35,7 +35,7 @@
     "ja": "日本語"
   },
   "languageSelector.jaShort": {
-    "en": "日本語",
+    "en": "JA",
     "zh": "日本語",
     "ja": "日本語"
   },
@@ -100,12 +100,12 @@
     "ja": "学校"
   },
   "overview.schools.ritsumeikan": {
-    "en": "立命館大学(Ritsumeikan University)",
+    "en": "Ritsumeikan University",
     "zh": "立命馆大学（Ritsumeikan University）",
     "ja": "立命館大学（Ritsumeikan University）"
   },
   "overview.schools.anu": {
-    "en": "オーストラリア国立大学（Australian National University）",
+    "en": "Australian National University",
     "zh": "澳大利亚国立大学（Australian National University）",
     "ja": "オーストラリア国立大学（Australian National University）"
   },
@@ -125,7 +125,7 @@
     "ja": "専攻"
   },
   "overview.major.ru": {
-    "en": "Global Liberal Arts(RU) (グローバル教養学、意味不明)",
+    "en": "Global Liberal Arts (RU)",
     "zh": "全球教养（立命馆大学）",
     "ja": "グローバル教養（立命館大学）"
   },
@@ -350,7 +350,7 @@
     "ja": "2023年 – 2026年"
   },
   "education.anu.meta": {
-    "en": "Australian National University（オーストラリア国立大学）, Canberra, Australia",
+    "en": "Australian National University, Canberra, Australia",
     "zh": "澳大利亚国立大学（Australian National University），澳大利亚堪培拉",
     "ja": "オーストラリア国立大学（Australian National University）、キャンベラ、オーストラリア"
   },
@@ -380,7 +380,7 @@
     "ja": "2022年 – 2026年"
   },
   "education.ritsumeikan.meta": {
-    "en": "Ritsumeikan University（立命館大学）, Osaka, Japan",
+    "en": "Ritsumeikan University, Osaka, Japan",
     "zh": "立命馆大学（Ritsumeikan University），日本大阪",
     "ja": "立命館大学（Ritsumeikan University）、大阪、日本"
   },
@@ -610,7 +610,7 @@
     "ja": "社会学の定量的手法"
   },
   "skills.certifications.drivingLicense": {
-    "en": "Japanese Driving License – Class 1 (普通車一種運転免許)",
+    "en": "Japanese Driving License – Class 1",
     "zh": "日本普通汽车第一类驾驶执照（普通車一種運転免許）",
     "ja": "普通車一種運転免許"
   },
@@ -780,9 +780,9 @@
     "ja": "Bilibili"
   },
   "hobbies.profile.bilibili.value": {
-    "en": "Railgun_Breaker_的个人空间",
+    "en": "Railgun_Breaker's Bilibili Space",
     "zh": "Railgun_Breaker_的个人空间",
-    "ja": "Railgun_Breaker_的个人空间"
+    "ja": "Railgun_Breaker_のBilibili個人スペース"
   },
   "hobbies.profile.steam.label": {
     "en": "Steam",
