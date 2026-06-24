@@ -3,11 +3,12 @@ name: Publish to S3
 on:
   push:
     branches:
-      - rebuild
+      - main
     paths-ignore:
       - scripts/**
       - README.md
       - .github/workflows/**
+      - "!.github/workflows/push-artifacts.yml"
   workflow_dispatch:
 jobs:
   push-artifacts-to-s3:
