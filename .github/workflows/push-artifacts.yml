@@ -38,6 +38,34 @@ jobs:
       - name: Deploy to S3
         run: |
           aws s3 sync ./dist s3://${{ vars.AWS_S3_BUCKET }}/rb-website --delete
+      - name: Regenerate rolling images
+        run: |
+          aws lambda invoke \
+            --function-name "${{ vars.AWS_LAMBDA_FUNCTION_NAME }}" \
+            --payload '{}' \
+            --cli-binary-format raw-in-base64-out \
+            lambda-response.json > lambda-invoke.json
+
+          cat lambda-invoke.json
+          cat lambda-response.json
+
+          if jq -e '.FunctionError' lambda-invoke.json > /dev/null; then
+            echo "Lambda invocation failed:"
+            cat lambda-invoke.json
+            exit 1
+          fi
+
+          if ! jq -e '.statusCode == 200' lambda-response.json > /dev/null; then
+            echo "Lambda returned a non-200 status code:"
+            cat lambda-response.json
+            exit 1
+          fi
+
+          if ! jq -e '(.body | fromjson | .success) == true' lambda-response.json > /dev/null; then
+            echo "Lambda did not regenerate rolling images successfully:"
+            cat lambda-response.json
+            exit 1
+          fi
       - name: Invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" --paths "/*"
