@@ -5,11 +5,9 @@ on:
   pull_request:
     branches:
       - main
-      - rebuild
   push:
     branches:
       - main
-      - rebuild
   workflow_dispatch:
 
 permissions:
