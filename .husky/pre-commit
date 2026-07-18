@@ -1,3 +1,3 @@
-pnpm format:check
-pnpm lint:check
-pnpm validate-i18n
+corepack pnpm format:check
+corepack pnpm lint:check
+corepack pnpm validate-i18n

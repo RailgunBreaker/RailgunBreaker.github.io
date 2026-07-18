@@ -113,11 +113,6 @@
   .rolling-images-track {
     animation: rolling-images-scroll 45s linear infinite;
   }
-
-  .rolling-images:hover .rolling-images-track,
-  .rolling-images:focus-within .rolling-images-track {
-    animation-play-state: paused;
-  }
 }
 
 @keyframes rolling-images-scroll {

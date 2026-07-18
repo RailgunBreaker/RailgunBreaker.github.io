@@ -35,9 +35,6 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Build Project
         run: pnpm cibuild
-      - name: Deploy to S3
-        run: |
-          aws s3 sync ./dist s3://${{ vars.AWS_S3_BUCKET }}/rb-website --delete
       - name: Regenerate rolling images
         run: |
           aws lambda invoke \
@@ -70,6 +67,11 @@ jobs:
               exit 1
             fi
           fi
+      - name: Deploy to S3
+        run: |
+          aws s3 sync ./dist s3://${{ vars.AWS_S3_BUCKET }}/rb-website \
+            --delete \
+            --exclude "data/rolling-images.json"
       - name: Invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" --paths "/*"
