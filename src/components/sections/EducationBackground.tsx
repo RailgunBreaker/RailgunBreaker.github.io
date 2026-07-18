@@ -8,6 +8,12 @@ import {
 
 const educationItems = [
   {
+    dateKey: "education.waseda.date",
+    metaKey: "education.waseda.meta",
+    titleKey: "education.waseda.title",
+    bulletKeys: ["education.waseda.bullet1", "education.waseda.bullet2"],
+  },
+  {
     dateKey: "education.anu.date",
     metaKey: "education.anu.meta",
     titleKey: "education.anu.title",
@@ -60,19 +66,19 @@ export function EducationBackground() {
           {content["education.title"]}
         </PortfolioSectionHeading>
 
-        <div className="flex flex-col gap-9 sm:gap-10">
+        <div className="grid gap-6 lg:grid-cols-2">
           {educationItems.map((item) => (
             <PortfolioSectionCard key={item.titleKey}>
-              <p className="text-xl font-bold text-slate-100 sm:text-2xl">
+              <p className="text-lg font-bold text-slate-100 md:text-xl">
                 {content[item.dateKey]}
               </p>
-              <p className="mt-3 text-base font-semibold text-slate-400 sm:text-lg">
+              <p className="mt-2 text-sm font-semibold text-slate-400 md:text-base">
                 {content[item.metaKey]}
               </p>
-              <h3 className="mt-4 text-lg font-bold text-slate-200 sm:text-xl">
+              <h3 className="mt-3 text-base font-bold text-slate-200 md:text-lg">
                 {content[item.titleKey]}
               </h3>
-              <ul className="mt-5 list-disc space-y-3 pl-5 text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-slate-300 md:text-base md:leading-7">
                 {item.bulletKeys.map((bulletKey) => (
                   <li key={bulletKey}>{content[bulletKey]}</li>
                 ))}

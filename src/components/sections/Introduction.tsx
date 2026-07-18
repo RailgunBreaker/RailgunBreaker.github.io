@@ -29,11 +29,11 @@ export function Introduction() {
           {content["introduction.title"]}
         </PortfolioSectionHeading>
 
-        <div className="flex flex-col gap-10 sm:gap-14">
+        <div className="grid gap-5 md:grid-cols-2">
           {paragraphKeys.map((paragraphKey) => (
             <PortfolioSectionCard
               as="p"
-              className="text-lg leading-9 sm:text-xl sm:leading-10"
+              className={`text-base leading-7 md:text-lg md:leading-8 ${paragraphKey === "introduction.research" ? "md:col-span-2" : ""}`}
               key={paragraphKey}
             >
               {content[paragraphKey]}

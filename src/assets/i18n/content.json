@@ -90,14 +90,19 @@
     "ja": "英語（流暢）"
   },
   "overview.language.japanese": {
-    "en": "Japanese (Advanced)",
-    "zh": "日语（高级）",
-    "ja": "日本語（上級）"
+    "en": "Japanese (Fluent)",
+    "zh": "日语（流利）",
+    "ja": "日本語（流暢）"
   },
   "overview.schools.label": {
     "en": "Schools",
     "zh": "学校",
     "ja": "学校"
+  },
+  "overview.schools.waseda": {
+    "en": "Waseda University",
+    "zh": "早稻田大学（Waseda University）",
+    "ja": "早稲田大学（Waseda University）"
   },
   "overview.schools.ritsumeikan": {
     "en": "Ritsumeikan University",
@@ -115,9 +120,9 @@
     "ja": "学歴"
   },
   "overview.education.degree": {
-    "en": "Undergraduate, Class of 2026",
-    "zh": "本科生，2026届",
-    "ja": "学部生、2026年卒業予定"
+    "en": "MA Political Science, 2026–2028",
+    "zh": "政治学硕士，2026–2028",
+    "ja": "政治学修士課程、2026–2028"
   },
   "overview.major.label": {
     "en": "Major",
@@ -140,9 +145,9 @@
     "ja": "メール（Web）"
   },
   "overview.emailWeb.address": {
-    "en": "alansong0318@outlook.com",
-    "zh": "alansong0318@outlook.com",
-    "ja": "alansong0318@outlook.com"
+    "en": "ghsong@railgunbreaker.icu",
+    "zh": "ghsong@railgunbreaker.icu",
+    "ja": "ghsong@railgunbreaker.icu"
   },
   "overview.emailAcademic.label": {
     "en": "E-mail(Academic)",
@@ -180,9 +185,9 @@
     "ja": "自己紹介"
   },
   "introduction.academic": {
-    "en": "I am an undergraduate student pursuing a dual degree in Asia Pacific Affairs at the Australian National University and Global Liberal Arts at Ritsumeikan University. My academic journey spans two leading institutions in the Asia-Pacific region, allowing me to approach global issues from both theoretical and cross-cultural perspectives.",
-    "zh": "我是一名本科生，正在澳大利亚国立大学攻读亚太事务专业，同时在立命馆大学攻读全球教养专业。我的学习经历横跨亚太地区两所重要院校，使我能够从理论和跨文化两个角度理解全球议题。",
-    "ja": "私は、オーストラリア国立大学でアジア太平洋地域研究を、立命館大学でグローバル教養を学ぶ学部生である。アジア太平洋地域を代表する二つの大学での学びを通じて、理論的視点と異文化的視点の両方からグローバルな課題に向き合っている。"
+    "en": "I will begin an MA in Political Science at Waseda University's Graduate School of Political Science in 2026, supervised by Prof. Shuhei Kurizaki. This builds on my dual bachelor's degrees in Asia Pacific Affairs at the Australian National University and Global Liberal Arts at Ritsumeikan University.",
+    "zh": "我将于2026年进入早稻田大学政治学研究科攻读政治学硕士，由栗崎周平教授指导。此前，我分别在澳大利亚国立大学攻读亚太事务学士、在立命馆大学攻读全球教养学士。",
+    "ja": "2026年より早稲田大学大学院政治学研究科の修士課程に進学し、栗崎周平教授の指導を受ける予定である。オーストラリア国立大学のアジア太平洋地域研究と立命館大学のグローバル教養による二つの学士課程での学びを基盤としている。"
   },
   "introduction.research": {
     "en": "My research interests lie in international political economy, particularly in how political expectations and geopolitical risk are reshaping global trade and production networks. I am interested in the limitations of efficiency-based frameworks such as world-systems theory in explaining recent changes in supply chains, trade governance, and outsourcing decisions. Drawing on cases such as rising strategic tensions involving China, the Russia-Ukraine war, and the weakening of the WTO, I seek to explore how expectations about future conflict, coercion, and institutional reliability influence state and firm behavior, as well as the growing role of high-standard trade arrangements such as the CPTPP.",
@@ -193,6 +198,46 @@
     "en": "Outside of my academic work, I am passionate about music games, photography, amateur radio, and Japanese culture. I enjoy exploring both the serious and playful sides of life — whether it's investigating education policy or perfecting a song in 太鼓の達人.",
     "zh": "在学术之外，我热爱音乐游戏、摄影、业余无线电和日本文化。我喜欢探索生活中严肃与玩乐并存的一面，无论是研究教育政策，还是在《太鼓の達人》中反复练习一首曲子。",
     "ja": "学業の外では、音楽ゲーム、写真、アマチュア無線、日本文化に強い関心がある。教育政策を調べるような真面目な時間も、『太鼓の達人』で一曲を仕上げていくような遊び心のある時間も、どちらも大切にしている。"
+  },
+  "projects.title": {
+    "en": "Selected Project",
+    "zh": "精选项目",
+    "ja": "主要プロジェクト"
+  },
+  "projects.sscim.eyebrow": {
+    "en": "Current project · Open source",
+    "zh": "当前项目 · 开源",
+    "ja": "進行中 · オープンソース"
+  },
+  "projects.sscim.title": {
+    "en": "SSCIM — Semiconductor Supply Chain Intelligence Map",
+    "zh": "SSCIM — 半导体供应链情报地图",
+    "ja": "SSCIM — 半導体サプライチェーン・インテリジェンス・マップ"
+  },
+  "projects.sscim.description": {
+    "en": "A live intelligence layer for understanding where semiconductor capabilities sit, what changed, which nodes are exposed, and how shocks may propagate across the global production network.",
+    "zh": "一个用于理解全球半导体产能分布、最新变化、暴露节点及冲击如何沿生产网络传播的动态情报平台。",
+    "ja": "半導体能力の所在地、変化、影響を受けるノード、そしてショックが世界の生産ネットワークをどう波及するかを把握するための動的インテリジェンス基盤。"
+  },
+  "projects.sscim.detail": {
+    "en": "The working demo combines a world map, a 24-stage industry graph, company and country layers, explainable shock propagation, scenario modeling, and generated intelligence briefings.",
+    "zh": "当前演示版整合世界地图、24阶段产业图谱、企业与国家层、可解释的冲击传播、情景建模及自动情报简报。",
+    "ja": "デモ版は世界地図、24段階の産業グラフ、企業・国家レイヤー、説明可能なショック波及、シナリオ分析、自動生成ブリーフィングを統合している。"
+  },
+  "projects.sscim.status": {
+    "en": "Working demo · Pre-MVP",
+    "zh": "可运行演示版 · MVP 前期",
+    "ja": "動作デモ · Pre-MVP"
+  },
+  "projects.sscim.live": {
+    "en": "Open live demo",
+    "zh": "打开在线演示",
+    "ja": "ライブデモを開く"
+  },
+  "projects.sscim.source": {
+    "en": "View source",
+    "zh": "查看源代码",
+    "ja": "ソースを見る"
   },
   "experience.title": {
     "en": "Experience",
@@ -215,9 +260,19 @@
     "ja": "学生リサーチアシスタント – Huseyin Rasit 准教授"
   },
   "experience.research.bullet1": {
-    "en": "Detect, classify, and analyze 120-130 entries exhibiting political bias from newspapers covering worldwide protests and demonstrations per month in the project Journalists of the Empire: Capitalism, Imperialism, and Misinformation (https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/)",
-    "zh": "在 Journalists of the Empire: Capitalism, Imperialism, and Misinformation 项目中，每月从报道全球抗议和示威的报纸资料中识别、分类并分析 120-130 条体现政治偏见的条目（https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/）",
-    "ja": "Journalists of the Empire: Capitalism, Imperialism, and Misinformation プロジェクトにおいて、世界各地の抗議・デモを報じる新聞記事から政治的バイアスを示す項目を毎月 120-130 件検出、分類、分析（https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K16305/）"
+    "en": "Classify and analyze 120–130 political-bias observations per month from international newspaper coverage of protests and demonstrations for Journalists of the Empire.",
+    "zh": "为 Journalists of the Empire 项目，每月对国际报纸有关抗议与示威的120–130条政治偏见观察进行分类和分析。",
+    "ja": "Journalists of the Empire のため、抗議・デモに関する国際紙の報道から毎月120–130件の政治的バイアスを分類・分析。"
+  },
+  "experience.research.bullet2": {
+    "en": "Develop and maintain a Node.js and Playwright scraper that turns articles from The New York Times, The Times, and The Guardian into analysis-ready datasets.",
+    "zh": "开发并维护 Node.js/Playwright 爬虫，将《纽约时报》《泰晤士报》和《卫报》的文章整理为可供分析的数据集。",
+    "ja": "Node.js／Playwrightによるスクレイパーを開発・保守し、The New York Times、The Times、The Guardianの記事を分析可能なデータセットに整形。"
+  },
+  "experience.research.bullet3": {
+    "en": "Refine content-analysis rules, document edge cases, and cross-check coding with research peers to strengthen inter-coder reliability.",
+    "zh": "完善内容分析规则、记录边界案例，并与研究助理同伴交叉核查编码，以提高编码者间信度。",
+    "ja": "内容分析ルールの改善、例外事例の記録、研究補助者間の相互確認を通じてコーダー間信頼性を向上。"
   },
   "experience.ana.date": {
     "en": "October 2025 – November 2025",
@@ -344,6 +399,31 @@
     "zh": "教育背景",
     "ja": "学歴"
   },
+  "education.waseda.date": {
+    "en": "2026 – 2028",
+    "zh": "2026年 – 2028年",
+    "ja": "2026年 – 2028年"
+  },
+  "education.waseda.meta": {
+    "en": "Waseda University, Tokyo, Japan",
+    "zh": "早稻田大学，日本东京",
+    "ja": "早稲田大学、東京、日本"
+  },
+  "education.waseda.title": {
+    "en": "Master of Arts in Political Science, Graduate School of Political Science",
+    "zh": "政治学硕士，政治学研究科",
+    "ja": "政治学修士、大学院政治学研究科"
+  },
+  "education.waseda.bullet1": {
+    "en": "Supervisor: Prof. Shuhei Kurizaki",
+    "zh": "导师：栗崎周平教授",
+    "ja": "指導教員：栗崎周平教授"
+  },
+  "education.waseda.bullet2": {
+    "en": "Thesis: From Efficiency to Resilience — the political economy of trade reorganization amid great-power competition in semiconductor supply chains.",
+    "zh": "论文：从效率到韧性——大国竞争时代半导体供应链贸易重组的政治经济学。",
+    "ja": "修士論文：効率性からレジリエンスへ—半導体サプライチェーンをめぐる大国間競争下の貿易再編の政治経済学。"
+  },
   "education.anu.date": {
     "en": "2023 – 2026",
     "zh": "2023年 – 2026年",
@@ -360,9 +440,9 @@
     "ja": "Bachelor of Asia Pacific Affairs, College of Asia and the Pacific"
   },
   "education.anu.bullet1": {
-    "en": "Semester GPA: 6/7; Cumulative GPA: 5.5/7",
-    "zh": "学期 GPA：6/7；累计 GPA：5.5/7",
-    "ja": "学期 GPA: 6/7、累計 GPA: 5.5/7"
+    "en": "Cumulative GPA: 5.57/7",
+    "zh": "累计 GPA：5.57/7",
+    "ja": "累計 GPA: 5.57/7"
   },
   "education.anu.bullet2": {
     "en": "Relevant coursework: International Security Studies, Japanese Politics and Foreign Policy, Asian Economics, Peace and Conflict Studies.",
@@ -390,9 +470,9 @@
     "ja": "Bachelor of Global Liberal Arts, College of Global Liberal Arts"
   },
   "education.ritsumeikan.bullet1": {
-    "en": "CGPA: 3.86/5, Semester GPA: 4.20/5",
-    "zh": "累计 GPA：3.86/5；学期 GPA：4.20/5",
-    "ja": "累計 GPA: 3.86/5、学期 GPA: 4.20/5"
+    "en": "Cumulative GPA: 3.85/5",
+    "zh": "累计 GPA：3.85/5",
+    "ja": "累計 GPA: 3.85/5"
   },
   "education.ritsumeikan.bullet2": {
     "en": "Relevant coursework, Law of Conflicts, Sociology, Political Theory, GIS",

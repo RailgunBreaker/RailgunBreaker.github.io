@@ -12,7 +12,11 @@ const experienceItems = [
     dateKey: "experience.research.date",
     metaKey: "experience.research.meta",
     titleKey: "experience.research.title",
-    bulletKeys: ["experience.research.bullet1"],
+    bulletKeys: [
+      "experience.research.bullet1",
+      "experience.research.bullet2",
+      "experience.research.bullet3",
+    ],
   },
   {
     dateKey: "experience.ana.date",
@@ -71,19 +75,19 @@ export function Experience() {
           {content["experience.title"]}
         </PortfolioSectionHeading>
 
-        <div className="flex flex-col gap-9 sm:gap-10">
+        <div className="grid gap-6 lg:grid-cols-2">
           {experienceItems.map((item) => (
             <PortfolioSectionCard key={item.titleKey}>
-              <p className="text-xl font-bold text-slate-100 sm:text-2xl">
+              <p className="text-lg font-bold text-slate-100 md:text-xl">
                 {content[item.dateKey]}
               </p>
-              <p className="mt-3 text-base font-semibold text-slate-400 sm:text-lg">
+              <p className="mt-2 text-sm font-semibold text-slate-400 md:text-base">
                 {content[item.metaKey]}
               </p>
-              <h3 className="mt-4 text-lg font-bold text-slate-200 sm:text-xl">
+              <h3 className="mt-3 text-base font-bold text-slate-200 md:text-lg">
                 {content[item.titleKey]}
               </h3>
-              <ul className="mt-5 list-disc space-y-3 pl-5 text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-slate-300 md:text-base">
                 {item.bulletKeys.map((bulletKey) => (
                   <li key={bulletKey}>{content[bulletKey]}</li>
                 ))}
@@ -93,7 +97,7 @@ export function Experience() {
 
           <a
             aria-label={content["experience.cv.aria"]}
-            className="group border-border flex flex-col gap-5 rounded-2xl border border-l-4 border-l-blue-400 bg-slate-950/25 px-5 py-6 text-slate-200 shadow-[inset_0_1px_0_rgb(255_255_255/0.03)] transition duration-300 ease-out outline-none hover:-translate-y-2 hover:border-blue-200/45 hover:bg-blue-400/8 hover:shadow-[0_18px_42px_rgb(96_165_250/0.16),inset_0_1px_0_rgb(255_255_255/0.06)] focus-visible:-translate-y-2 focus-visible:border-blue-200/45 focus-visible:bg-blue-400/8 focus-visible:shadow-[0_18px_42px_rgb(96_165_250/0.16),inset_0_1px_0_rgb(255_255_255/0.06)] focus-visible:ring-2 focus-visible:ring-blue-200/80 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 sm:flex-row sm:items-center sm:justify-between sm:px-7"
+            className="group border-border flex flex-col gap-4 rounded-xl border border-l-3 border-l-blue-400 bg-slate-950/25 px-5 py-5 text-slate-200 transition outline-none hover:border-blue-200/45 hover:bg-blue-400/8 focus-visible:ring-2 focus-visible:ring-blue-200/80 lg:col-span-2 lg:flex-row lg:items-center lg:justify-between lg:px-6"
             download="Guohua.S-CV.pdf"
             href="/Guohua.S-CV.pdf"
           >

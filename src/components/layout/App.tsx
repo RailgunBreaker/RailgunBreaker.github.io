@@ -4,6 +4,7 @@ import { Experience } from "../sections/Experience";
 import { Hobbies } from "../sections/Hobbies";
 import { Introduction } from "../sections/Introduction";
 import { Overview } from "../sections/Overview";
+import { Projects } from "../sections/Projects";
 import { Skills } from "../sections/Skills";
 
 export function App() {
@@ -13,6 +14,7 @@ export function App() {
         <div className="flex w-full flex-col">
           <Overview />
           <Introduction />
+          <Projects />
           <Experience />
           <EducationBackground />
           <Awards />
