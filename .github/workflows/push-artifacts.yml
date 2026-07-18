@@ -62,9 +62,13 @@ jobs:
           fi
 
           if ! jq -e '(.body | fromjson | .success) == true' lambda-response.json > /dev/null; then
-            echo "Lambda did not regenerate rolling images successfully:"
-            cat lambda-response.json
-            exit 1
+            if jq -e '(.body | fromjson | .message) == "No image links found"' lambda-response.json > /dev/null; then
+              echo "Lambda did not find image links to refresh; continuing deployment."
+            else
+              echo "Lambda did not regenerate rolling images successfully:"
+              cat lambda-response.json
+              exit 1
+            fi
           fi
       - name: Invalidate CloudFront cache
         run: |
