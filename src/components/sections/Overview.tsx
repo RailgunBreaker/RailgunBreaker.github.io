@@ -2,7 +2,6 @@ import type { IconType } from "react-icons";
 import {
   FaBroadcastTower,
   FaEnvelope,
-  FaGraduationCap,
   FaLanguage,
   FaUniversity,
 } from "react-icons/fa";
@@ -29,11 +28,6 @@ const overviewContentRequests = [
   { sectionName: "content", contentKey: "overview.schools.waseda" },
   { sectionName: "content", contentKey: "overview.schools.ritsumeikan" },
   { sectionName: "content", contentKey: "overview.schools.anu" },
-  { sectionName: "content", contentKey: "overview.education.label" },
-  { sectionName: "content", contentKey: "overview.education.degree" },
-  { sectionName: "content", contentKey: "overview.major.label" },
-  { sectionName: "content", contentKey: "overview.major.ru" },
-  { sectionName: "content", contentKey: "overview.major.anu" },
   { sectionName: "content", contentKey: "overview.emailWeb.label" },
   { sectionName: "content", contentKey: "overview.emailWeb.address" },
   { sectionName: "content", contentKey: "overview.emailAcademic.label" },
@@ -70,19 +64,6 @@ const factGroups: FactGroup[] = [
       { contentKey: "overview.schools.waseda" },
       { contentKey: "overview.schools.ritsumeikan" },
       { contentKey: "overview.schools.anu" },
-    ],
-  },
-  {
-    icon: FaGraduationCap,
-    labelKey: "overview.education.label",
-    items: [{ contentKey: "overview.education.degree" }],
-  },
-  {
-    icon: FaUniversity,
-    labelKey: "overview.major.label",
-    items: [
-      { contentKey: "overview.major.ru" },
-      { contentKey: "overview.major.anu" },
     ],
   },
   {
@@ -193,7 +174,7 @@ export function Overview() {
 
   return (
     <Section
-      className="overflow-hidden bg-[linear-gradient(135deg,rgb(28_82_125)_0%,rgb(11_43_77)_48%,rgb(5_29_58)_100%)] px-0 py-0 sm:px-0 sm:py-0 md:py-0"
+      className="overflow-hidden bg-[radial-gradient(circle_at_18%_20%,rgb(92_179_255/0.20),transparent_45%),linear-gradient(125deg,#0b2b50_0%,#09213f_52%,#081b35_100%)] px-0 py-0 sm:px-0 sm:py-0 md:py-0"
       hasInnerCard={false}
     >
       <div className="relative">
@@ -201,17 +182,17 @@ export function Overview() {
           <LanguageSelector />
         </div>
 
-        <div className="flex min-h-72 flex-col items-center justify-center gap-5 px-5 py-9 text-center md:min-h-72 md:flex-row md:justify-start md:gap-10 md:px-10 md:py-10 md:text-left">
+        <div className="flex flex-col items-center justify-center gap-4 px-5 py-6 text-center md:flex-row md:justify-start md:gap-7 md:px-8 md:py-7 md:text-left">
           <div className="shrink-0 rounded-full bg-white p-1.5 shadow-[0_18px_44px_rgb(0_0_0/0.35)] md:p-2">
             <img
               alt=""
-              className="size-32 rounded-full object-cover md:size-44 lg:size-48"
+              className="size-24 rounded-full object-cover sm:size-28 md:size-32"
               src={treeImage}
             />
           </div>
 
           <div>
-            <h1 className="text-4xl leading-tight font-bold tracking-normal text-white drop-shadow-[0_4px_3px_rgb(0_0_0/0.42)] md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl leading-tight font-bold tracking-tight text-white drop-shadow-[0_4px_3px_rgb(0_0_0/0.42)] sm:text-4xl md:text-5xl">
               <span>Railgun </span>
               <span className="whitespace-nowrap">
                 <a
@@ -235,17 +216,17 @@ export function Overview() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-px bg-blue-200/10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-2 px-3 pb-3 sm:grid-cols-2 md:px-4 md:pb-4 lg:grid-cols-3">
           {factGroups.map((group) => (
             <section
-              className="min-w-0 bg-[rgb(3_25_48/0.88)] px-5 py-5 shadow-[inset_0_1px_0_rgb(255_255_255/0.04)] transition duration-300 ease-out md:px-6 md:hover:bg-blue-400/8"
+              className="min-w-0 rounded-xl border border-blue-200/20 bg-[linear-gradient(150deg,rgb(6_23_43/0.78),rgb(5_18_35/0.78))] px-4 py-4 shadow-[inset_0_1px_0_rgb(255_255_255/0.05)]"
               key={group.labelKey}
             >
               <h2 className="text-base font-bold tracking-[0.12em] text-slate-200 uppercase">
                 {content[group.labelKey]}
               </h2>
-              <div className="mt-3 h-1 w-20 rounded-full bg-blue-400" />
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="mt-2 h-0.5 w-12 rounded-full bg-blue-400" />
+              <div className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <FactChip
                     key={item.contentKey}

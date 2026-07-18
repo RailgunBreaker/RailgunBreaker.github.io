@@ -20,7 +20,7 @@ export function PortfolioSectionContent({
   children,
   gap = "default",
 }: PortfolioSectionContentProps) {
-  const gapClass = gap === "wide" ? "gap-7 md:gap-9" : "gap-7 md:gap-8";
+  const gapClass = gap === "wide" ? "gap-5 md:gap-6" : "gap-5 md:gap-6";
 
   return <div className={`flex flex-col ${gapClass}`}>{children}</div>;
 }
@@ -30,9 +30,9 @@ export function PortfolioSectionHeading({
 }: PortfolioSectionHeadingProps) {
   return (
     <header>
-      <h2 className="flex items-center text-2xl font-bold tracking-normal text-white md:text-3xl">
+      <h2 className="flex items-center text-xl font-bold tracking-tight text-white md:text-2xl">
         <FiChevronRight
-          className="mr-1 size-7 shrink-0 text-sky-300 md:mr-2 md:size-8"
+          className="mr-1 size-6 shrink-0 text-sky-300 md:mr-2 md:size-7"
           aria-hidden
         />
         {children}
@@ -49,7 +49,7 @@ export function PortfolioSectionCard({
 }: PortfolioSectionCardProps) {
   return (
     <Element
-      className={`border-border border-l-2 border-l-blue-400 bg-slate-950/18 py-4 pl-4 text-slate-300 transition duration-300 ease-out md:rounded-xl md:border md:border-l-3 md:bg-slate-950/25 md:px-6 md:py-5 md:shadow-[inset_0_1px_0_rgb(255_255_255/0.03)] md:focus-within:border-blue-200/70 md:hover:border-blue-200/70 md:hover:bg-blue-400/8 md:hover:shadow-[0_16px_36px_rgb(96_165_250/0.14)] ${className}`}
+      className={`border-border rounded-xl border border-l-3 border-l-sky-400 bg-[linear-gradient(145deg,rgb(7_26_49/0.73),rgb(6_19_37/0.72))] px-4 py-4 text-slate-300 shadow-[0_10px_20px_rgb(3_8_18/0.32)] transition duration-200 focus-within:border-blue-200/55 hover:border-blue-200/45 md:px-5 ${className}`}
     >
       {children}
     </Element>

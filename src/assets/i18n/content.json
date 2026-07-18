@@ -239,6 +239,81 @@
     "zh": "查看源代码",
     "ja": "ソースを見る"
   },
+  "projects.archived.title": {
+    "en": "Archived (Past Projects)",
+    "zh": "归档（过往项目）",
+    "ja": "アーカイブ（過去の研究）"
+  },
+  "projects.archived.description": {
+    "en": "Selected research papers on migration, humanitarian protection, economic security, and coercive diplomacy.",
+    "zh": "关于移民、国际人道保护、经济安全与强制外交的精选研究论文。",
+    "ja": "移民、人道的保護、経済安全保障、強制外交を扱った研究論文。"
+  },
+  "projects.archived.open": {
+    "en": "Read paper",
+    "zh": "阅读论文",
+    "ja": "論文を読む"
+  },
+  "projects.archived.japan.title": {
+    "en": "Recent Foreign-Labor Reforms and the Limits of Social Incorporation in Japan, 2019–2026",
+    "zh": "日本近期外国劳工改革与社会融入的局限，2019–2026",
+    "ja": "日本における近年の外国人労働政策改革と社会的包摂の限界、2019–2026"
+  },
+  "projects.archived.japan.meta": {
+    "en": "Research Seminar",
+    "zh": "研究研讨课",
+    "ja": "リサーチ・セミナー"
+  },
+  "projects.archived.japan.description": {
+    "en": "Evaluates Japan’s transition from the Technical Intern Training Program toward Specified Skilled Worker and Employment for Skill Development. It argues that reform improves worker recognition and support while preserving selective settlement, family restrictions, and administrative control.",
+    "zh": "评估日本从技能实习制度转向特定技能与育成就劳制度的过程。论文认为，改革改善了劳动者身份认定与支持，但仍保留选择性定居、家庭限制及行政管理。",
+    "ja": "技能実習制度から特定技能・育成就労制度への移行を検討する。労働者としての承認と支援は改善した一方、選択的な定住、家族制限、行政管理が残ると論じる。"
+  },
+  "projects.archived.humanitarian.title": {
+    "en": "Bilateral Politics and Uneven Humanitarian Protection: North Korean Escapee Corridors in East Asia",
+    "zh": "双边政治与不均衡的人道保护：东亚朝鲜逃离者通道",
+    "ja": "二国間政治と不均衡な人道的保護：東アジアにおける北朝鮮脱出ルート"
+  },
+  "projects.archived.humanitarian.meta": {
+    "en": "Humanitarianism",
+    "zh": "国际人道主义",
+    "ja": "人道主義"
+  },
+  "projects.archived.humanitarian.description": {
+    "en": "Examines how sovereignty, legal classification, border control, and bilateral relations determine protection along North Korean escape routes. The paper shows why vulnerability alone does not guarantee humanitarian recognition or safe passage.",
+    "zh": "考察主权、法律分类、边境管制与双边关系如何决定朝鲜逃离路线上的保护结果，并说明脆弱性本身为何无法保证获得人道认定或安全通行。",
+    "ja": "主権、法的分類、国境管理、二国間関係が北朝鮮脱出ルートの保護結果をどう左右するかを分析し、脆弱性だけでは人道的承認や安全な移動が保証されないことを示す。"
+  },
+  "projects.archived.fdi.title": {
+    "en": "Foreign Direct Investment, Economic Interdependence, and Security in Asia",
+    "zh": "外国直接投资、经济相互依赖与亚洲安全",
+    "ja": "海外直接投資、経済的相互依存、アジアの安全保障"
+  },
+  "projects.archived.fdi.meta": {
+    "en": "Security Studies",
+    "zh": "安全研究",
+    "ja": "安全保障研究"
+  },
+  "projects.archived.fdi.description": {
+    "en": "Uses ASEAN and Vietnam to explore how FDI reshapes the economy-security nexus. It connects realist, Marxist, and trade-expectations approaches to the strategic pressures created by dependence on Chinese and US capital.",
+    "zh": "以东盟和越南为案例，探讨外国直接投资如何重塑经济—安全关系，并结合现实主义、马克思主义与贸易预期理论分析对中美资本依赖所产生的战略压力。",
+    "ja": "ASEANとベトナムを事例に、FDIが経済と安全保障の関係をどう変えるかを考察する。現実主義、マルクス主義、貿易期待理論を用いて米中資本への依存が生む戦略的圧力を分析する。"
+  },
+  "projects.archived.russia.title": {
+    "en": "Western Sanctions, Russian Resilience, and the Failure of Deterrence in 2022",
+    "zh": "西方制裁、俄罗斯韧性与2022年威慑失败",
+    "ja": "西側制裁、ロシアのレジリエンス、そして2022年の抑止失敗"
+  },
+  "projects.archived.russia.meta": {
+    "en": "Undergraduate Thesis",
+    "zh": "本科毕业论文",
+    "ja": "学士論文"
+  },
+  "projects.archived.russia.description": {
+    "en": "Explains the failure of pre-invasion economic deterrence as a credibility-resilience mismatch: Western energy dependence weakened signaling while Russia’s post-2014 financial insulation and alternative infrastructure increased its expected capacity to absorb sanctions.",
+    "zh": "以“可信度—韧性错配”解释入侵前经济威慑的失败：西方对俄罗斯能源的依赖削弱了威胁信号，而俄罗斯自2014年后建立的金融缓冲与替代基础设施提高了其承受制裁的预期能力。",
+    "ja": "侵攻前の経済的抑止の失敗を「信頼性とレジリエンスの不一致」として説明する。西側のエネルギー依存が威嚇の信頼性を弱める一方、2014年以降の金融的防御と代替インフラがロシアの制裁耐性への期待を高めたと論じる。"
+  },
   "experience.title": {
     "en": "Experience",
     "zh": "经历",
