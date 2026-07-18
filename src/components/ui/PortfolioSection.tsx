@@ -12,7 +12,7 @@ type PortfolioSectionHeadingProps = {
 
 type PortfolioSectionCardProps = {
   children: ReactNode;
-  as?: "article" | "p";
+  as?: "article" | "li" | "p";
   className?: string;
 };
 

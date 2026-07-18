@@ -84,7 +84,7 @@ const hobbyGroups: HobbyGroup[] = [
       { labelKey: "hobbies.photography.f3", Icon: FaCamera },
       { labelKey: "hobbies.photography.z7ii", Icon: FaCamera },
       { labelKey: "hobbies.photography.bronica", Icon: FaCamera },
-      { labelKey: "hobbies.photography.luminar", Icon: FaPhotoVideo },
+      { labelKey: "hobbies.photography.lightroom", Icon: FaPhotoVideo },
     ],
   },
   {
@@ -164,7 +164,7 @@ type HobbyChipViewProps = HobbyChip & {
 
 function HobbyChipView({ content, Icon, labelKey }: HobbyChipViewProps) {
   return (
-    <span className="group/chip inline-flex min-h-10 max-w-full items-center gap-3 rounded-full border border-blue-200/25 bg-blue-400/12 px-4 py-1.5 text-base leading-snug font-medium text-slate-200 shadow-(--shadow-sm) transition duration-200 ease-out hover:-translate-y-1 hover:border-blue-300/65 hover:bg-blue-400/20 hover:text-white hover:shadow-[0_12px_28px_rgb(96_165_250/0.2)] sm:text-lg">
+    <span className="group/chip inline-flex min-h-8 max-w-full items-center gap-2 rounded-full border border-blue-200/25 bg-blue-400/12 px-3 py-1 text-sm leading-snug font-medium text-slate-200 transition duration-200 hover:border-blue-300/65 hover:bg-blue-400/20 hover:text-white md:text-base">
       <Icon
         className="size-5 shrink-0 text-blue-200 transition duration-200 group-hover/chip:text-blue-100"
         aria-hidden
@@ -181,12 +181,12 @@ type HobbyGroupCardProps = {
 
 function HobbyGroupCard({ content, group }: HobbyGroupCardProps) {
   return (
-    <section className="mb-6 break-inside-avoid rounded-3xl border border-blue-200/18 bg-slate-950/20 px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.035)] transition duration-300 ease-out hover:border-blue-200/35 hover:bg-blue-400/6 hover:shadow-[0_18px_42px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.055)] sm:px-6 sm:py-7">
-      <h3 className="text-base font-bold tracking-[0.12em] text-slate-300 uppercase sm:text-lg">
+    <section className="rounded-xl border border-l-3 border-blue-200/18 border-l-sky-400 bg-[linear-gradient(145deg,rgb(7_26_49/0.73),rgb(6_19_37/0.72))] px-4 py-4 shadow-[0_10px_20px_rgb(3_8_18/0.32)] transition hover:border-blue-200/45 md:px-5">
+      <h3 className="text-sm font-bold tracking-[0.12em] text-slate-300 uppercase md:text-base">
         {content[group.titleKey]}
       </h3>
 
-      <div className="mt-6 flex flex-wrap gap-3 sm:gap-4">
+      <div className="mt-4 flex flex-wrap gap-2">
         {group.chips.map((chip) => (
           <HobbyChipView
             content={content}
@@ -210,11 +210,11 @@ function ProfileRow({ content, item }: ProfileRowProps) {
     <>
       <span className="flex min-w-0 items-center gap-4">
         <item.Icon className="size-6 shrink-0 text-blue-300" aria-hidden />
-        <span className="min-w-0 text-lg font-semibold text-slate-100 sm:text-xl">
+        <span className="min-w-0 text-sm font-semibold text-slate-100 md:text-base">
           {content[item.labelKey]}
         </span>
       </span>
-      <span className="flex min-w-0 items-center gap-3 text-base font-semibold text-blue-300 sm:text-lg">
+      <span className="flex min-w-0 items-center gap-3 text-sm font-semibold text-blue-300 md:text-base">
         <span className="min-w-0 text-right wrap-break-word">
           {content[item.valueKey]}
         </span>
@@ -226,7 +226,7 @@ function ProfileRow({ content, item }: ProfileRowProps) {
   );
 
   const className =
-    "group flex flex-col gap-3 rounded-2xl border border-blue-200/12 bg-slate-950/14 px-5 py-4 transition duration-300 ease-out hover:-translate-y-1 hover:border-blue-200/35 hover:bg-blue-400/7 hover:shadow-[0_14px_34px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.045)] sm:flex-row sm:items-center sm:justify-between sm:px-6";
+    "group flex flex-col gap-2 rounded-lg border border-blue-200/12 bg-slate-950/14 px-4 py-3 transition hover:border-blue-200/35 hover:bg-blue-400/7 sm:flex-row sm:items-center sm:justify-between";
 
   if (item.href) {
     return (
@@ -254,7 +254,7 @@ export function Hobbies() {
           {content["hobbies.title"]}
         </PortfolioSectionHeading>
 
-        <div className="columns-1 gap-8 lg:columns-2">
+        <div className="grid items-start gap-3 md:grid-cols-2">
           {hobbyGroups.map((group) => (
             <HobbyGroupCard
               content={content}
@@ -263,27 +263,27 @@ export function Hobbies() {
             />
           ))}
 
-          <section className="mb-6 break-inside-avoid rounded-3xl border border-blue-200/18 bg-slate-950/20 px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.035)] transition duration-300 ease-out hover:border-blue-200/35 hover:bg-blue-400/6 hover:shadow-[0_18px_42px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.055)] sm:px-6 sm:py-7">
-            <h3 className="flex items-center gap-3 text-base font-bold tracking-[0.12em] text-slate-300 uppercase sm:text-lg">
+          <section className="rounded-xl border border-l-3 border-blue-200/18 border-l-sky-400 bg-[linear-gradient(145deg,rgb(7_26_49/0.73),rgb(6_19_37/0.72))] px-4 py-4 shadow-[0_10px_20px_rgb(3_8_18/0.32)] md:px-5">
+            <h3 className="flex items-center gap-3 text-sm font-bold tracking-[0.12em] text-slate-300 uppercase md:text-base">
               <FaExternalLinkAlt
                 className="size-5 shrink-0 text-blue-300"
                 aria-hidden
               />
               {content["hobbies.profile.title"]}
             </h3>
-            <div className="mt-6 flex flex-col gap-4">
+            <div className="mt-4 flex flex-col gap-2">
               {profileItems.map((item) => (
                 <ProfileRow content={content} item={item} key={item.labelKey} />
               ))}
             </div>
           </section>
 
-          <section className="mb-6 break-inside-avoid rounded-3xl border border-blue-200/18 bg-slate-950/20 px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.035)] transition duration-300 ease-out hover:border-blue-200/35 hover:bg-blue-400/6 hover:shadow-[0_18px_42px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.055)] sm:px-6 sm:py-7">
-            <h3 className="flex items-center gap-3 text-base font-bold tracking-[0.12em] text-slate-300 uppercase sm:text-lg">
+          <section className="rounded-xl border border-l-3 border-blue-200/18 border-l-sky-400 bg-[linear-gradient(145deg,rgb(7_26_49/0.73),rgb(6_19_37/0.72))] px-4 py-4 shadow-[0_10px_20px_rgb(3_8_18/0.32)] md:px-5">
+            <h3 className="flex items-center gap-3 text-sm font-bold tracking-[0.12em] text-slate-300 uppercase md:text-base">
               <FaPlay className="size-5 shrink-0 text-blue-300" aria-hidden />
               {content["hobbies.music.title"]}
             </h3>
-            <div className="mt-6 flex flex-wrap gap-3 sm:gap-4">
+            <div className="mt-4 flex flex-wrap gap-2">
               {musicGameChips.map((chip) => (
                 <HobbyChipView
                   content={content}

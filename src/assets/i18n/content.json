@@ -599,10 +599,10 @@
     "zh": "奖项",
     "ja": "受賞・奨学金"
   },
-  "awards.ritsumeikanTuition2024": {
-    "en": "2024 Ritsumeikan University Tuition Fee Reduction (20%)",
-    "zh": "2024年 立命馆大学学费减免（20%）",
-    "ja": "2024年 立命館大学 学費減免（20%）"
+  "awards.ritsumeikanTuition2022To2026": {
+    "en": "2022–2026 Ritsumeikan University Tuition Fee Reduction (20%)",
+    "zh": "2022–2026年 立命馆大学学费减免（20%）",
+    "ja": "2022–2026年 立命館大学 学費減免（20%）"
   },
   "awards.glaStudyAbroad2024": {
     "en": "2024 College of Global Liberal Arts Scholarship for Study Abroad",
@@ -614,20 +614,10 @@
     "zh": "立命馆大学 Study Abroad Challenge Scholars",
     "ja": "立命館大学 Study Abroad Challenge Scholars"
   },
-  "awards.ritsumeikanTuition2023": {
-    "en": "2023 Ritsumeikan University Tuition Fee Reduction (20%)",
-    "zh": "2023年 立命馆大学学费减免（20%）",
-    "ja": "2023年 立命館大学 学費減免（20%）"
-  },
   "awards.monbukagakusho2022": {
     "en": "2022-2023 Monbukagakusho Honors Scholarship for Privately Financed International Students",
     "zh": "2022-2023年 文部科学省私费外国人留学生学习奖励费",
     "ja": "2022-2023年 文部科学省 私費外国人留学生学習奨励費"
-  },
-  "awards.ritsumeikanTuition2022": {
-    "en": "2022 Ritsumeikan University Tuition Fee Reduction (20%)",
-    "zh": "2022年 立命馆大学学费减免（20%）",
-    "ja": "2022年 立命館大学 学費減免（20%）"
   },
   "awards.ucr2022": {
     "en": "2022 Non-Resident Achievement Scholarship, University of California, Riverside (Rejected acceptance)",
@@ -644,6 +634,11 @@
     "zh": "编程",
     "ja": "プログラミング"
   },
+  "skills.category.languages": {
+    "en": "Languages",
+    "zh": "语言",
+    "ja": "言語"
+  },
   "skills.category.statisticalData": {
     "en": "Statistical & Data Skills",
     "zh": "统计与数据技能",
@@ -659,6 +654,11 @@
     "zh": "证书",
     "ja": "資格"
   },
+  "skills.category.researchAnalysis": {
+    "en": "Research & Analysis",
+    "zh": "研究与分析",
+    "ja": "研究・分析"
+  },
   "skills.programming.python": {
     "en": "Python",
     "zh": "Python",
@@ -668,6 +668,11 @@
     "en": "R",
     "zh": "R",
     "ja": "R"
+  },
+  "skills.programming.javascript": {
+    "en": "JavaScript",
+    "zh": "JavaScript",
+    "ja": "JavaScript"
   },
   "skills.programming.java": {
     "en": "Java",
@@ -739,6 +744,26 @@
     "zh": "ArcGIS（成绩：A，立命馆大学）",
     "ja": "ArcGIS（成績：A、立命館大学）"
   },
+  "skills.tools.nodejs": {
+    "en": "Node.js",
+    "zh": "Node.js",
+    "ja": "Node.js"
+  },
+  "skills.tools.playwright": {
+    "en": "Playwright",
+    "zh": "Playwright",
+    "ja": "Playwright"
+  },
+  "skills.tools.wordpress": {
+    "en": "WordPress",
+    "zh": "WordPress",
+    "ja": "WordPress"
+  },
+  "skills.tools.lamp": {
+    "en": "LAMP Stack",
+    "zh": "LAMP 技术栈",
+    "ja": "LAMPスタック"
+  },
   "skills.statistical.regression": {
     "en": "Regression Analysis",
     "zh": "回归分析",
@@ -764,10 +789,35 @@
     "zh": "社会学定量方法",
     "ja": "社会学の定量的手法"
   },
+  "skills.research.contentAnalysis": {
+    "en": "Content Analysis",
+    "zh": "内容分析",
+    "ja": "内容分析"
+  },
+  "skills.research.mediaBias": {
+    "en": "Media-Bias Classification",
+    "zh": "媒体偏见分类",
+    "ja": "メディア・バイアス分類"
+  },
+  "skills.research.geopoliticalRisk": {
+    "en": "Geopolitical Risk Analysis",
+    "zh": "地缘政治风险分析",
+    "ja": "地政学リスク分析"
+  },
+  "skills.research.macroeconomicRisk": {
+    "en": "Macroeconomic Risk Analysis",
+    "zh": "宏观经济风险分析",
+    "ja": "マクロ経済リスク分析"
+  },
   "skills.certifications.drivingLicense": {
     "en": "Japanese Driving License – Class 1",
     "zh": "日本普通汽车第一类驾驶执照（普通車一種運転免許）",
     "ja": "普通車一種運転免許"
+  },
+  "skills.certifications.acma": {
+    "en": "ACMA Amateur Radio Foundation Recognition",
+    "zh": "ACMA 业余无线电 Foundation 级认可证书",
+    "ja": "ACMAアマチュア無線Foundation認定証"
   },
   "hobbies.title": {
     "en": "Hobbies",
@@ -874,10 +924,10 @@
     "zh": "Bronica ECTL（6x6, 6x4.5）",
     "ja": "Bronica ECTL（6x6, 6x4.5）"
   },
-  "hobbies.photography.luminar": {
-    "en": "Luminar 4",
-    "zh": "Luminar 4",
-    "ja": "Luminar 4"
+  "hobbies.photography.lightroom": {
+    "en": "Adobe Lightroom",
+    "zh": "Adobe Lightroom",
+    "ja": "Adobe Lightroom"
   },
   "hobbies.radio.title": {
     "en": "Amateur Radio",

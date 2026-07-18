@@ -1,10 +1,5 @@
 import type { IconType } from "react-icons";
-import {
-  FaBroadcastTower,
-  FaEnvelope,
-  FaLanguage,
-  FaUniversity,
-} from "react-icons/fa";
+import { FaBroadcastTower, FaEnvelope } from "react-icons/fa";
 import treeImage from "../../assets/images/tree.jpg";
 import { useContent } from "../../hooks/useContent";
 import { Section } from "../layout/Section";
@@ -20,14 +15,6 @@ const overviewContentRequests = [
     sectionName: "content",
     contentKey: "overview.legalName.second.annotation",
   },
-  { sectionName: "content", contentKey: "overview.language.label" },
-  { sectionName: "content", contentKey: "overview.language.chinese" },
-  { sectionName: "content", contentKey: "overview.language.english" },
-  { sectionName: "content", contentKey: "overview.language.japanese" },
-  { sectionName: "content", contentKey: "overview.schools.label" },
-  { sectionName: "content", contentKey: "overview.schools.waseda" },
-  { sectionName: "content", contentKey: "overview.schools.ritsumeikan" },
-  { sectionName: "content", contentKey: "overview.schools.anu" },
   { sectionName: "content", contentKey: "overview.emailWeb.label" },
   { sectionName: "content", contentKey: "overview.emailWeb.address" },
   { sectionName: "content", contentKey: "overview.emailAcademic.label" },
@@ -48,24 +35,6 @@ type FactGroup = {
 };
 
 const factGroups: FactGroup[] = [
-  {
-    icon: FaLanguage,
-    labelKey: "overview.language.label",
-    items: [
-      { contentKey: "overview.language.chinese" },
-      { contentKey: "overview.language.english" },
-      { contentKey: "overview.language.japanese" },
-    ],
-  },
-  {
-    icon: FaUniversity,
-    labelKey: "overview.schools.label",
-    items: [
-      { contentKey: "overview.schools.waseda" },
-      { contentKey: "overview.schools.ritsumeikan" },
-      { contentKey: "overview.schools.anu" },
-    ],
-  },
   {
     icon: FaEnvelope,
     labelKey: "overview.emailWeb.label",

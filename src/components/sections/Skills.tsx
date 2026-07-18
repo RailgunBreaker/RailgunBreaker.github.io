@@ -27,20 +27,20 @@ export function Skills() {
           {content["skills.title"]}
         </PortfolioSectionHeading>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid items-start gap-3 md:grid-cols-2">
           {skillCategories.map((category) => (
             <section
-              className="rounded-3xl border border-blue-200/18 bg-slate-950/20 px-5 py-6 shadow-[inset_0_1px_0_rgb(255_255_255/0.035)] transition duration-300 ease-out hover:border-blue-200/35 hover:bg-blue-400/6 hover:shadow-[0_18px_42px_rgb(96_165_250/0.12),inset_0_1px_0_rgb(255_255_255/0.055)] sm:px-6 sm:py-7"
+              className="rounded-xl border border-l-3 border-blue-200/18 border-l-sky-400 bg-[linear-gradient(145deg,rgb(7_26_49/0.73),rgb(6_19_37/0.72))] px-4 py-4 shadow-[0_10px_20px_rgb(3_8_18/0.32)] transition hover:border-blue-200/45 md:px-5"
               key={category.titleKey}
             >
-              <h3 className="text-base font-bold tracking-[0.12em] text-slate-300 uppercase sm:text-lg">
+              <h3 className="text-sm font-bold tracking-[0.12em] text-slate-300 uppercase md:text-base">
                 {content[category.titleKey]}
               </h3>
 
-              <div className="mt-6 flex flex-wrap gap-3 sm:gap-4">
+              <div className="mt-4 flex flex-wrap gap-2">
                 {category.skills.map(({ Icon, labelKey }) => (
                   <span
-                    className="group/chip inline-flex min-h-10 max-w-full items-center gap-3 rounded-full border border-sky-200/25 bg-sky-300/15 px-4 py-1.5 text-base leading-snug font-medium text-slate-200 shadow-(--shadow-sm) transition duration-200 ease-out hover:-translate-y-1 hover:border-blue-300/65 hover:bg-blue-400/20 hover:text-white hover:shadow-[0_12px_28px_rgb(96_165_250/0.2)] sm:text-lg"
+                    className="group/chip inline-flex min-h-8 max-w-full items-center gap-2 rounded-full border border-sky-200/25 bg-sky-300/15 px-3 py-1 text-sm leading-snug font-medium text-slate-200 transition duration-200 hover:border-blue-300/65 hover:bg-blue-400/20 hover:text-white md:text-base"
                     key={labelKey}
                   >
                     <Icon
